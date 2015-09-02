@@ -1,0 +1,17 @@
+{{ partial "head.html" . }}
+
+<body class="error">
+
+    {{ partial "header.html" . }}
+
+    <section class="content">
+
+        <h1>Page not found</h1>
+
+        <p>You are looking but not finding. <a href="{{ .Site.BaseURL }}">Head back home</a> to try finding it again.</p>
+    </section>
+
+    {{ partial "footer.html" . }}
+
+</body>
+</html>

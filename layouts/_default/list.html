@@ -1,0 +1,23 @@
+{{ partial "head.html" . }}
+<body class="single">
+
+    {{ partial "header.html" . }}
+
+    <section class="content">
+
+        {{ range .Data.Pages }}
+        <article>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <dl class="meta">
+                <dt>Date</dt>
+                <dd><time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time></dd>
+            </dl>
+        </article>
+        {{ end }}
+
+    </section>
+
+    {{ partial "footer.html" . }}
+
+</body>
+</html>

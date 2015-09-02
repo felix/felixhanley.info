@@ -1,0 +1,25 @@
+{{ partial "head.html" . }}
+
+<body>
+
+    {{ partial "header.html" . }}
+
+    <section class="content">
+        <article>
+        <h1>{{ .Title }}</h1>
+
+        {{ .Content }}
+
+        <footer>
+            <dl class="meta">
+                <dt>Last update</dt>
+                <dd><time datetime="{{ .Lastmod }}">{{ .Lastmod.Format "2006-01-02" }}</time></dd>
+            </dl>
+        </footer>
+        </article>
+    </section>
+
+    {{ partial "footer.html" . }}
+
+</body>
+</html>

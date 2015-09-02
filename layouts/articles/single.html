@@ -1,0 +1,32 @@
+{{ partial "head.html" . }}
+
+<body class="article">
+
+    {{ partial "header.html" . }}
+
+    <section class="content">
+        <article>
+            <header>
+                <h1>{{ .Title }}</h1>
+
+                <dl class="meta">
+                    <dt>Date:</dt>
+                    <dd><time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time></dd>
+                    <dt>Tags:</dt>
+                    <dd>
+                    {{ range .Params.tags }}
+                    <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+                    {{ end }}
+                    </dd>
+                </dl>
+            </header>
+
+            {{ .Content }}
+
+        </article>
+    </section>
+
+    {{ partial "footer.html" . }}
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<header class="site">
+
+    <h1><a href="{{ .Site.BaseURL }}">FELIX HANLEY</a></h1>
+
+    <a id="nav-toggle" href="#"><span></span></a>
+    <nav class="site">
+        {{ $currentNode := . }}
+        {{ range .Site.Menus.main }}
+        <a href="{{.URL}}" class="{{if $currentNode.IsMenuCurrent "main" . }}active{{ end }}{{if $currentNode.HasMenuCurrent "main" . }} section{{ end }}"> {{ .Name }} </a>
+        {{end}}
+        {{ range .Site.Menus.sections }}
+        <a href="{{.URL}}" class="{{if $currentNode.IsMenuCurrent "sections" . }}active{{ end }}{{if $currentNode.HasMenuCurrent "sections" . }} section{{ end }}"> {{ .Name }} </a>
+        {{end}}
+    </nav>
+
+</header>
