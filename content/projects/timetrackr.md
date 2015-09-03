@@ -1,10 +1,9 @@
 ---
-order: 2
+weight: 3
 title: timetrackr - simple time tracking
-kind: article
 description: simple time tracking
 date: 2012-04-04
-updated_at: 2011-04-04
+lastmod: 2011-04-04
 tags:
 - timetrackr
 - ruby

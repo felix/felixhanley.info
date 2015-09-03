@@ -39,11 +39,13 @@ To install the server code:
 
    For example:
 
-       +groucho.example.com:192.168.0.2:3360
-       +groucho.example.com:192.168.0.2
-       =groucho.example.com:192.168.0.2:60
-       +*.groucho.example.com:192.168.0.2:60
-       +*.groucho.example.com:192.168.0.2
+   ~~~
+   +groucho.example.com:192.168.0.2:3360
+   +groucho.example.com:192.168.0.2
+   =groucho.example.com:192.168.0.2:60
+   +*.groucho.example.com:192.168.0.2:60
+   +*.groucho.example.com:192.168.0.2
+   ~~~
 
    will all get updated if the host groucho.example.com does a request.
 

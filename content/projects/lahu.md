@@ -1,7 +1,8 @@
 ---
-order: 2
+weight: 1
 title: Lahu Language resources
 description: Lahu language project page. A collection of information about the language spoken by the Lahu hill tribe group.
+keywords: lahu unicode
 date: 2011-01-01
 tags:
 - lahu
