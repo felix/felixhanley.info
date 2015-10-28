@@ -1,5 +1,4 @@
 ---
-order: 3
 title: Lahu Keyboard
 created_at: 2011-01-04
 description: How to install a Lahu language keyboard layout in Linux and Windows.
@@ -7,6 +6,7 @@ tags:
 - lahu
 - unicode
 - font
+weight: 2
 ---
 
 There are two ways to install your own keyboard map in Linux, globally and per
@@ -113,4 +113,4 @@ scroll lock LED indicating the change.
         setxkbmap  -option grp:menu\_toggle,grp\_led:scroll "us,lah"
 
 The files used above can be found in [my public git
-repository](http://git.seconddrawer.com.au/lahu_keyboard/).
+repository](http://git.userspace.com.au/lahu_keyboard/).

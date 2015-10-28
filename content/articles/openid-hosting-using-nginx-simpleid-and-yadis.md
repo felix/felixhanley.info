@@ -7,7 +7,7 @@ description: How to host your own OpenID with Nginx and SimpleID
 tags:
 - nginx
 ---
-Just updated my OpenID hosting on seconddrawer.com.au to make it that little
+Just updated my OpenID hosting on userspace.com.au to make it that little
 bit smoother. In the past I had been using the MyPhpId script to do this, I
 recently switched to [SimpleID](http://simpleid.sourceforge.net/) for no other
 reason than to try it out. I also wanted to clean up the delegation stuff.
@@ -19,8 +19,8 @@ extensions if you want too.
 Usually to setup your delegation for OpenID you need to include two headers in
 your html page like this:
 
-    <link rel="openid.server" ref="http://seconddrawer.com.au/openid/" />
-    <link rel="openid.delegate" ref="http://seconddrawer.com.au/" />
+    <link rel="openid.server" ref="http://userspace.com.au/openid/" />
+    <link rel="openid.delegate" ref="http://userspace.com.au/" />
 
 The first link is where the openid server is located. Naturally this is my own.
 The second link is what I want my OpenID URL to be and what the server knows me
@@ -31,10 +31,10 @@ While this is fine, it can do with some improvements. Firstly, it is
 links](http://wiki.openid.net/OpenID-Authentication-2_0-Errata#WhenusingHTMLbaseddiscoveryseparateoutOpenID11andOpenID20links)
 so my links then look like this:
 
-    <link rel="openid2.provider" href="http://seconddrawer.com.au/openid/" />
-    <link rel="openid2.local_id" href="http://seconddrawer.com.au/" />
-    <link rel="openid.server" href="http://seconddrawer.com.au/openid/" />
-    <link rel="openid.delegate" href="http://seconddrawer.com.au/" />
+    <link rel="openid2.provider" href="http://userspace.com.au/openid/" />
+    <link rel="openid2.local_id" href="http://userspace.com.au/" />
+    <link rel="openid.server" href="http://userspace.com.au/openid/" />
+    <link rel="openid.delegate" href="http://userspace.com.au/" />
 
 This can also be improved. This means that to find the delegate information a
 client has to download the entire page just for this small amount of
@@ -52,13 +52,13 @@ Yadis file looks like this:
         <XRD>
             <Service priority="10">
                 <Type>http://specs.openid.net/auth/2.0/signon</Type>
-                <URI>http://seconddrawer.com.au/openid/</URI>
-                <LocalID>http://seconddrawer.com.au/</LocalID>
+                <URI>http://userspace.com.au/openid/</URI>
+                <LocalID>http://userspace.com.au/</LocalID>
             </Service>
             <Service priority="20" xmlns:openid="http://openid.net/xmlns/1.0">
                 <Type>http://openid.net/signon/1.0</Type>
-                <URI>http://seconddrawer.com.au/openid/</URI>
-                <openid:Delegate>http://seconddrawer.com.au/</openid:Delegate>
+                <URI>http://userspace.com.au/openid/</URI>
+                <openid:Delegate>http://userspace.com.au/</openid:Delegate>
             </Service>
         </XRD>
     </xrds:XRDS>

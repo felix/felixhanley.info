@@ -6,12 +6,13 @@ lastmod: 2011-04-21
 tags:
 - controlr
 - ruby
+weight: 9
 ---
 
 A [Ruby on Rails](http://rubyonrails.org) based hosting control panel.
 
 Currently a work in progress as I have the time. It is replacing the current
-control panel for seconddrawer.com.au.
+control panel for userspace.com.au.
 
 ## Features
 
@@ -49,7 +50,7 @@ are given in the 'docs' folder for common setups with tinydns, dovecot and other
 ## Contributions
 
 You are more than welcome to help. The pull from the [main Controlr Git
-repository](http://git.seconddrawer.com.au/controlr) or the [GitHub Controlr
+repository](http://git.userspace.com.au/controlr) or the [GitHub Controlr
 mirror](http://github.com/felix/controlr). All bug reports and patches should go
 through the [Controlr ticket
-tracker](http://support.seconddrawer.com.au/projects/controlr).
+tracker](http://support.userspace.com.au/projects/controlr).

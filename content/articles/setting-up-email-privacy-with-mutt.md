@@ -78,14 +78,14 @@ going in Mutt so I have done this via a folder hook. When changing into a
 particular folder (or mailbox) it sets some variables.
 
         # ~/.muttrc
-        folder-hook seconddrawer source ~/.mutt/hook-seconddrawer
+        folder-hook userspace source ~/.mutt/hook-userspace
 
-        # ~/.mutt/hook-seconddrawer
-        set from="felix@seconddrawer.com.au"
+        # ~/.mutt/hook-userspace
+        set from="felix@userspace.com.au"
         set pgp_sign_as="0xD5F692E3"
-        set signature=~/.signature.seconddrawer
-        my_hdr From: Felix <felix@seconddrawer.com.au>
-        my_hdr Organization: Second Drawer, http://seconddrawer.com.au/
+        set signature=~/.signature.userspace
+        my_hdr From: Felix <felix@userspace.com.au>
+        my_hdr Organization: User Space, http://userspace.com.au/
 
     Note here the `set pgp_sign_as` setting which selects the ID for the key I
     wish to use for this account. Without folder hooks you could just place

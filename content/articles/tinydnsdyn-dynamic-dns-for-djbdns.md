@@ -45,6 +45,6 @@ So see how it fits you.
 ## Getting it
 
 Code can be grabbed from the [tinydnsdyn Git
-repository](http://git.seconddrawer.com.au/tinydnsdyn) and you can tell me
+repository](http://git.userspace.com.au/tinydnsdyn) and you can tell me
 about all the bugs and mistakes on the [tinydnsdyn ticket
-tracker](http://support.seconddrawer.com.au/projects/tinydnsdyn/)
+tracker](http://support.userspace.com.au/projects/tinydnsdyn/)

@@ -1,5 +1,4 @@
 ---
-weight: 1
 title: Lahu Language resources
 description: Lahu language project page. A collection of information about the language spoken by the Lahu hill tribe group.
 keywords: lahu unicode
@@ -8,6 +7,7 @@ tags:
 - lahu
 - unicode
 - font
+weight: 1
 ---
 
 _I am currently trying to learn both Thai and Lahu.  These languages are not
@@ -16,7 +16,6 @@ expert in Lahu so if you find any mistakes or have suggestions then please let
 me know._
 
 _Ngaˬ Lahu laˇ henˇ nyi chehˇ ve yoˬ. Haˬ jaˆ._
-{: .lahu}
 
 <!--more-->
 
@@ -44,7 +43,7 @@ least two nice fonts that are capable of representing these characters. Both
 
 This is a work in progress. It is mainly just collection of Lahu words often
 used. A dictd server should be up soon. The current word list can be found in
-[the git repository](http://git.seconddrawer.com.au/).
+[the git repository](http://git.userspace.com.au/).
 
 ## Lahu-English Bible
 
@@ -62,7 +61,7 @@ also some brief [instructions and patches for Linux](/projects/lahu/keyboard/).
 
 Both the above methods will make the following mappings:
 
-- \[ = <span class="lahu"></span> (Unicode U+F1E7)
+- \[ = <span class="lahu">˰</span> (Unicode U+02F0)
 - \] = <span class="lahu">ˬ</span> (Unicode U+02EC)
 - \\ = <span class="lahu">ˍ</span> (Unicode U+02CD)
 - \{ = <span class="lahu">ˆ</span> (Unicode U+02C6)
@@ -70,7 +69,7 @@ Both the above methods will make the following mappings:
 - \| = <span class="lahu">ˉ</span> (Unicode U+02C9)
 
 Hopefully the pattern should be clear. Note, to see the correct characters you
-will need to have the CharisSIL font installed.
+will need to have a recent Unicode font installed.
 
 ## Other Resources
 

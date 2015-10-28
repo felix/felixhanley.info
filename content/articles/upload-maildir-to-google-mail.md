@@ -27,4 +27,4 @@ sort them out from there. In GMail, IMAP folders are just 'labels'. Most other
 options have sensible defaults.
 
 Use at your own risk but if you find something wrong then please tell me. You
-can get it from [my public git repository](http://git.seconddrawer.com.au/).
+can get it from [my public git repository](http://git.userspace.com.au/).

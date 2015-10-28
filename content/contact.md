@@ -5,10 +5,20 @@ lastmod: 2015-08-10
 menu: ["main", "footer"]
 ---
 
+### Email
+
+Note, if you are sending any sensitive information be sure to use the GPG key below.
 [felix@userspace.com.au](mailto:felix@userspace.com.au)
 
-My [GPG public key](/files/felixhanley.asc) is
-available with a fingerprint of
-E6FC&nbsp;5BC6&nbsp;268D&nbsp;B874&nbsp;E546 8F6F&nbsp;A2BB&nbsp;220B&nbsp;D5F6&nbsp;92E3.
+### Post
 
-*[GPG]: GNU Privacy Guard (OpenPGP)
+PO Box 364  
+Kew East 3102 VIC  
+AUSTRALIA
+
+### GnuPG/PGP
+
+My [GPG public
+key](https://sks-keyservers.net/pks/lookup?op=get&search=0xB6F229D77E20D10B) is
+available with a fingerprint of  
+E6FC&nbsp;5BC6&nbsp;268D&nbsp;B874&nbsp;E546 8F6F&nbsp;A2BB&nbsp;220B&nbsp;D5F6&nbsp;92E3.

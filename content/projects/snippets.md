@@ -3,8 +3,7 @@ title: Snippets & One-liners
 description: Snippets and one-liners I want to remember
 date: 2011-01-01
 updated_at: 2011-05-13
-order: 6
-publish: false
+draft: true
 ---
 
 Just stuff I need to write down so I don't have to go looking for them, again!

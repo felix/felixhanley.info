@@ -38,7 +38,7 @@ bars etc.) I thought I would just show how it is used on this site.
         .change(function(){
           var lang = $(this).val();
           translateTo(lang);
-          $.cookie('destLang', lang, {path:'/', domain:'www.seconddrawer.com.au'});
+          $.cookie('destLang', lang, {path:'/', domain:'www.userspace.com.au'});
           })
         .val('English') //select English as default
         .appendTo('#translate'); //insert the dropdown to the page

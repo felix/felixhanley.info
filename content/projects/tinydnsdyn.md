@@ -1,15 +1,15 @@
 ---
-order: 2
 title: 'tinydnsdyn - Dynamic DNS'
 kind: article
 description: "Dynamic DNS for DJB's tinydns DNS server"
 date: 2011-01-01
-updated_at: 2011-03-07
+lastmod: 2011-03-07
 tags:
 - tinydnsdyn
 - djbdns
 - python
 - dns
+weight: 4
 ---
 
 This is a basic dynamic client and server for the djbdns DNS 
@@ -85,5 +85,5 @@ That said, please let me know if there are any issues.
 ## Source
 
 It can be downloaded from [my Git
-repository](http://git.seconddrawer.com.au/tinydnsdyn/) or from
+repository](http://git.userspace.com.au/tinydnsdyn/) or from
 [GitHub](https://github.com/felix/tinydnsdyn).

@@ -1,5 +1,5 @@
 ---
-title: Felix Hanley
+title: Home
 description: Online home of Felix Hanley
 ---
 

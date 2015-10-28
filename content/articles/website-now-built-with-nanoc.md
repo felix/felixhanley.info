@@ -8,8 +8,8 @@ tags:
 - jekyll
 - nanoc
 ---
-**UPDATE:** The source for seconddrawer.com.au is now available from my git
-server, http://git.seconddrawer.com.au/
+**UPDATE:** The source for userspace.com.au is now available from my git
+server, http://git.userspace.com.au/
 
 After a long while of building this (and other) sites with
 [Jekyll](http://github.com/mojombo/jekyll) I eventually got too fed up with its
