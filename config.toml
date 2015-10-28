@@ -2,6 +2,7 @@ baseurl = "http://felixhanley.info/"
 languageCode = "en-au"
 title = "Felix Hanley"
 SectionPagesMenu = "sections"
+relativeURLs = true
 
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 

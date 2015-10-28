@@ -8,7 +8,7 @@
 
         {{ range .Data.Pages }}
         <article>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
 
             {{ partial "meta.html" . }}
 

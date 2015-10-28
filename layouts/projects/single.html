@@ -11,16 +11,8 @@
             <header>
                 <h1>{{ .Title }}</h1>
 
-                <dl class="meta">
-                    {{ if .Params.tags }}
-                    <dt>Tags:</dt>
-                    <dd>
-                    {{ range .Params.tags }}
-                    <a class="tag" rel="{{ . }}" href="/tags/{{ . | urlize }}">{{ . }}</a>
-                    {{ end }}
-                    </dd>
-                    {{ end }}
-                </dl>
+                {{ partial "meta.html" . }}
+
             </header>
 
             {{ .Content }}

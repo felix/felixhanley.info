@@ -1,10 +1,24 @@
 <dl class="meta">
-    <dt>Date:</dt>
-    <dd><time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time></dd>
-    <dt>Tags:</dt>
+    <dt>Date</dt>
+    <dd>
+    <time class="created" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
+        {{ .Date.Format "2006-01-02" }}
+    </time>
+    </dd>
+    {{ if ne .Lastmod .Date }}
+    <dt>Updated</dt>
+    <dd>
+    <time class="updated" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">
+        {{ .Lastmod.Format "2006-01-02" }}
+    </time>
+    </dd>
+    {{ end }}
+    {{ if .Params.tags }}
+    <dt>Tags</dt>
     <dd>
     {{ range .Params.tags }}
     <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
     {{ end }}
     </dd>
 </dl>
