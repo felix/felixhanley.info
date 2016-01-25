@@ -7,8 +7,8 @@ menu: ["main", "footer"]
 
 ### Email
 
+[felix@userspace.com.au](mailto:felix@userspace.com.au)  
 Note, if you are sending any sensitive information be sure to use the GPG key below.
-[felix@userspace.com.au](mailto:felix@userspace.com.au)
 
 ### Post
 

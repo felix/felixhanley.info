@@ -15,6 +15,8 @@ weight: 4
 This is a basic dynamic client and server for the djbdns DNS 
 server 'tinydns' by Dan Bernstein.
 
+<!--more-->
+
 ## Requirements
 
 * Administrative access to a server running tinydns and hence

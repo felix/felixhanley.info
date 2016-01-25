@@ -35,24 +35,26 @@ Sinatra and I thought a simple Rack middleware would do this well. So here it
 is:
 
 
-    module Rack
-      class LocaleSetter
-        def initialize(app)
-          @app = app
-        end
-
-        def call(env)
-          req = Rack::Request.new(env)
-          if m = req.host.match(/^(?:www\.)?([a-z]{2})\./)
-            locale = m[1]
-          else
-            locale = 'en'
-          end
-          req.params['locale'] ||= locale
-          @app.call env
-        end
-      end
+~~~ ruby
+module Rack
+  class LocaleSetter
+    def initialize(app)
+        @app = app
     end
+
+    def call(env)
+        req = Rack::Request.new(env)
+        if m = req.host.match(/^(?:www\.)?([a-z]{2})\./)
+        locale = m[1]
+        else
+        locale = 'en'
+        end
+        req.params['locale'] ||= locale
+        @app.call env
+    end
+  end
+end
+~~~
 
 Due to many peoples' habit of putting 'www' at the start of the domain, this
 should account for _en.example.com_ **and** _www.en.example.com_. It also allows

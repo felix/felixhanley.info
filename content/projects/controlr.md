@@ -14,6 +14,8 @@ A [Ruby on Rails](http://rubyonrails.org) based hosting control panel.
 Currently a work in progress as I have the time. It is replacing the current
 control panel for userspace.com.au.
 
+<!--more-->
+
 ## Features
 
 Currently it supports the following:

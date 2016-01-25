@@ -2,7 +2,6 @@
 title: timetrackr - simple time tracking
 description: simple time tracking
 date: 2012-04-04
-lastmod: 2011-04-04
 tags:
 - timetrackr
 - ruby
@@ -10,6 +9,8 @@ weight: 3
 ---
 
 A simple CLI time tracking utility.
+
+<!--more-->
 
 ## Install
 
