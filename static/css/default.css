@@ -23,7 +23,7 @@ h1 {
     line-height: 1.25;
 }
 h2, h3 {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     color: #222;
     font-weight: normal;
 }
@@ -101,13 +101,16 @@ header.site {
     background-color: #222;
 }
 .content {
-    max-width: 85rem;
     padding: 2rem;
     padding-top: 5em;
     line-height: 1.625;
 }
 .content.list {
     max-width: 100%;
+}
+.content,
+.content.list article {
+    max-width: 85rem;
 }
 footer.site {
     width: 100%;
@@ -326,7 +329,7 @@ article header .warning {
 #TableOfContents {
     display: none;
     position: fixed;
-    left: 120rem;
+    left: 128rem;
     top: 10rem;
     width: 30rem;
     padding: 1rem;
@@ -338,7 +341,7 @@ article header .warning {
     list-style: none;
     padding: 0;
 }
-@media (min-width: 94rem) {
+@media (min-width: 96rem) {
     #TableOfContents {
         display: block;
     }
@@ -393,4 +396,8 @@ article header .warning {
 .articles .content h1 {
     -webkit-column-span: all;
     column-span: all;
+}
+.articles .content article {
+    break-inside: avoid-column;
+    break-before: column;
 }

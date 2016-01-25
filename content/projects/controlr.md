@@ -3,6 +3,7 @@ title: Controlr control panel
 description: Ruby based hosting control panel
 date: 2011-01-01
 lastmod: 2011-04-21
+draft: true
 tags:
 - controlr
 - ruby

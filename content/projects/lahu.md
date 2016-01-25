@@ -16,7 +16,7 @@ similar at all so it is proving to be quite a challenge. I am by no means an
 expert in Lahu so if you find any mistakes or have suggestions then please let
 me know._
 
-_Ngaˬ Lahu laˇ henˇ nyi chehˇ ve yoˬ. Haˬ jaˆ._
+_Ngaˬ Lahu hk'awˇ henˇ chehˇ ve yaꞈ hk'aˇ haˬ jaˆ._
 
 <!--more-->
 
@@ -39,6 +39,8 @@ include them. One good resource is [SIL](http://www.sil.org) which produces at
 least two nice fonts that are capable of representing these characters. Both
 [CharisSIL](http://scripts.sil.org/CharisSILfont) and
 [DoulosSIL](http://scripts.sil.org/DoulosSILfont) are at Unicode version 5.
+Another list of fonts grouped by their character support has be made by [Alan
+Wood](http://www.alanwood.net/unicode/fontsbyrange.html).
 
 ## Dictionary
 
@@ -81,5 +83,5 @@ will need to have a recent Unicode font installed.
 - [Lahu New Testament at the Myanmar Bible
   society](http://www.myanmarbible.com/bible/Lahu/html/index.html) can be
   useful for online study of the language. Get yourself a hard copy if you can,
-  its so much easier.
+  its so much easier though it is not colloqial Lahu.
 - [Simple Thai to English translation with phonetics](http://thai2english.com)
