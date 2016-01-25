@@ -1,8 +1,9 @@
 ---
 title: Lahu Language resources
 description: Lahu language project page. A collection of information about the language spoken by the Lahu hill tribe group.
-keywords: lahu unicode
+keywords: lahu font unicode
 date: 2011-01-01
+lastmod: 2016-01-25
 tags:
 - lahu
 - unicode
@@ -19,7 +20,7 @@ _Ngaˬ Lahu laˇ henˇ nyi chehˇ ve yoˬ. Haˬ jaˆ._
 
 <!--more-->
 
-The Lahu language (ISO 639-3 code ‘lah’) is the language spoken by the Lahu
+The Lahu language (ISO 639-3 code ‘lhu’) is the language spoken by the Lahu
 people in Burma, Thailand, Laos and China. See also [the Wikipedia
 entry](http://en.wikipedia.org/wiki/Lahu_language) for Lahu.
 
@@ -32,7 +33,7 @@ towards the Burmese Lahu it seems.
 
 ## Lahu characters and fonts
 
-Unicode version 5 has the necessary characters to represent the tone marks in
+Unicode version 5.1 has the necessary characters to represent the tone marks in
 the Lahu written language. There are not many fonts around that actually
 include them. One good resource is [SIL](http://www.sil.org) which produces at
 least two nice fonts that are capable of representing these characters. Both
@@ -43,7 +44,7 @@ least two nice fonts that are capable of representing these characters. Both
 
 This is a work in progress. It is mainly just collection of Lahu words often
 used. A dictd server should be up soon. The current word list can be found in
-[the git repository](http://git.userspace.com.au/).
+[the git repository](http://github.com/felix/lahu-dictionary).
 
 ## Lahu-English Bible
 
@@ -61,7 +62,7 @@ also some brief [instructions and patches for Linux](/projects/lahu/keyboard/).
 
 Both the above methods will make the following mappings:
 
-- \[ = <span class="lahu">˰</span> (Unicode U+02F0)
+- \[ = <span class="lahu">ꞈ</span> (Unicode U+A788)
 - \] = <span class="lahu">ˬ</span> (Unicode U+02EC)
 - \\ = <span class="lahu">ˍ</span> (Unicode U+02CD)
 - \{ = <span class="lahu">ˆ</span> (Unicode U+02C6)
@@ -69,7 +70,7 @@ Both the above methods will make the following mappings:
 - \| = <span class="lahu">ˉ</span> (Unicode U+02C9)
 
 Hopefully the pattern should be clear. Note, to see the correct characters you
-will need to have a recent Unicode font installed.
+will need to have a recent Unicode font installed. 
 
 ## Other Resources
 

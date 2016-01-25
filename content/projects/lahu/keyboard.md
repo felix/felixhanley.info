@@ -1,13 +1,18 @@
 ---
 title: Lahu Keyboard
-created_at: 2011-01-04
 description: How to install a Lahu language keyboard layout in Linux and Windows.
+date: 2011-01-04
+lastmod: 2016-01-25
 tags:
 - lahu
 - unicode
 - font
 weight: 2
 ---
+
+How to type Lahu!
+
+<!--more-->
 
 There are two ways to install your own keyboard map in Linux, globally and per
 user (locally).
@@ -17,7 +22,7 @@ user (locally).
 ### Create your custom key map
 
 Looking through the files under /usr/share/X/xkb/rules should give you an idea
-of how a keyboard map can be defined. You can either define an entier map
+of how a keyboard map can be defined. You can either define an entire map
 (tedious and probably unnecessary) or simply inerit all the part you want and
 then adjust the bits you want changed. This is a method to create a Lahu
 keyboard. All we need to change are three keys which is six characters.
@@ -31,7 +36,7 @@ keyboard. All we need to change are three keys which is six characters.
 
         name[Group1]= "Lahu";
 
-        key <AD11> { [ UF1E7,  U02C6,  bracketleft,   braceleft  ] };
+        key <AD11> { [ UA788,  U02C6,  bracketleft,   braceleft  ] };
         key <AD12> { [ U02EC,  U02C7,  bracketright,  braceright ] };
         key <BKSL> { [ U02CD,  U02C9,  backslash,     brokenbar  ] };
 
@@ -48,7 +53,7 @@ level modified keystroke so that they were there if needed. These are accessed
 by the right 'Alt' key as indicated. Have a look at some other keyboard rule
 files to get a feel for it.
 
-The codes we are interested in are UF1E7, U02EC, U02CD, U02C6, U02C7 &amp;
+The codes we are interested in are UA788, U02EC, U02CD, U02C6, U02C7 &amp;
 U02C9. To see the characters they correspond to see the [page on
 Lahu](/projects/lahu/).
 
@@ -66,7 +71,7 @@ where xkbcomp will expect to find the rule file.
 Then it is simply a matter of constructing the command to load and compile your
 rules file. An example is:
 
-    setxkbmap -I$HOME/.xkb -option grp:shifts_toggle,grp_led:scroll "us,th,lah" -print | xkbcomp -I$HOME/.xkb - $DISPLAY
+    setxkbmap -I$HOME/.xkb -option grp:shifts_toggle,grp_led:scroll "us,th,lhu" -print | xkbcomp -I$HOME/.xkb - $DISPLAY
 
 There are two parts to this, the first part sets the options for the X session
 by defining the two shift keys pressed together as the keyboard map toggle
@@ -75,7 +80,7 @@ own Lahu). The output of this command is a short configuration that the
 keyboard compiler _xkbcomp_ can read.
 
 The second part of that command tells xkbcomp to load the configuration passed
-to it into the currently running X server. It will try to find the 'lah' rule
+to it into the currently running X server. It will try to find the 'lhu' rule
 file in the folder structure created previously.
 
 ### Load it on start up
@@ -88,19 +93,25 @@ scroll lock LED indicating the change.
 
 ## Global (system wide) Instructions
 
-1.  Copy the [Lahu keyboard layout file](/files/lah.txt) into '/usr/share/X11/xkb/symbols/', naming it 'lah' . This is where the layout of the key symbols is defined. It is simply a copy of one of the layouts in the 'us' symbol file with the necessary changes.
+1.  Copy the [Lahu keyboard layout file](/files/lhu.txt) into
+    '/usr/share/X11/xkb/symbols/', naming it 'lhu' . This is where the layout
+    of the key symbols is defined. It is simply a copy of one of the layouts in
+    the 'us' symbol file with the necessary changes.
 
-2.  In the '/usr/share/X11/xkb/rules/' directory, edit the 'xorg.lst' file. Find the 'layout' section and add a line as follows:
+2.  In the '/usr/share/X11/xkb/rules/' directory, edit the 'xorg.lst' file.
+    Find the 'layout' section and add a line as follows:
 
-        lah  Lahu
+        lhu  Lahu
 
-    'lah' refers to the filename you created in step 1
+    'lhu' refers to the filename you created in step 1
 
-3.  Also in '/usr/share/X11/xkb/rules/', edit the 'xorg.xml' file. Find the last 'layout' definition (search for '/layoutlist', insert before this) and create a new layout definition with the following:
+3.  Also in '/usr/share/X11/xkb/rules/', edit the 'xorg.xml' file. Find the
+    last 'layout' definition (search for '/layoutlist', insert before this) and
+    create a new layout definition with the following:
 
         <layout>
           <configItem>
-            <name>lah</name>
+            <name>lhu</name>
             <shortDescription>Lahu</shortDescription>
             <description>Lahu</description>
           </configItem>
@@ -108,9 +119,12 @@ scroll lock LED indicating the change.
 
     Note that the 'name' should be the same as the file created in step 1.
 
-4.  You can then setup your window manager to use the Lahu keyboard layout. There is usually some little toolbar icon you can configure for this too. If you are using something out of the ordinary then try the following which uses the 'menu' key to toggle the language:
+4.  You can then setup your window manager to use the Lahu keyboard layout.
+    There is usually some little toolbar icon you can configure for this too.
+    If you are using something out of the ordinary then try the following which
+    uses the 'menu' key to toggle the language:
 
-        setxkbmap  -option grp:menu\_toggle,grp\_led:scroll "us,lah"
+        setxkbmap  -option grp:menu\_toggle,grp\_led:scroll "us,lhu"
 
-The files used above can be found in [my public git
-repository](http://git.userspace.com.au/lahu_keyboard/).
+The files used above can be found in [the Github
+repository](https://github.com/felix/xkb-lahu/).

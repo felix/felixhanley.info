@@ -7,7 +7,7 @@ xkb_symbols "basic" {
 
     name[Group1]= "Lahu";
 
-    key <AD11> { [ UF1E7,	 U02C6,  bracketleft, 	braceleft  ] };
+    key <AD11> { [ UA788,	 U02C6,  bracketleft, 	braceleft  ] };
     key <AD12> { [ U02EC,  U02C7,  bracketright,  braceright ] };
     key <BKSL> { [ U02CD,  U02C9,  backslash,	    brokenbar  ] };
 
