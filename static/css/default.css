@@ -56,6 +56,9 @@ pre {
 code {
     font-size: 1.3rem;
 }
+textarea {
+  width: 100%;
+}
 .meta {
     margin: 0;
     overflow: hidden;
@@ -68,13 +71,20 @@ code {
     font-size: 1rem;
     color: #666;
 }
-.meta dt {
-    clear: left;
-    margin-right: .5em;
+.meta dd {
+    margin-left: .5em;
 }
+.meta .time {
+    font-style: italic;
+}
+.meta dt.tags {
+    display: none;
+}
+/*
 .meta dt::after {
-    content: ':';
+     content: ':';
 }
+*/
 .tag {
     display: inline-block;
     padding: 3px;
@@ -99,6 +109,21 @@ header.site {
     padding: 2rem;
     text-align: left;
     background-color: #222;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% auto;
+}
+.home header.site {
+    background-image: url(/img/mill.png);
+}
+@media (min-width: 48em) {
+    header.site {
+        background-image: url(/img/mill.png);
+    }
+    .home header.site {
+        background-size: 50% auto;
+    }
 }
 .content {
     padding: 2rem;
@@ -291,7 +316,11 @@ header.site a:hover {
 .content a {
     border-bottom: 1px solid #aaa;
 }
-.content a:hover {
+.content a[target="_blank"] {
+    border-bottom: 1px dashed #aaa;
+}
+.content a:hover,
+.content a[target="_blank"]:hover {
     border-bottom: 1px solid #555;
 }
 article {
@@ -299,7 +328,6 @@ article {
 }
 article header h1,
 article header h2 {
-    margin-bottom: 0;
 }
 article header {
     margin-bottom: 2rem;
@@ -330,6 +358,7 @@ article header .warning {
     display: none;
     position: fixed;
     left: 128rem;
+    left: calc(22vw + 85rem);
     top: 10rem;
     width: 30rem;
     padding: 1rem;
@@ -400,4 +429,8 @@ article header .warning {
 .articles .content article {
     break-inside: avoid-column;
     break-before: column;
+}
+
+.dict article {
+    white-space: pre;
 }

@@ -8,13 +8,14 @@ tags:
 - lahu
 - unicode
 - font
+- dictionary
 weight: 1
 ---
 
-_I am currently trying to learn both Thai and Lahu.  These languages are not
-similar at all so it is proving to be quite a challenge. I am by no means an
-expert in Lahu so if you find any mistakes or have suggestions then please let
-me know._
+I am currently trying to learn both Thai and Lahu, the latter being a language
+spoken by the Lahu people in northern Thailand, Burma (Myanmar) and China.
+These are some resources I have used. Suggestions and corrections are always
+welcome.
 
 _Ngaˬ Lahu hk'awˇ henˇ chehˇ ve yaꞈ hk'aˇ haˬ jaˆ._
 
@@ -46,7 +47,8 @@ Wood](http://www.alanwood.net/unicode/fontsbyrange.html).
 
 This is a work in progress. It is mainly just collection of Lahu words often
 used. A dictd server should be up soon. The current word list can be found in
-[the git repository](http://github.com/felix/lahu-dictionary).
+[the git repository](http://github.com/felix/lahu-dictionary). A [web
+interface](/projects/lahu/dictionary/) is usually available to search it.
 
 ## Lahu-English Bible
 
@@ -64,12 +66,12 @@ also some brief [instructions and patches for Linux](/projects/lahu/keyboard/).
 
 Both the above methods will make the following mappings:
 
-- \[ = <span class="lahu">ꞈ</span> (Unicode U+A788)
-- \] = <span class="lahu">ˬ</span> (Unicode U+02EC)
-- \\ = <span class="lahu">ˍ</span> (Unicode U+02CD)
-- \{ = <span class="lahu">ˆ</span> (Unicode U+02C6)
-- \} = <span class="lahu">ˇ</span> (Unicode U+02C7)
-- \| = <span class="lahu">ˉ</span> (Unicode U+02C9)
+\[ = <span class="lahu">ꞈ</span> (Unicode U+A788)  
+\] = <span class="lahu">ˬ</span> (Unicode U+02EC)  
+\\ = <span class="lahu">ˍ</span> (Unicode U+02CD)  
+\{ = <span class="lahu">ˆ</span> (Unicode U+02C6)  
+\} = <span class="lahu">ˇ</span> (Unicode U+02C7)  
+\| = <span class="lahu">ˉ</span> (Unicode U+02C9)
 
 Hopefully the pattern should be clear. Note, to see the correct characters you
 will need to have a recent Unicode font installed. 
