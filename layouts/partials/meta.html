@@ -1,6 +1,6 @@
 <dl class="meta">
-    <dt>Updated</dt>
-    <dd>
+    <dt class="time">Updated</dt>
+    <dd class="time">
     {{ if ne .Lastmod .Date }}
     <time class="updated" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">
         {{ .Lastmod.Format "2006-01-02" }}
@@ -12,8 +12,8 @@
     {{ end }}
     </dd>
     {{ if .Params.tags }}
-    <dt>Tags</dt>
-    <dd>
+    <dt class="tags">Tagged</dt>
+    <dd class="tags">
     {{ range .Params.tags }}
     <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
     {{ end }}
