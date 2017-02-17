@@ -1,16 +1,20 @@
-<header class="site">
+<header class="menu">
 
-    <h1><a href="{{ .Site.BaseURL }}">FELIX HANLEY</a></h1>
+  <h1 class="menu__link menu__link--title"><a href="{{ .Site.BaseURL }}">Felix Hanley</a></h1>
 
-    <a id="nav-toggle" href="#"><span></span></a>
-    <nav class="site">
-        {{ $currentNode := . }}
-        {{ range .Site.Menus.main }}
-        <a href="{{.URL}}" class="{{if $currentNode.IsMenuCurrent "main" . }}active{{ end }}{{if $currentNode.HasMenuCurrent "main" . }} section{{ end }}"> {{ .Name }} </a>
-        {{end}}
-        {{ range .Site.Menus.sections }}
-        <a href="{{.URL}}" class="{{if $currentNode.IsMenuCurrent "sections" . }}active{{ end }}{{if $currentNode.HasMenuCurrent "sections" . }} section{{ end }}"> {{ .Name }} </a>
-        {{end}}
+  <a class="menu__toggle" id="nav-toggle" href="#"><span></span></a>
+  <nav class="menu__group">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <a class="menu__link{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} menu__link--active{{ end }}" href="{{ .URL }}"> {{ .Name }} </a>
+    {{ if .HasChildren }}
+    <nav class="menu__group">
+    {{ range $child := .Children }}
+      <a class="menu__link menu__link--nested {{if $currentPage.IsMenuCurrent "main" . }}menu__link--active{{ end }}" href="{{ $child.URL }}"> {{ $child.Name }} </a>
+    {{ end }}
     </nav>
+    {{ end }}
+    {{ end }}
+  </nav>
 
 </header>

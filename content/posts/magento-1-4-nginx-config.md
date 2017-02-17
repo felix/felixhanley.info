@@ -13,7 +13,7 @@ tags:
 **UPDATE:** I have added my php5.conf file for completeness, by request.
 
 So after my [previous post regarding an Nginx configuration for
-Magento](/articles/simple-nginx-config-for-magento/), they have released
+Magento](/posts/simple-nginx-config-for-magento/), they have released
 version 1.4 and are now up to 1.4.0.1 already. I have migrated my Magento
 installations to the new stable version and this is my current Nginx
 configuration. Again, comments welcome.

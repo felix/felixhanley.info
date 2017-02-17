@@ -10,7 +10,7 @@ tags:
 ---
 
 **UPDATE:** Magento 1.4.0 has since been released and my new [configuration for
-Nginx](/articles/magento-1-4-nginx-config/) is more recent.
+Nginx](/posts/magento-1-4-nginx-config/) is more recent.
 
 Magento comes with rewrite rules designed for Apache and these work well out of
 the box. They are actually located in .htaccess files in appropriate locations

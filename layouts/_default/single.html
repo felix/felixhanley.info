@@ -2,24 +2,46 @@
 
 <body>
 
-    {{ partial "header.html" . }}
+  {{ partial "body-header.html" . }}
 
-    <section class="content">
-        <article>
+  <section class="content">
+    <article>
+      <header>
         <h1>{{ .Title }}</h1>
+        {{ if .Params.tags }}
+        <dl class="meta">
+          <dt class="tags">Tagged</dt>
+          <dd class="tags">
+          {{ range .Params.tags }}
+          <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
+          </dd>
+        </dl>
+        {{ end }}
+      </header>
 
-        {{ .Content }}
+      {{ .Content }}
 
-        <footer>
-            <dl class="meta">
-                <dt>Last update</dt>
-                <dd><time datetime="{{ .Lastmod }}">{{ .Lastmod.Format "2006-01-02" }}</time></dd>
-            </dl>
-        </footer>
-        </article>
-    </section>
+      <footer>
+        <dl class="meta">
+          <dt class="time">Updated</dt>
+          <dd class="time">
+          {{ if ne .Lastmod .Date }}
+          <time class="updated" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">
+            {{ .Lastmod.Format "2006-01-02" }}
+          </time>
+          {{ else }}
+          <time class="created" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
+            {{ .Date.Format "2006-01-02" }}
+          </time>
+          {{ end }}
+          </dd>
+        </dl>
+      </footer>
+    </article>
+  </section>
 
-    {{ partial "footer.html" . }}
+  {{ partial "footer.html" . }}
 
 </body>
 </html>

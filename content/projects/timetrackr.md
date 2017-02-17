@@ -1,11 +1,15 @@
 ---
 title: timetrackr - simple time tracking
+linktitle: timetrackr
 description: simple time tracking
 date: 2012-04-04
 tags:
 - timetrackr
 - ruby
-weight: 3
+menu:
+  main:
+    parent: projects
+    weight: 10
 ---
 
 A simple CLI time tracking utility.
@@ -14,7 +18,9 @@ A simple CLI time tracking utility.
 
 ## Install
 
-    $ gem install timetrackr
+~~~bash
+$ gem install timetrackr
+~~~
 
 ## Example
 
@@ -22,20 +28,20 @@ A simple CLI time tracking utility.
 
 start a task:
 
-~~~
+~~~bash
 $ tt start something
 ~~~
 
 ...view durations:
 
-~~~
+~~~bash
 $ tt
 something *     0h  0m  4s
 ~~~
 
 ...have two running tasks:
 
-~~~
+~~~bash
 $ tt start another-thing
 $ tt log
 2011-05-18   something *     22:11            0h  0m 30s
@@ -44,7 +50,7 @@ $ tt log
 
 ...start with a note:
 
-~~~
+~~~bash
 $ tt start one-more with a note
 $ tt log
 2011-05-18   something *     22:11            0h  0m 45s
@@ -54,14 +60,14 @@ $ tt log
 
 ...restrict some:
 
-~~~
+~~~bash
 $ tt log something
 2011-05-18   something *     22:11            0h  1m 00s
 ~~~
 
 ...exclude some:
 
-~~~
+~~~bash
 $ tt log something -n another-thing
 2011-05-18   something *     22:11            0h  1m 15s
              one-more *      22:13            0h  0m 45s  with a note
@@ -69,7 +75,7 @@ $ tt log something -n another-thing
 
 ...stop one (or more):
 
-~~~
+~~~bash
 $ tt stop something
 $ tt
 something       0h  1m 20s
@@ -79,7 +85,7 @@ one-more *      0h  1m 15s
 
 ...and delete one:
 
-~~~
+~~~bash
 $ tt clear something
 another-thing * 0h  1m 45s
     one-more *      0h  1m 30s

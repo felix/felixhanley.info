@@ -40,7 +40,7 @@ privacy. With email, there is _no privacy_ unless you encrypt it. There is _no
 proof of identity_ unless you sign it.
 
 Read the followup post about [how to read encrypted and signed emails and how
-to send your own](/articles/setting-up-email-privacy-with-mutt/).
+to send your own](/posts/setting-up-email-privacy-with-mutt/).
 
 *[PGP]: Pretty Good Privacy
 *[TLS]: Transport Layer Security

@@ -233,7 +233,7 @@ but this sets up a few basics for one model.
 
 This also enables you to have a nice report of the roles and their permissions
 much like the following:
-![RBAC report screenshot](/images/articles/rbac-report.png)
+![RBAC report screenshot](/images/posts/rbac-report.png)
 
 This can be created in the view something like this:
 

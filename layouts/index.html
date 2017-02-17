@@ -1,8 +1,44 @@
 {{ partial "head.html" . }}
 
-<body class="home">
+<body>
 
-    {{ partial "header.html" . }}
+  {{ partial "body-header.html" . }}
+
+  <section class="content">
+    <article>
+      <h1>About me</h1>
+
+      <p>I am an Australian with a broad range of experience as a
+      software engineer and analyst, both in Australia and South East
+      Asia.  I also run <a href="https://userspace.com.au" target="_blank">User Space</a>, a
+      Melbourne based programming and bespoke hosting business.</p>
+
+      <p>Over the past 2 decades I have had been involved in the design
+      and development of large distributed applications, complex
+      networks spanning multiple continents, resilient database clusters
+      and custom encryption software in a variety of languages and
+      environments.</p>
+
+      <p>I prefer working remotely and have done so for the last 10
+      years from the major cities of Australia's east coast, the deserts
+      of Western Australia and now both the north and south of
+      Thailand.</p>
+
+      <p>I call Melbourne, Australia my home with my wife, son and
+      daughter.</p>
+
+      <p>I am available for hire, <a href="/contact/">contact me</a>.</p>
+
+      <footer>
+        <dl class="meta">
+          <dt>Last updated</dt>
+          <dd><time datetime="{{ .Lastmod }}">{{ .Lastmod.Format "2006-01-02" }}</time></dd>
+        </dl>
+      </footer>
+    </article>
+  </section>
+
+  {{ partial "footer.html" . }}
 
 </body>
 </html>

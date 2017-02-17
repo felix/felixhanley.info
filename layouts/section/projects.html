@@ -2,31 +2,36 @@
 
 <body class="projects">
 
-    {{ partial "header.html" . }}
+    {{ partial "body-header.html" . }}
 
-    <section class="content list">
-        <h1>Projects</h1>
+    <section class="content">
+        <header>
+            <h1>Projects</h1>
 
-        <p>There are other projects on <a target="_blank"
-        href="https://github.com/felix/">Github</a> and perhaps even <a
-        target="_blank" href="https://bitbucket.org/xilef/">Bitbucket</a>.</p>
+            <p>There are other projects on
+            <a target="_blank" href="https://github.com/felix/">Github</a>
+            and perhaps even <a target="_blank" href="https://bitbucket.org/xilef/">Bitbucket</a>.
+            </p>
 
-        {{ range .Data.Pages.ByWeight }}
-        <article class="project">
-            <header>
-                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                {{ partial "meta.html" . }}
-            </header>
+            <input type="text" id="filter" placeholder="Filter&hellip;" />
+        </header>
 
-            {{ .Summary }}
+        <div class="list">
+            {{ range .Data.Pages.ByWeight }}
+            <article class="project">
+                <header>
+                    <h2><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                    {{ partial "meta.html" . }}
+                </header>
 
-            <a href="{{ .RelPermalink }}">Read more&hellip;</a>
+                {{ .Summary }}
 
-            <footer>
-            </footer>
+                <footer>
+                </footer>
 
-        </article>
-        {{ end }}
+            </article>
+            {{ end }}
+        </div>
 
     </section>
 

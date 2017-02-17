@@ -149,6 +149,7 @@ var output = function (data) {
   var dstType = dstTypeEl.options[dstTypeEl.selectedIndex].value
   console.log('Input data', data)
   console.log('Output set to', dstType)
+  var fixedWidth = document.getElementById('fixedWidth').checked
   var out
   if (dstType === 'ascii') {
     out = bytesToStr(data)
@@ -157,7 +158,10 @@ var output = function (data) {
   } else if (dstType === 'base64') {
     out = bytesToBase64(data)
   } else if (dstType === 'array') {
-    out = data.toString()
+    out = data.toString().split(',').join(', ')
+  }
+  if (fixedWidth) {
+    out = out.replace(/(.{80})/g, '$1\n')
   }
   // console.log('Output data', out)
   if (dstIsFileEl.checked) {
@@ -194,7 +198,7 @@ var convert = function () {
   } else if (srcType === 'base64') {
     convertFunc = function (src) {
       // Strip unknown chars
-      src = src.replace(/[^0-9a-z/=]/gi, '')
+      src = src.replace(/[^0-9a-z+/=]/gi, '')
       output(base64ToBytes(src))
     }
   } else if (srcType === 'ascii') {

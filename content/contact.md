@@ -1,7 +1,9 @@
+
 ---
 title: Contact
-description: How to contact Felix Hanley
-lastmod: 2015-08-10
+description: Felix Hanley
+date: 2015-09-02
+lastmod: 2016-10-01
 menu: ["main", "footer"]
 ---
 

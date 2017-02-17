@@ -1,23 +1,39 @@
 {{ partial "head.html" . }}
 <body class="single">
 
-    {{ partial "header.html" . }}
+  {{ partial "body-header.html" . }}
 
-    <section class="content">
+  <section class="content">
+    <article>
+      <header>
+        <h1>{{ .Title }}</h1>
+      </header>
 
-        {{ range .Data.Pages }}
-        <article>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            <dl class="meta">
-                <dt>Date</dt>
-                <dd><time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time></dd>
-            </dl>
-        </article>
+      {{ .Content }}
+
+    </article>
+
+    <p>See also:</p>
+
+    {{ range .Data.Pages }}
+    <article>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ if .Params.tags }}
+      <dl class="meta">
+        <dt class="tags">Tagged</dt>
+        <dd class="tags">
+        {{ range .Params.tags }}
+        <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
         {{ end }}
+        </dd>
+      </dl>
+      {{ end }}
+    </article>
+    {{ end }}
 
-    </section>
+  </section>
 
-    {{ partial "footer.html" . }}
+  {{ partial "footer.html" . }}
 
 </body>
 </html>

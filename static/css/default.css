@@ -39,7 +39,7 @@ ul, ol {
     padding-left: 1rem;
 }
 li {
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
 }
 @media (min-width: 48em) {
     ul, ol {
@@ -52,12 +52,17 @@ pre {
     background-color: #eee;
     border: 1px solid #d8d8d8;
     border-radius: 4px;
+    overflow-x: auto;
 }
 code {
     font-size: 1.3rem;
 }
 textarea {
   width: 100%;
+}
+textarea.code {
+    font-family: mono;
+    font-size: .875em;
 }
 .meta {
     margin: 0;
@@ -71,14 +76,14 @@ textarea {
     font-size: 1rem;
     color: #666;
 }
+.meta dt {
+    margin-right: .5em;
+}
 .meta dd {
-    margin-left: .5em;
+    margin-right: .5em;
 }
 .meta .time {
     font-style: italic;
-}
-.meta dt.tags {
-    display: none;
 }
 /*
 .meta dt::after {
@@ -103,7 +108,7 @@ textarea {
 
 /* page structure */
 
-header.site {
+.menu {
     position: fixed;
     width: 100%;
     padding: 2rem;
@@ -114,27 +119,20 @@ header.site {
     background-position: 100% 100%;
     background-size: 100% auto;
 }
-.home header.site {
-    background-image: url(/img/mill.png);
-}
-@media (min-width: 48em) {
-    header.site {
-        background-image: url(/img/mill.png);
-    }
-    .home header.site {
-        background-size: 50% auto;
-    }
-}
+
 .content {
     padding: 2rem;
-    padding-top: 5em;
+    padding-top: 6em;
     line-height: 1.625;
 }
-.content.list {
+.content > header {
+    margin-bottom: 1em;
+}
+.content .list {
     max-width: 100%;
 }
 .content,
-.content.list article {
+.content .list article {
     max-width: 85rem;
 }
 footer.site {
@@ -153,13 +151,10 @@ footer.site p {
 
 /* header and nav menu */
 
-header.site h1,
-nav.site {
-    color: white;
-}
 
-header.site h1,
-header.site a {
+.menu__link,
+.menu__link--title {
+    display: block;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
@@ -169,54 +164,34 @@ header.site a {
     letter-spacing: .2rem;
     text-transform: uppercase;
     transition: color 0.2s ease-in-out 0s;
-    text-shadow:
-        -1px -1px 0 #222,
-        1px -1px 0 #222,
-        -1px 1px 0 #222,
-        -1px -1px 0 #222;
 }
-nav.site {
+.menu__group {
     height: 0;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s linear 0s;
 }
-nav.site a {
+.menu__link {
     color: #aaa;
+    margin-bottom: 1rem;
 }
-header.site a.active,
-header.site a.section,
-header.site a:hover {
+.menu__link:hover,
+.menu__link--active,
+.menu__link--section {
     color: #ff3333;
 }
-
-
-/* Flip to side menu */
-
-@media (min-width: 48em) {
-    header.site {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 21vw;
-        padding: 2rem;
-    }
-    .content {
-        padding-top: 2em;
-        margin-left: 22vw;
-    }
-    header.site h1 {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-    header.site h1,
-    header.site a {
-        font-size: 2.7vw;
-    }
+.menu__link--title {
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+}
+.menu__link--nested {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-left: 1em;
 }
 
-
-#nav-toggle {
+.menu__toggle {
     display: block;
     position: absolute;
     top: 1.5rem;
@@ -235,10 +210,10 @@ header.site a:hover {
     transition: background 0.3s;
     overflow: hidden;
 }
-#nav-toggle::focus {
+.menu__toggle::focus {
     outline: none;
 }
-#nav-toggle span {
+.menu__toggle span {
     display: block;
     position: absolute;
     top: 14px;
@@ -248,8 +223,8 @@ header.site a:hover {
     background: white;
     transition: background 0s 0.3s;
 }
-#nav-toggle span::before,
-#nav-toggle span::after {
+.menu__toggle span::before,
+.menu__toggle span::after {
     position: absolute;
     display: block;
     left: 0;
@@ -260,53 +235,85 @@ header.site a:hover {
     transition-duration: 0.3s, 0.3s;
     transition-delay: 0.3s, 0s;
 }
-#nav-toggle span::before {
+.menu__toggle span::before {
     top: -8px;
     transition-property: top, transform;
 }
-#nav-toggle span::after {
+.menu__toggle span::after {
     bottom: -8px;
     transition-property: bottom, transform;
 }
 
-#nav-toggle.active span {
+.menu--active .menu__toggle span {
     background: none;
 }
 
-#nav-toggle.active span::before {
+.menu--active .menu__toggle span::before {
     top: 0;
     transform: rotate(45deg);
 }
 
-#nav-toggle.active span::after {
+.menu--active .menu__toggle span::after {
     bottom: 0;
     transform: rotate(-45deg);
 }
 
-#nav-toggle.active span::before,
-#nav-toggle.active span::after {
+.menu--active .menu__toggle span::before,
+.menu--active .menu__toggle span::after {
     transition-delay: 0s, 0.3s;
 }
-#nav-toggle.active + nav.site {
+.menu--active .menu__group {
     height: auto;
     visibility: visible;
     opacity: 1;
     padding-top: 2rem;
 }
-#nav-toggle.active + nav.site a {
+.menu--active .menu__link {
     display: block;
-    margin-bottom: 1rem;
-    text-align: right;
+}
+.menu--active .menu__link + .menu__group {
+    padding-top: 0;
 }
 
+/* Flip to side menu */
+
 @media (min-width: 48em) {
-    nav.site {
+    .menu {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 21vw;
+        padding: 2rem;
+    }
+    .content {
+        padding-top: 2em;
+        margin-left: 22vw;
+    }
+    .menu__link--title {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 2.7vw;
+    }
+    .menu__link {
+        font-size: 2.7vw;
+    }
+    .menu__link--nested {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+    .menu__group {
         height: auto;
         visibility: visible;
         opacity: 1;
     }
-    #nav-toggle {
+    .menu__toggle {
         display: none;
+    }
+    .menu__link + .menu__group {
+        display: none;
+    }
+    .menu__link--active + .menu__group {
+        display: block;
     }
 }
 
@@ -326,6 +333,9 @@ header.site a:hover {
 article {
     margin-bottom: 2rem;
 }
+article.filtered {
+    display: none !important;
+}
 article header h1,
 article header h2 {
 }
@@ -343,6 +353,9 @@ article header .warning {
     border: 1px dashed #aaa;
     background-color: #ee8;
     animation: fadein 3s;
+}
+article footer {
+    margin-top: 1em;
 }
 
 @keyframes fadein {
@@ -377,60 +390,54 @@ article header .warning {
 }
 
 
-/* home page */
 
-.home header.site {
-    width: 100%;
-    top: 0;
-    bottom: 0;
-}
-.home nav.site {
-    height: auto;
-    visibility: visible;
-    opacity: 1;
-}
-.home #nav-toggle {
-    display: none;
-}
-.home header.site h1 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.home header.site a {
-    font-size: 3rem;
-}
-.home header.site nav a {
-    display: block;
-}
-@media (min-width: 50em) {
-    .home header.site a {
-        font-size: 5rem;
-    }
-    .home header.site nav a {
-        display: inline;
-    }
-}
+/* posts */
 
-
-/* articles */
-
-.articles .content  {
-    -webkit-columns: 35rem 3;
-    -moz-columns: 35rem 3;
-    columns: 35rem 3;
+.posts .list  {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
     -webkit-column-gap: 2rem;
     -moz-column-gap: 2rem;
     column-gap: 2rem;
 }
-.articles .content h1 {
-    -webkit-column-span: all;
-    column-span: all;
-}
-.articles .content article {
+.posts .list article {
+    display: inline-block;
     break-inside: avoid-column;
     break-before: column;
 }
 
 .dict article {
     white-space: pre;
+}
+
+/* forms */
+
+fieldset {
+    padding: 0;
+    border-left: none;
+    border-right: none;
+}
+fieldset.aligned label {
+    width: 14em;
+    float: left;
+    padding-right: .5em;
+}
+input {
+    margin-bottom: .5em;
+    padding-left: .25em;
+    padding-right: .25em;
+    line-height: 1.5;
+}
+input[type=number] {
+    width: 6em;
+}
+
+@media (min-width: 50em) {
+    fieldset {
+        padding: 1em;
+    }
+    fieldset.aligned label {
+        text-align: right;
+    }
 }

@@ -18,7 +18,7 @@ In the next couple of posts we are going to do the following:
 
 - organise our folder structure
 - add custom fields to the customer objects
-- [customise our customer controller](/articles/customising-magento-controllers/)
+- [customise our customer controller](/posts/customising-magento-controllers/)
 
 ## Organising your custom code
 
@@ -202,4 +202,4 @@ These are the files used in this example:
     `-- index.php
 
 Continue on to see [how to customise the customer account
-controller](/articles/customising-magento-controllers/).
+controller](/posts/customising-magento-controllers/).

@@ -9,14 +9,14 @@ tags:
 ---
 
 Following on from the previous post about [creating a simple Magento
-module](/articles/creating-a-custom-magento-module/), we will now
+module](/posts/creating-a-custom-magento-module/), we will now
 customise a controller.
 
 ## Code structure
 
 We start by copying the core 'AccountController.php' file to our already
 existing module. To keep things simpler will we reuse the module we created in
-the [previous post](/articles/creating-a-custom-magento-module/) as both
+the [previous post](/posts/creating-a-custom-magento-module/) as both
 relate to the customer. We then start with the following structure:
 
     .
@@ -148,7 +148,7 @@ We adjust our module's config file to looke like this:
     </config>
 
 I have removed the code from the [previous
-post](/articles/creating-a-custom-magento-module/) for clarity. What you
+post](/posts/creating-a-custom-magento-module/) for clarity. What you
 will notice is that we have added a section under 'routers' both for 'global'
 and 'frontend'. The naming scheme, again, must match the module folder
 structure.  Here we have told Magento that requests to 'customer/account' will

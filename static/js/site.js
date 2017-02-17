@@ -1,14 +1,14 @@
 console.log('Hi there!')
 
 // Mobile menu toggler
-document.querySelector('#nav-toggle').addEventListener('click', function () {
-  this.classList.toggle('active')
+document.getElementById('nav-toggle').addEventListener('click', function () {
+  this.parentNode.classList.toggle('menu--active')
 })
 
 // Change external links' targets
 var links = document.getElementsByTagName('a')
 if (links) {
-  var re = new RegExp('^https?://(.+\.)?' + window.location.host)
+  var re = new RegExp('^https?://(.+)?' + window.location.host)
   var arr = [].slice.call(links)
   arr.forEach(function (l) {
     if (!l.href.match(re)) {
@@ -18,26 +18,31 @@ if (links) {
   })
 }
 
-// Add the ancient content warning
-var items = document.getElementsByTagName('article')
-for (var i = 0; i < items.length; i += 1) {
-  if (!items[i].classList.contains('project')) {
-    var createdAt = items[i].querySelectorAll('header .meta time.created')[0]
-    var updatedAt = items[i].querySelectorAll('header .meta time.updated')[0]
-    var recentDate = updatedAt || createdAt
+var posts = document.getElementsByTagName('article')
 
-    if (recentDate) {
-      var date = Date.parse(recentDate.getAttribute('datetime'))
-      var age = Math.floor((Date.now() - date) / 86400000)
-      if (age > 365) {
-        console.warn('This article is ' + age + ' days old')
-        var warning = document.createElement('span')
-        warning.appendChild(
-          document.createTextNode('This page has not been updated in ' + age + ' days! Here be dragons.')
-        )
-        warning.className = 'warning'
-        items[i].querySelectorAll('header')[0].appendChild(warning)
-      }
+var filter = document.getElementById('filter')
+if (filter) {
+  filter.addEventListener('keyup', function () {
+    var term = this.value
+    if (term.length > 1) {
+      Array.prototype.forEach.call(posts, function (el, i) {
+        var titles = Array.prototype.filter.call(el.querySelectorAll('.title'), function (el, i) {
+          return new RegExp(term, 'i').test(el.textContent)
+        })
+        var tags = Array.prototype.filter.call(el.querySelectorAll('tag'), function (el, i) {
+          return new RegExp(term, 'i').test(el.textContent)
+        })
+        if (titles.length || tags.length) {
+          console.log('Filtering on', term)
+          el.classList.remove('filtered')
+        } else {
+          el.classList.add('filtered')
+        }
+      })
+    } else {
+      Array.prototype.forEach.call(posts, function (el, i) {
+        el.classList.remove('filtered')
+      })
     }
-  }
+  })
 }

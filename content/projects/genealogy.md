@@ -2,7 +2,9 @@
 title: My Family Tree
 description: Family Tree of Felix Hanley
 date: 2011-03-07
-weight: 2
+menu:
+  main:
+    parent: projects
 ---
 
 Along with my mother (mainly her!) I have been building my family tree.

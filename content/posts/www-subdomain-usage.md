@@ -13,7 +13,7 @@ Is it just historical? Can it affect performance?
 
 **UPDATE:** Have a look at a more [recent post that explains how you might
 implement some of these
-points](/articles/setting-up-subdomain-cookies-google-analytics-and-nginx-for-faster-assets/).
+points](/posts/setting-up-subdomain-cookies-google-analytics-and-nginx-for-faster-assets/).
 
 ## Subdomains
 

@@ -11,7 +11,7 @@ tags:
 ---
 
 Not long ago I wrote about [using subdomains to improve your sites'
-performance](/articles/www-subdomain-usage/). Well this is one way you can
+performance](/posts/www-subdomain-usage/). Well this is one way you can
 combine it all to speed up your site.
 
 ## Nginx subdomain setup

@@ -1,19 +1,24 @@
 {{ partial "head.html" . }}
-<body class="articles">
+<body class="posts">
 
-    {{ partial "header.html" . }}
+    {{ partial "body-header.html" . }}
 
-    <section class="content list">
-        <h1>Pages tagged <em>{{ .Title }}</em></h1>
+    <section class="content">
+        <header>
+            <h1>Pages tagged <em>{{ .Title }}</em></h1>
+            <input type="text" id="filter" placeholder="Filter&hellip;" />
+        </header>
 
-        {{ range .Data.Pages }}
-        <article>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <div class="list">
+            {{ range .Data.Pages }}
+            <article>
+                <a class="title" href="{{ .Permalink }}">{{ .Title }}</a>
 
-            {{ partial "meta.html" . }}
+                {{ partial "meta.html" . }}
 
-        </article>
-        {{ end }}
+            </article>
+            {{ end }}
+        </div>
 
     </section>
 
