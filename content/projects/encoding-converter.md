@@ -47,4 +47,4 @@ Auto detection is a bit hit-and-miss.
 <button id="srcReset">Clear</button>
 </form>
 
-<script src="/js/tools.js"></script>
+<script src="/js/encoding-converter.js"></script>
