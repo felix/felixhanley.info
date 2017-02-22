@@ -7,3 +7,10 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
 
 [author]
     name = "Felix Hanley"
+
+[[menu.main]]
+    name = "Résumé"
+    identifier = "resume"
+    parent = "work"
+    url = "/files/felix_hanley.pdf"
+    weight = 10

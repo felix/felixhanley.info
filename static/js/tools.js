@@ -110,7 +110,7 @@ var base64ToBytes = function (input) {
 
   var out = new Uint8Array(bytes)
 
-  input = input.replace(/[^A-Za-z0-9\+\/\=]/g, '')
+  input = input.replace(/[^A-Za-z0-9+/=]/g, '')
 
   for (var i = 0; i < bytes; i += 3) {
     // Get the 3 octects in 4 ascii chars
