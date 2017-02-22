@@ -18,10 +18,19 @@
 
         <div class="list">
             {{ range .Data.Pages.ByWeight }}
-            <article class="project">
+            <article class="content--article article--list project">
                 <header>
                     <h2><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                    {{ partial "meta.html" . }}
+                    {{ if .Params.tags }}
+                    <dl class="meta">
+                      <dt class="meta__label meta__label--tag">Tagged</dt>
+                      <dd class="meta__data meta__data--tag">
+                      {{ range .Params.tags }}
+                      <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+                      {{ end }}
+                      </dd>
+                    </dl>
+                    {{ end }}
                 </header>
 
                 {{ .Summary }}

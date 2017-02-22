@@ -1,12 +1,12 @@
 {{ partial "head.html" . }}
-<body class="single">
+<body>
 
   {{ partial "body-header.html" . }}
 
   <section class="content">
-    <article>
-      <header>
-        <h1>{{ .Title }}</h1>
+    <article class="content__article">
+      <header class="header header--article">
+        <h1 class="header__title">{{ .Title }}</h1>
       </header>
 
       {{ .Content }}

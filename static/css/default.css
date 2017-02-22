@@ -57,10 +57,10 @@ pre {
 code {
     font-size: 1.3rem;
 }
-textarea {
+.textarea {
   width: 100%;
 }
-textarea.code {
+.textarea--code {
     font-family: mono;
     font-size: .875em;
 }
@@ -68,21 +68,24 @@ textarea.code {
     margin: 0;
     overflow: hidden;
 }
-.meta dt,
-.meta dd {
+.meta__label,
+.meta__data {
     display: inline;
     float: left;
     margin: 0;
     font-size: 1rem;
     color: #666;
 }
-.meta dt {
+.meta__label {
     margin-right: .5em;
 }
-.meta dd {
+.meta__label--tag {
+    display: none;
+}
+.meta__data {
     margin-right: .5em;
 }
-.meta .time {
+.time {
     font-style: italic;
 }
 /*
@@ -335,31 +338,16 @@ footer.site p {
 .content a[target="_blank"]:hover {
     border-bottom: 1px solid #555;
 }
-article {
+.content--article {
     margin-bottom: 2rem;
 }
 article.filtered {
     display: none !important;
 }
-article header h1,
-article header h2 {
-}
-article header {
+.header--article {
     margin-bottom: 2rem;
 }
-article header .warning {
-    display: inline-block;
-    margin-top: .5em;
-    padding-top: .5em;
-    padding-bottom: .25em;
-    padding-left: .5em;
-    padding-right: .5em;
-    font-size: 1.5rem;
-    border: 1px dashed #aaa;
-    background-color: #ee8;
-    animation: fadein 3s;
-}
-article footer {
+.footer--article {
     margin-top: 1em;
 }
 
