@@ -5,9 +5,11 @@ description: How to install a Lahu language keyboard layout in Linux and Windows
 date: 2011-01-04
 lastmod: 2016-01-25
 tags:
-- lahu
-- unicode
-- font
+  - lahu
+  - unicode
+  - font
+aliases:
+  - /projects/lahu/keyboard/
 menu:
   main:
     parent: lahu

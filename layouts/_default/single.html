@@ -8,35 +8,13 @@
     <article class="content__article">
       <header class="header header--article">
         <h1 class="header--title">{{ .Title }}</h1>
-        {{ if .Params.tags }}
-        <dl class="meta">
-          <dt class="meta__label meta__label--tag">Tagged</dt>
-          <dd class="meta__data meta__data--tag">
-          {{ range .Params.tags }}
-          <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
-          {{ end }}
-          </dd>
-        </dl>
-        {{ end }}
+        {{ partial "meta-tags.html" }}
       </header>
 
       {{ .Content }}
 
       <footer class="footer--article">
-        <dl class="meta">
-          <dt class="meta__label meta__label--time">Updated</dt>
-          <dd class="meta__data meta__data--time">
-          {{ if ne .Lastmod .Date }}
-          <time class="time time--updated" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">
-            {{ .Lastmod.Format "2006-01-02" }}
-          </time>
-          {{ else }}
-          <time class="time time--created" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
-            {{ .Date.Format "2006-01-02" }}
-          </time>
-          {{ end }}
-          </dd>
-        </dl>
+        {{ partial "meta-time.html" }}
       </footer>
     </article>
   </section>

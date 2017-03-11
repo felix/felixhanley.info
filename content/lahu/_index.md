@@ -9,6 +9,8 @@ tags:
 - unicode
 - font
 - dictionary
+aliases:
+  - /projects/lahu/
 menu:
   main:
     identifier: lahu

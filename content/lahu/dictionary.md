@@ -8,6 +8,8 @@ lastmod: 2016-11-02
 tags:
 - lahu
 - dictionary
+aliases:
+  - /projects/lahu/dictionary/
 menu:
   main:
     parent: lahu
