@@ -30,10 +30,7 @@
       <p>I am available for hire, <a href="/contact/">contact me</a>.</p>
 
       <footer>
-        <dl class="meta">
-          <dt class="meta__label meta__label--tag">Last updated</dt>
-          <dd class="meta__data meta__data--time"><time datetime="{{ .Lastmod }}">{{ .Lastmod.Format "2006-01-02" }}</time></dd>
-        </dl>
+        {{ partial "meta-time.html" . }}
       </footer>
     </article>
   </section>

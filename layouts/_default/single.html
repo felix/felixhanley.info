@@ -8,13 +8,13 @@
     <article class="content__article">
       <header class="header header--article">
         <h1 class="header--title">{{ .Title }}</h1>
-        {{ partial "meta-tags.html" }}
+        {{ partial "meta-tags.html" . }}
       </header>
 
       {{ .Content }}
 
       <footer class="footer--article">
-        {{ partial "meta-time.html" }}
+        {{ partial "meta-time.html" . }}
       </footer>
     </article>
   </section>

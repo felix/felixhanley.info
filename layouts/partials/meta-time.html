@@ -1,7 +1,7 @@
 <dl class="meta">
   <dt class="meta__label meta__label--time">Updated</dt>
   <dd class="meta__data meta__data--time">
-  {{ if ne .Lastmod .Date }}
+  {{ if .Lastmod }}
   <time class="time time--updated" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">
     {{ .Lastmod.Format "2006-01-02" }}
   </time>
