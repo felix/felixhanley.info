@@ -12,5 +12,5 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
     name = "Résumé"
     identifier = "resume"
     parent = "work"
-    url = "https://git.userspace.com.au/resume/tree/felix_hanley.pdf"
+    url = "https://git.userspace.com.au/resume/plain/felix_hanley.pdf"
     weight = 10
