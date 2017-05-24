@@ -22,6 +22,12 @@ PO Box 364
 Kew East 3102 VIC  
 AUSTRALIA
 
+### Social
+
+- [GitHub](https://github.com/felix)
+- [BitBucket](https://bitbucket.org/xilef)
+- [LinkedIn](https://www.linkedin.com/in/felix-hanley/)
+
 ### GnuPG/PGP
 
 My [GPG public
