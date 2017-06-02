@@ -13,6 +13,7 @@ tags:
 menu:
   main:
     parent: projects
+    weight: 40
 ---
 
 This is a basic dynamic client and server for the djbdns DNS server 'tinydns'

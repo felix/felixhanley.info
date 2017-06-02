@@ -5,6 +5,7 @@ date: 2011-03-07
 menu:
   main:
     parent: projects
+    weight: 30
 ---
 
 Along with my mother (mainly her!) I have been building my family tree.

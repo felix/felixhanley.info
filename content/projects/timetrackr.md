@@ -9,7 +9,7 @@ tags:
 menu:
   main:
     parent: projects
-    weight: 10
+    weight: 100
 ---
 
 A simple CLI time tracking utility.
