@@ -180,7 +180,7 @@ footer.site p {
     height: 0;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 1s linear 0s;
+    transition: opacity 0.5s linear 0s;
 }
 .menu__link {
     color: #aaa;
