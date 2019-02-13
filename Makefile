@@ -7,7 +7,7 @@ all: build
 build:
 	hugo -v
 
-deploy:
+deploy: clean build
 	rsync -Prtc --delete public/ felixhanley.info@ww01.mel.userspace.com.au:htdocs/
 
 clean: ## Clean public
