@@ -8,9 +8,12 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
 [author]
     name = "Felix Hanley"
 
+[frontmatter]
+lastmod = ["lastmod", ":fileModTime", ":default"]
+
 [[menu.main]]
-    name = "Résumé"
+    name = "PDF Résumé"
     identifier = "resume"
     parent = "work"
     url = "http://src.userspace.com.au/felix/resume/plain/felix_hanley.pdf"
-    weight = 10
+    weight = 15

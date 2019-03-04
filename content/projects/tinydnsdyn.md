@@ -3,8 +3,6 @@ title: tinydnsdyn for tinydns
 linktitle: tinydnsdyn
 kind: article
 description: "Dynamic DNS for DJB's tinydns DNS server"
-date: 2011-01-01
-lastmod: 2015-03-07
 tags:
 - tinydnsdyn
 - djbdns

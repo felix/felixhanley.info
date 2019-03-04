@@ -1,8 +1,6 @@
 ---
 title: Contact
 description: Felix Hanley
-date: 2015-09-02
-lastmod: 2016-10-01
 menu:
   main
 ---

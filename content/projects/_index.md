@@ -1,7 +1,5 @@
 ---
 title: Projects
-date: 2011-01-01
-lastmod: 2017-03-11
 menu:
   main:
     identifier: projects
