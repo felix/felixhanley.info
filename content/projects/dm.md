@@ -2,7 +2,6 @@
 title: dm - dotfile manager
 linktitle: dm
 description: POSIX shell dotfile manager
-date: 2017-04-03
 tags:
 - dm
 - dotfiles
@@ -67,6 +66,6 @@ The `nested` and `foo` directories above will be created if need be.
 
 ## Source
 
-[My Git repository](http://git.userspace.com.au/dm),
+[My Git repository](http://src.userspace.com.au/dm),
 [GitHub](https://github.com/felix/dm) or
 [BitBucket](https://bitbucket.org/xilef/dm).

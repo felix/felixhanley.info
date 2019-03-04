@@ -1,7 +1,6 @@
 ---
 title: My Family Tree
 description: Family Tree of Felix Hanley
-date: 2011-03-07
 menu:
   main:
     parent: projects

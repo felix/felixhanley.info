@@ -2,7 +2,6 @@
 title: timetrackr - simple time tracking
 linktitle: timetrackr
 description: simple time tracking
-date: 2012-04-04
 tags:
 - timetrackr
 - ruby
@@ -93,5 +92,5 @@ another-thing * 0h  1m 45s
 
 ## Source
 
-From [my Git repository](http://git.userspace.com.au/timetrackr) or on
+From [my Git repository](http://src.userspace.com.au/timetrackr) or on
 [GitHub](https://github.com/felix/timetrackr).

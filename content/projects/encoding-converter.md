@@ -3,7 +3,6 @@ title: Encoding conversion tool
 linktitle: Convert encoding
 keywords: javascript convert encoding base64 hex
 description: A tool to convert encodings
-date: 2016-02-19
 tags:
 - encoding
 - javascript

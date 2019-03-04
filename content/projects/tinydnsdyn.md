@@ -93,5 +93,5 @@ That said, please let me know if there are any issues.
 ## Source
 
 It can be downloaded from [my Git
-repository](http://git.userspace.com.au/tinydnsdyn/) or from
+repository](http://src.userspace.com.au/tinydnsdyn/) or from
 [GitHub](https://github.com/felix/tinydnsdyn).

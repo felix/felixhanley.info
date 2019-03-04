@@ -12,13 +12,13 @@ menu:
     weight: 20
 ---
 
+_Ngaˬ Lahu hk'awˇ henˇ chehˇ ve yaꞈ hk'aˇ haˬ jaˆ._
 
 I have been learning Lahu since 2008 with some limited success. Lahu is a
 language spoken by the Lahu people in Northern Thailand, Burma, China and
 surrounding areas.
 
-_Ngaˬ Lahu hk'awˇ henˇ chehˇ ve yaꞈ hk'aˇ haˬ jaˆ._
+<!--more-->
 
 I have moved all my Lahu resources to http://lahu.felixhanley.info Suggestions
 and corrections are always welcome.
-
