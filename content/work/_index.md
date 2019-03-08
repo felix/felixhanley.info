@@ -8,23 +8,27 @@ menu:
     weight: 10
 ---
 
-<felix@userspace.com.au>  
-[felixhanley.info](http://felixhanley.info/?pk_campaign=CV)  
-+61 457 092 803  
+Email: <felix@userspace.com.au>  
+WWW: [felixhanley.info](http://felixhanley.info/?pk_campaign=CV)  
+Phone: [+61 457 092 803](tel:+61457092803)  
+Skype: [felix.hanley](skype:felix.hanley?chat)  
 
 I am a software engineer with many years experience in both small and large
 teams producing software and system in a variety of industries. My experience
 covers data processing, encryption, security, devops and general consulting.
 
-I am available for permanent, contract and remote positions.
+My wife and I moved to Thailand in 2006 and have spent nearly 10 years as
+part-time volunteers in SE Asia with our two children. During this time I
+worked remotely for Australian and international companies.
 
-I am an Australian citizen and a native English speaker. My wife and I moved to
-Thailand in 2006 and have spent nearly 10 years as part-time volunteers in SE
-Asia with our two children. I am fluent in Thai.
+I am an Australian citizen, a native English speaker, and am also fluent in
+Thai. I am available for full-time, part-time, contract and remote positions.
 
 Publicly available source code repositories:  
-[http://src.userspace.com.au](http://src.userspace.com.au?pk_campaign=CV),
-<https://github.com/felix>, <https://bitbucket.org/xilef>
+
+- [http://src.userspace.com.au](http://src.userspace.com.au?pk_campaign=CV)
+- <https://github.com/felix>
+- <https://bitbucket.org/xilef>
 
 _References available on request_
 
@@ -34,16 +38,16 @@ _References available on request_
 **July 2018 -- Present**, Melbourne
 
 A small security business with a flagship product used by a number of
-government organisations.
+government organisations. They use a loose, Agile scrum methodology.
 
 ***Senior Software Developer***
 
 I initially was working solely on a content extraction and processing engine
 written in Go. As client requirements changed I was moved to a Python based
-APIs and infrastructure. An 'Agile' team.
+APIs and infrastructure.
 
 - Developed a distributed and configurable content extraction engine _(Go)_
-- Maintained extensive tests and CI integration using machine learned datasets _(Gitlab, Docker)_
+- Maintained extensive tests and CI integration using machine learned datasets _(Gitlab, Docker, AWS)_
 - Maintained API back-end _(Python, Django, Postgresql)_
 - Came up to speed on existing code base very quickly
 
@@ -54,21 +58,20 @@ APIs and infrastructure. An 'Agile' team.
 
 An IoT technology company providing hardware and software solutions to service
 providers and municipalities across SE Asia and Australasia. Their solution
-involves "smart" devices and real time control.
+involves "smart" devices and real time control. They use an Agile scrum methodology.
 
 ***Senior Software Engineer***
 
 As a member of the data team I developed a custom ETL and rules processing
 pipeline to cope with data from large deployments of devices, and the APIs
-required to consume this data by the rest of the system. An 'Agile' team.
+required to consume this data by the rest of the system.
 
 - Development of several distributed network stream processing daemons handling 1000s of messages per second _(Go)_
 - Designed and implemented numerous based API micro-services _(Python, Awk, Shell)_
 - Designed, implemented and administered Postgresql services and PL/pgSQL functions
 - Designed and managed time series data systems _(InfluxDB, TimescaleDB)_
-- Administered several Docker based deployments, both internal and external
+- Administered several Docker based deployments, both internal and external _(Docker, AWS)_
 - Maintained excellent test coverage and CI services _(PL/pgSQL, Jenkins, Groovy)_
-
 
 ## [KLData/ARKpX](https://web-beta.archive.org/web/20161203050431/arkpx.com)
 
@@ -76,14 +79,13 @@ required to consume this data by the rest of the system. An 'Agile' team.
 
 A small team developing a cross-platform, encrypted storage solution much like
 'Dropbox' but using client-side, PKI encryption. Products in use by multiple
-government organisations.
+government organisations. They used an Agile scrum methodology.
 
 ***Senior Software Engineer***
 
-I was instrumental in the transition from a Java based product to a web-based,
-platform independent solution. I worked remotely from Thailand on AEST's
-timezone so as to work in sync with the team and participate in all daily
-scrums. An 'Agile' team.
+I was instrumental in the transition from a Java based product to a platform
+independent solution, developing the core encryption and business logic library
+used by multiple front-ends.
 
 - Lead development of core "vanilla" Javascript encryption library _(Javascript)_
 - Implemented PKI primitives using A+ Promises _(Javascript)_
@@ -134,7 +136,6 @@ Managed my own consulting, development and hosting business.
 - Built custom REST API for a number of SaaS clients _(Go, Sinatra)_
 - Built custom e-commerce integrations for international clients _(Magento, Spree, Ruby, SQL, PHP, XML)_
 
-
 ## [Sensory Networks](https://web-beta.archive.org/web/20070105091228/sensorynetworks.com)
 
 **February 2005 -- April 2006**, Sydney
@@ -163,7 +164,7 @@ results.
 ***Programmer, DevOps***
 
 I worked in remote mining towns supporting local contractors and government
-departments in Western Australia and Sydney.
+departments in Western Australia.
 
 - Developed custom web applications for contractor reporting _(PHP, MySQL)_
 - Installed and maintained large LDAP, firewall and email system for a local high school
