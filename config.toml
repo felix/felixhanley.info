@@ -15,5 +15,5 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
     name = "PDF Résumé"
     identifier = "resume"
     parent = "work"
-    url = "http://src.userspace.com.au/felix/resume/plain/felix_hanley.pdf"
+    url = "/felix_hanley.pdf"
     weight = 15

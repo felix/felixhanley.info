@@ -1,15 +1,18 @@
-# A Self-Documenting Makefile
+PDOPTS=	-f markdown+yaml_metadata_block+smart --data-dir=.
 
-.PHONY: clean deploy
+all: public public/felix_hanley.pdf
 
-all: build
-
-build:
+public:
 	hugo -v
 
-deploy: clean build
+public/felix_hanley.pdf: content/work/_index.md public templates/default.html templates/default.latex
+	pandoc $(PDOPTS) --pdf-engine=xelatex --standalone -o public/felix_hanley.pdf $<
+
+.PHONY: deploy
+deploy: all
 	rsync -Prtc --delete public/ felixhanley.info@ww01.mel.userspace.com.au:htdocs/
 
+.PHONY: clean
 clean: ## Clean public
 	@rm -rf public
 
