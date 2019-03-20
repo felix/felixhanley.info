@@ -22,4 +22,4 @@ I call Melbourne, Australia my home with my wife, son and
 daughter.
 
 I am available for hire, [contact me](/contact/) or read [my
-résumé/CV](http://src.userspace.com.au/felix/resume/plain/felix_hanley.pdf).
+résumé/CV](/felix_hanley.pdf).

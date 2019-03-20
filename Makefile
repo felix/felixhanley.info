@@ -1,12 +1,13 @@
-PDOPTS=	-f markdown+yaml_metadata_block+smart --data-dir=.
+pdopts=	-f markdown+yaml_metadata_block+smart --data-dir=.
+src=	$(shell find content -type f -name '*.md')
 
 all: public public/felix_hanley.pdf
 
-public:
+public: $(src)
 	hugo -v
 
 public/felix_hanley.pdf: content/work/_index.md public templates/default.html templates/default.latex
-	pandoc $(PDOPTS) --pdf-engine=xelatex --standalone -o public/felix_hanley.pdf $<
+	pandoc $(pdopts) --pdf-engine=xelatex --standalone -o public/felix_hanley.pdf $<
 
 .PHONY: deploy
 deploy: all
