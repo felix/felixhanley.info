@@ -337,12 +337,14 @@ footer.site p {
 /* content area */
 
 .content a {
-    border-bottom: 1px solid #aaa;
-}
-.content a[target="_blank"] {
     border-bottom: 1px dashed #aaa;
 }
-.content a:hover,
+.content a[target="_blank"] {
+    border-bottom: 1px solid #aaa;
+}
+.content a:hover {
+    border-bottom: 1px dashed #555;
+}
 .content a[target="_blank"]:hover {
     border-bottom: 1px solid #555;
 }
