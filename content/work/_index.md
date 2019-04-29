@@ -48,9 +48,14 @@ Publicly available source code repositories:
 _References available on request_
 
 
+## Senior Developer Operations Engineer, [MYOB](https://myob.com)
+
+**April 2019 -- Present**, Melbourne
+
+
 ## Senior Software Developer, [Seer Security](https://seersec.com.au)
 
-**July 2018 -- Present**, Melbourne
+**July 2018 -- May 2019**, Melbourne
 
 A small security business with a flagship product used by a number of
 government organisations. They use a loose, Agile scrum methodology.

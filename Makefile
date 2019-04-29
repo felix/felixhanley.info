@@ -12,7 +12,7 @@ public/felix_hanley.pdf: content/work/_index.md public templates/default.html te
 
 .PHONY: deploy
 deploy: all
-	rsync -Prtc --delete public/ felixhanley.info@ww01.userspace.com.au:htdocs/
+	rsync -Prtc --delete public/ felixhanley.info@silver.userspace.com.au:htdocs/
 
 .PHONY: clean
 clean: ## Clean public
