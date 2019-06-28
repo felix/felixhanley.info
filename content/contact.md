@@ -5,14 +5,13 @@ menu:
   main
 ---
 
-Email is my preferred means of contact.
+Email is my preferred means of contact. Note, if you are sending any sensitive
+information be sure to use the GPG key below.
 
 ### Email
 
 
 [felix@userspace.com.au](mailto:felix@userspace.com.au)
-
-Note, if you are sending any sensitive information be sure to use the GPG key below.
 
 ### Post
 
@@ -29,60 +28,6 @@ AUSTRALIA
 ### GnuPG/PGP
 
 My [GPG public
-key](https://sks-keyservers.net/pks/lookup?op=get&search=0xB6F229D77E20D10B) is
+key](https://keys.openpgp.org/vks/v1/by-fingerprint/971CF7B2913AD16370AC02C3B6F229D77E20D10B) is
 available with a fingerprint of  
-E6FC&nbsp;5BC6&nbsp;268D&nbsp;B874&nbsp;E546 8F6F&nbsp;A2BB&nbsp;220B&nbsp;D5F6&nbsp;92E3.
-
-~~~
------BEGIN PGP PUBLIC KEY BLOCK-----
-
-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
-2hi0uAcfRdmRwX2o
-=HKyY
------END PGP PUBLIC KEY BLOCK-----
-~~~
+971C&nbsp;F7B2&nbsp;913A&nbsp;D163&nbsp;70AC 02C3&nbsp;B6F2&nbsp;29D7&nbsp;7E20&nbsp;D10B.

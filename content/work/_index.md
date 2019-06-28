@@ -20,10 +20,10 @@ geometry: [ margin=1.5cm ]
 
 # [Felix Hanley](http://felixhanley.info/?pk_campaign=CV)
 
-Email: <felix@userspace.com.au>  
-WWW: [felixhanley.info](http://felixhanley.info/?pk_campaign=CV)  
-Phone: [+61 457 092 803](tel:+61457092803)  
-Skype: [felix.hanley](skype:felix.hanley?chat)  
+<felix@userspace.com.au>  
+[https://felixhanley.info](https://felixhanley.info/?pk_campaign=CV)  
+[+61 457 092 803](tel:+61457092803)  
+[skype:felix.hanley](skype:felix.hanley?chat)  
 
 I am a software engineer with many years experience in both small and large
 teams producing software and systems in a variety of industries. My experience
@@ -55,7 +55,7 @@ _References available on request_
 
 ## Senior Software Developer, [Seer Security](https://seersec.com.au)
 
-**July 2018 -- May 2019**, Melbourne
+**July 2018 -- April 2019**, Melbourne
 
 A small security business with a flagship product used by a number of
 government organisations. They use a loose, Agile scrum methodology.
@@ -90,7 +90,7 @@ required to consume this data by the rest of the system.
 - Maintained excellent test coverage and CI services _(PL/pgSQL, Jenkins, Groovy)_
 
 
-## Senior Software Engineer, [KLData/ARKpX](https://web.archive.org/web/20161203050431/http://arkpx.com)
+## Senior Software Engineer, [KL Data/ARKpX](https://web.archive.org/web/20161203050431/http://arkpx.com)
 
 **March 2015 -- December 2016**, Melbourne & remote
 
