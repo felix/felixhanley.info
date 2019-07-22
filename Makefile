@@ -8,7 +8,7 @@ public: $(src) $(res)
 	hugo -v
 
 public/felix_hanley.pdf: content/work/_index.md public templates/default.html templates/default.latex
-	pandoc $(pdopts) --pdf-engine=xelatex --standalone -o public/felix_hanley.pdf $<
+	pandoc $(pdopts) --standalone -o public/felix_hanley.pdf $<
 
 .PHONY: deploy
 deploy: all

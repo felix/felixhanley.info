@@ -52,6 +52,15 @@ _References available on request_
 
 **April 2019 -- Present**, Melbourne
 
+An Australian multinational corporation that provides tax, accounting and other
+business services software to small and medium businesses.
+
+As a member of the observability team I am involved in all things logging,
+tracing and metrics related. I manage many systems in AWS and Kubernetes as
+well as cross-platform CLI tools for product engineers.
+
+- Developed and extended the internal distributed tracing service and libraries _(Go, Javascript, Java)_
+- Developed CLI applications to manage internal services _(Go)_
 
 ## Senior Software Developer, [Seer Security](https://seersec.com.au)
 
