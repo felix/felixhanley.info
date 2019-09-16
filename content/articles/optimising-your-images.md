@@ -1,7 +1,7 @@
 ---
 kind: article
 date: 2010-05-21
-title: Optimise your images for performance and consistency
+title: Optimise images for performance and consistency
 description: using pngcrush/optipng to speed up your website and make colours more consistent
 keywords: optimisation pngcrush optipng
 tags:

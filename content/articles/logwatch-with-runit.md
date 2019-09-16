@@ -22,9 +22,8 @@ entry and the hostname removed:
 
     authpriv.info: Aug 21 20:45:44 sshd: pam_unix(sshd...
 
-I recently had to modify Logwatch for some other reasons and thought I would
-post my existing scripts here for others to see also. These should be placed in
-the /etc/logwatch directory so they are not overwritten on package upgrades.
+The following configs should be placed in the /etc/logwatch directory so they
+are not overwritten on package upgrades:
 
 conf/logfiles/messages.conf
 

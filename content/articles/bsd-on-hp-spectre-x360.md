@@ -58,7 +58,7 @@ I then had to reboot twice to get the analog audio device to be recognised.
 The equivalent in Debian was an addition to the kernel parameter in Grub:
 
     GRUB_CMDLINE_LINUX_DEFAULT="quiet acpi_osi='!Windows 2013' acpi_osi='!Windows 2012'"
- 
+
 
 ## Touchpad
 

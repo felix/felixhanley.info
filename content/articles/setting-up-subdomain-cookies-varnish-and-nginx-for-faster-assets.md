@@ -10,9 +10,7 @@ tags:
 - varnish
 ---
 
-Not long ago I wrote about [using subdomains to improve your sites'
-performance](/posts/www-subdomain-usage/). Well this is one way you can
-combine it all to speed up your site.
+Combine subdomains, cookies, Varnish and Nginx to speed up your site.
 
 ## Nginx subdomain setup
 

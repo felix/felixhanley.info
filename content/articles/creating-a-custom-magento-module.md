@@ -7,6 +7,7 @@ tags:
 - magento
 - php
 ---
+
 Magento has become one of the best open source commerce systems for the web but
 sadly (and frustratingly) it is one of the most poorly documented beasts.
 
