@@ -7,26 +7,49 @@ menu:
 ---
 
 Projects that I am actively working on or have contributed to. You may find
-others on [GitHub](https://github.com/felix/) and perhaps even
-[Bitbucket](https://bitbucket.org/xilef/)
+others on [my personal Git hosting](https://src.userspace.com.au),
+[GitHub](https://github.com/felix/), and maybe even
+[Bitbucket](https://bitbucket.org/xilef/).
+
+## Personal projects
+
+[Lahu language resources](http://lahu.felixhanley.info)
+: Lahu language project page. A collection of information about the language
+spoken by the Lahu hill tribe group.
+
+[dm](http://src.userspace.com.au/felix/dm/about/)
+: A single-file "dotfile" manager written in POSIX shell. It creates and
+synchronises symlinks in your home directory to a central dotfile source.
+
+[Family tree](http://genealogy.felixhanley.info/)
+: My family tree. Most work has been done by my mother.
+
+[BitArray](https://src.userspace.com.au/bitarray/about/)
+: A bit array structure with sub-byte methods like packing and shifting for
+arrays of arbitrary length
+
+[Encoding converter](/projects/encoding-converter/)
+: Convert between HEX, Base64, ASCII or binary, from and to files.
+
+[tinydnsdyn](https://src.userspace.com.au/felix/tinydnsdyn/about/)
+: This is a basic dynamic client and server for the djbdns DNS server 'tinydns'
+by Dan Bernstein. Not maintained.
+
+[timetrackr](https://src.userspace.com.au/felix/timetrackr/about/)
+: A simple CLI time tracking utility. Not maintained.
 
 ## Open Source Contributions
 
-### [ASN.1 Decoder/Encoder/DSL in Javascript](https://github.com/felix/asn1.js)
-
-A very useful project for working with ASN.1 and encryption primitives with
+[asn1.js](https://github.com/felix/asn1.js)
+: A very useful project for working with ASN.1 and encryption primitives with
 Javascript. This project was chosen over others due to its good handling of
 implicit types and encapsulated models. It also has a nice DSL.
 
-### [FreeBSD Ports](https://github.com/felix/freebsd-ports)
+[FreeBSD Ports](https://github.com/felix/freebsd-ports)
+: Mainly contributions for Nuster, Postgresql and MariaDB Galera clustering
+support for client work.
 
-Mainly contributions to Postgresql and MariaDB Galera clustering support for
-client work.
-
-### [Void Linux](https://github.com/felix/void-packages)
-
-As Linux distros go this one is very similar to the BSD method of building
-ports and it is not ham-strung by systemd. Used where BSD is not supported by
+[Void Linux](https://github.com/felix/void-packages)
+: As Linux distributions go this one is very similar to the BSD method of building
+ports and it is not ham-strung by systemd. I use Void where BSD is not supported by
 hardware.
-
-## Other Projects

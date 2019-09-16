@@ -7,10 +7,6 @@ tags:
 - encoding
 - javascript
 - conversion
-menu:
-  main:
-    parent: projects
-    weight: 30
 ---
 
 Convert between HEX, Base64, ASCII or binary, from and to files.
