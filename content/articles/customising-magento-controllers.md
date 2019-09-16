@@ -8,9 +8,8 @@ tags:
 - php
 ---
 
-Following on from the previous post about [creating a simple Magento
-module](/posts/creating-a-custom-magento-module/), we will now
-customise a controller.
+How to customize a Magento controller. This follows from another note about
+[creating a simple Magento module](/posts/creating-a-custom-magento-module/).
 
 ## Code structure
 

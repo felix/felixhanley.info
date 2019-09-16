@@ -57,9 +57,6 @@ end
 ~~~
 
 Due to many peoples' habit of putting 'www' at the start of the domain, this
-should account for _en.example.com_ **and** _www.en.example.com_. It also allows
-for the locale to be specified in the query string. So
-  _en.example.com/foo?locale=th_ will set the locale to 'th'.
-
-There are probably others out there but due to the simplicity of Rack based apps
-it is very easy to write, and adjust, your own.
+should account for _en.example.com_ **and** _www.en.example.com_. It also
+allows for the locale to be specified in the query string. So
+_en.example.com/foo?locale=th_ will set the locale to 'th'.

@@ -10,11 +10,9 @@ tags:
 - nginx
 ---
 
-## The situation
-
-You are using subdomains for locales such as _en.example.com_ and
-_th.example.com_. Your app is Rack based and is behind Nginx with a 'wildcard'
-*server_name* directive such as:
+The situation: you are using subdomains for locales such as _en.example.com_
+and _th.example.com_. Your app is Rack based and is behind Nginx with a
+'wildcard' *server_name* directive such as:
 
     server {
       server_name .example.com;
@@ -25,7 +23,7 @@ You are also using Rack's map abilities to have two different applications
 mounted on different paths on your domain. This could be done like this in your
 _config.ru_ file:
 
-    
+```ruby
     map '/users' do
       run Example::Admin
     end
@@ -33,6 +31,7 @@ _config.ru_ file:
     map '/' do
       run Example::Public
     end
+```
 
 
 ## The problem
@@ -49,6 +48,7 @@ to fix this is to simply set the environment's' SERVER_NAME' to equal
 'HTTP_HOST' by including something like this in your _config.ru_ file, before
 your map calls:
 
+```ruby
     module Rack
       class Blah
         def initialize app
@@ -65,5 +65,4 @@ your map calls:
 
     map '/users' do
     ...etc.
-
-
+```

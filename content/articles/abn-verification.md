@@ -2,13 +2,14 @@
 title: ABN verfication code in Ruby
 kind: article
 date: 2009-01-15
-keywords: ruby australian business number snippet
-description: Snippet of Ruby code to check an Australian Business Number
+keywords: ruby ABN Australian business number
+description: Snippet of Ruby code to check an ABN
 tags:
 - ruby
 ---
-The Australian Business Number (ABN) is a self-checking series of numbers. Here
-is some code I used to verify ABN numbers for a job I was working on.
+
+The Australian Business Number (ABN) is a self-checking series of numbers. The
+following Ruby snippet can be used to verify an ABN.
 
 ~~~ruby
 class ABN

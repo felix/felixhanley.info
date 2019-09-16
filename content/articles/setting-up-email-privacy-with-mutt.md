@@ -1,5 +1,4 @@
 ---
-kind: article
 date: 2009-04-16
 title: Setting up email privacy with Mutt using GnuPG
 keywords: gpg gnupg pgp encryption privacy email
@@ -8,8 +7,8 @@ tags:
 - mutt
 - gnupg
 ---
-My last post justified my move to using privacy on my emails. This is how I
-have done it using Mutt and GnuPG.
+
+This is how I have set up Mutt and GnuPG.
 
 ## Mutt and GnuPG
 
