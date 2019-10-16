@@ -43,7 +43,6 @@ Publicly available source code repositories:
 
 - [http://src.userspace.com.au](http://src.userspace.com.au?pk_campaign=CV)
 - <https://github.com/felix>
-- <https://bitbucket.org/xilef>
 
 _References available on request_
 
