@@ -7,9 +7,8 @@ menu:
 ---
 
 Projects that I am actively working on or have contributed to. You may find
-others on [my personal Git hosting](https://src.userspace.com.au),
-[GitHub](https://github.com/felix/), and maybe even
-[Bitbucket](https://bitbucket.org/xilef/).
+others on [my personal Git hosting](https://src.userspace.com.au) and
+[GitHub](https://github.com/felix/).
 
 ## Personal projects
 
