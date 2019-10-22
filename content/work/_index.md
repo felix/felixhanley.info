@@ -28,7 +28,7 @@ geometry: [ margin=1.5cm ]
 I am a software engineer with many years experience in both small and large
 teams producing software and systems in a variety of industries. My experience
 covers processing engines (ETL), encryption, security, micro-services & API
-design, large scale hosting devops and general consulting.
+design, large scale hosting and general consulting.
 
 <!---
 My wife and I moved to Thailand in 2006 and have spent nearly 10 years as
@@ -43,6 +43,7 @@ Publicly available source code repositories:
 
 - [http://src.userspace.com.au](http://src.userspace.com.au?pk_campaign=CV)
 - <https://github.com/felix>
+- <https://gitlab.com/xilef>
 
 _References available on request_
 
@@ -54,12 +55,12 @@ _References available on request_
 An Australian multinational corporation that provides tax, accounting and other
 business services software to small and medium businesses.
 
-As a member of the observability team I am involved in all things logging,
-tracing and metrics related. I manage many systems in AWS and Kubernetes as
-well as cross-platform CLI tools for product engineers.
+As a member of the 'observability' team I am involved in all things logging,
+tracing and metrics related. This includes software development of
+cross-platform tools and internal products to increase developer productivity.
 
-- Developed and extended the internal distributed tracing service and libraries _(Go, Javascript, Java)_
-- Developed CLI applications to manage internal services _(Go)_
+- Distributed tracing service development and implementation _(Go)_
+- Various cross-platform CLIs to manage internal services _(Go)_
 
 ## Senior Software Developer, [Seer Security](https://seersec.com.au)
 
@@ -68,14 +69,12 @@ well as cross-platform CLI tools for product engineers.
 A small security business with a flagship product used by a number of
 government organisations. They use a loose, Agile scrum methodology.
 
-I initially was working solely on a content extraction and processing engine
-written in Go. As client requirements changed I was moved to a Python based
-APIs and infrastructure.
+I was instrumental in the design and implementation of a content extraction,
+processing and classification engine.
 
 - Developed a distributed and configurable content extraction engine _(Go)_
+- Designed and developed a distributed plugin architecture _(Python, Django, Postgresql)_
 - Maintained extensive tests and CI integration using machine learned datasets _(Gitlab, Docker, AWS)_
-- Maintained API back-end _(Python, Django, Postgresql)_
-- Came up to speed on existing code base very quickly
 
 
 ## Senior Software Engineer, [Freestyle Technology](https://freestyleiot.com)
