@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="description" content="Personal website of Felix Hanley">
     <meta charset="UTF-8">
-    <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+    <title>{{ with .Title }}{{ . }} &middot; {{ end }}{{ .Site.Title }} </title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/default.css">
     <link rel="shortcut icon" href="/favicon.png">
