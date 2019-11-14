@@ -143,7 +143,8 @@ clients.
 
 Managed my own consulting, development and hosting business.
 
-- Built a loyal customer base of over 20 clients
+- Development of ISO 20248 (DigSig) solutions for government agencies _(Go, Javascript)_
+- Development custom machine learning pipelines for Thai language customers _(Go, Zig)_
 - Developed custom hosting control panels _(Go, AngularJS, Ruby on Rails, Shell)_
 - Maintained 30+ Linux and BSD virtual machines including highly available databases and load balanced servers _(BSD, Ansible, HAProxy, Postgresql)_
 - Administered free DNS service, custom dynamic DNS and OpenNIC services _(PowerDNS, TinyDNS, Python)_
