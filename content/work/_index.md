@@ -25,16 +25,13 @@ geometry: [ margin=1.5cm ]
 [+61 457 092 803](tel:+61457092803)  
 [skype:felix.hanley](skype:felix.hanley?chat)  
 
-I am a software engineer with many years experience in both small and large
-teams producing software and systems in a variety of industries. My experience
-covers processing engines (ETL), encryption, security, micro-services & API
-design, large scale hosting and general consulting.
+I am a software engineer with many years experience producing software and
+systems in a variety of industries. My experience covers document processing
+engines, encryption, security, micro-services & API design, large scale hosting
+and general consulting.
 
-<!---
-My wife and I moved to Thailand in 2006 and have spent nearly 10 years as
-part-time volunteers in SE Asia with our two children. During this time I
-worked remotely for Australian and international companies.
--->
+I am experienced in Agile methodologies in both small and large teams, working
+remotely and in situ.
 
 I am an Australian citizen, a native English speaker, and am also fluent in
 Thai. I am available for full-time, part-time, contract and remote positions.
@@ -55,19 +52,20 @@ _References available on request_
 An Australian multinational corporation that provides tax, accounting and other
 business services software to small and medium businesses.
 
-As a member of the 'observability' team I am involved in all things logging,
-tracing and metrics related. This includes software development of
-cross-platform tools and internal products to increase developer productivity.
+As a member of the observability team I am involved in all things logging,
+tracing and metrics related. This includes development of cross-platform tools
+and internal products to increase developer productivity.
 
-- Distributed tracing service development and implementation _(Go)_
-- Various cross-platform CLIs to manage internal services _(Go)_
+- Development of a distributed tracing service _(Go, Kubernetes, AWS)_
+- Design and development of a centralised log processing pipeline _(Go, AWS)_
+- Implemented cross-platform CLIs to manage internal services _(Go)_
 
 ## Senior Software Developer, [Seer Security](https://seersec.com.au)
 
 **July 2018 -- April 2019**, Melbourne
 
 A small security business with a flagship product used by a number of
-government organisations. They use a loose, Agile scrum methodology.
+government agencies.
 
 I was instrumental in the design and implementation of a content extraction,
 processing and classification engine.
@@ -83,7 +81,7 @@ processing and classification engine.
 
 An IoT technology company providing hardware and software solutions to service
 providers and municipalities across SE Asia and Australasia. Their solution
-involves "smart" devices and real time control. They use an Agile scrum methodology.
+involves "smart" devices and real time control.
 
 As a member of the data team I developed a custom ETL and rules processing
 pipeline to cope with data from large deployments of devices, and the APIs
@@ -103,7 +101,7 @@ required to consume this data by the rest of the system.
 
 A small team developing a cross-platform, encrypted storage solution much like
 'Dropbox' but using client-side, PKI encryption. Products in use by multiple
-government organisations. They used an Agile scrum methodology.
+government organisations.
 
 I was instrumental in the transition from a Java based product to a platform
 independent solution, developing the core encryption and business logic library
