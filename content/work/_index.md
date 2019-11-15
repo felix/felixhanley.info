@@ -30,11 +30,9 @@ systems in a variety of industries. My experience covers document processing
 engines, encryption, security, micro-services & API design, large scale hosting
 and general consulting.
 
-I am experienced in Agile methodologies in both small and large teams, working
-remotely and in situ.
-
-I am an Australian citizen, a native English speaker, and am also fluent in
-Thai. I am available for full-time, part-time, contract and remote positions.
+As an Australian I am a native English speaker but I am also fluent in Thai. I
+am available for full-time, part-time, and contract positions with remote work
+being preferred.
 
 Publicly available source code repositories:  
 
