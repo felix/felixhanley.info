@@ -336,15 +336,9 @@ footer.site p {
 /* content area */
 
 .content a {
-    border-bottom: 1px dashed #ffaaaa;
-}
-.content a[target="_blank"] {
     border-bottom: 1px solid #ffaaaa;
 }
 .content a:hover {
-    border-bottom: 1px dashed #555;
-}
-.content a[target="_blank"]:hover {
     border-bottom: 1px solid #555;
 }
 .content--article {
