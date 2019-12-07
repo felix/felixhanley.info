@@ -13,15 +13,10 @@ information be sure to use the GPG key below.
 
 [felix@userspace.com.au](mailto:felix@userspace.com.au)
 
-### Post
-
-PO Box 364  
-Kew East 3102 VIC  
-AUSTRALIA
-
 ### Social
 
 - [GitHub](https://github.com/felix)
+- [GitLab](https://gitlab.com/xilef)
 - [LinkedIn](https://www.linkedin.com/in/felix-hanley/)
 
 ### GnuPG/PGP
