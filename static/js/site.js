@@ -14,7 +14,6 @@ if (links) {
     if (!l.href.match(re)) {
       l.target = '_blank'
       l.rel = 'noopener'
-      console.log('Sending', l.href, 'to another tab')
     }
   })
 }
