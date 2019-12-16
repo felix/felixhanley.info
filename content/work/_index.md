@@ -26,19 +26,18 @@ geometry: [ margin=1.5cm ]
 [skype:felix.hanley](skype:felix.hanley?chat)  
 
 I am a software engineer with many years experience producing software and
-systems in a variety of industries. My experience covers document processing
-engines, encryption, security, micro-services & API design, large scale hosting
-and general consulting.
+systems in a variety of industries. My experience covers ETL pipelines, PKI &
+client side encryption, network security, API & micro-service design, large
+scale hosting and general consulting.
 
 As an Australian I am a native English speaker but I am also fluent in Thai. I
 am available for full-time, part-time, and contract positions with remote work
 being preferred.
 
-Publicly available source code repositories:  
-
-- [http://src.userspace.com.au](http://src.userspace.com.au?pk_campaign=CV)
-- <https://github.com/felix>
-- <https://gitlab.com/xilef>
+All my publicly available source code is available at
+[http://src.userspace.com.au](http://src.userspace.com.au?pk_campaign=CV) and
+mirrored to [GitHub](https://github.com/felix) and
+[GitLab](https://gitlab.com/xilef).
 
 _References available on request_
 
@@ -50,13 +49,14 @@ _References available on request_
 An Australian multinational corporation that provides tax, accounting and other
 business services software to small and medium businesses.
 
-As a member of the observability team I am involved in all things logging,
-tracing and metrics related. This includes development of cross-platform tools
-and internal products to increase developer productivity.
+As a member of the observability team I am involved in all things related to
+logging, tracing and metrics, working exclusively in Go. This includes
+development of cross-platform tools and internal products to increase developer
+productivity.
 
 - Development of a distributed tracing service _(Go, Kubernetes, AWS)_
 - Design and development of a centralised log processing pipeline _(Go, AWS)_
-- Implemented cross-platform CLIs to manage internal services _(Go)_
+- Implemented various cross-platform utilities to manage internal services _(Go)_
 
 ## Senior Software Developer, [Seer Security](https://seersec.com.au)
 
@@ -68,8 +68,8 @@ government agencies.
 I was instrumental in the design and implementation of a content extraction,
 processing and classification engine.
 
-- Developed a distributed and configurable content extraction engine _(Go)_
-- Designed and developed a distributed plugin architecture _(Python, Django, Postgresql)_
+- Developed a distributed and configurable content extraction engine _(Go, Flatbuffers)_
+- Designed and developed a distributed plugin architecture _(Python, Django, PostgreSQL)_
 - Maintained extensive tests and CI integration using machine learned datasets _(Gitlab, Docker, AWS)_
 
 
@@ -85,12 +85,10 @@ As a member of the data team I developed a custom ETL and rules processing
 pipeline to cope with data from large deployments of devices, and the APIs
 required to consume this data by the rest of the system.
 
-- Developed distributed network stream processing engines handling 1000s of messages per second _(Go)_
-- Designed and implemented numerous based API micro-services _(Python, Awk, Shell)_
-- Designed, implemented and administered Postgresql services and PL/pgSQL functions
-- Designed and managed time series data systems _(InfluxDB, TimescaleDB)_
-- Administered several Docker based deployments, both internal and external _(Docker, AWS)_
-- Maintained excellent test coverage and CI services _(PL/pgSQL, Jenkins, Groovy)_
+- Developed distributed network stream processing engines handling many 1000s of messages per second _(Go)_
+- Designed and implemented numerous supporting APIs _(Python, Awk, Shell, Docker, AWS)_
+- Designed, implemented and administered supporting services (PostgreSQL, PL/pgSQL, InfluxDB, TimescaleDB)_
+- Maintained excellent test coverage and CI services _(TAP, Jenkins, Groovy)_
 
 
 ## Senior Software Engineer, [KL Data/ARKpX](https://web.archive.org/web/20161203050431/http://arkpx.com)
@@ -105,23 +103,44 @@ I was instrumental in the transition from a Java based product to a platform
 independent solution, developing the core encryption and business logic library
 used by multiple front-ends.
 
-- Lead development of core "vanilla" Javascript encryption library _(Javascript)_
-- Implemented PKI primitives using A+ Promises _(Javascript)_
+- Lead development of core promise based Javascript encryption library _(Javascript)_
 - Developed custom ASN.1 schemas for CMS (RFC 5952) communications _(ASN.1)_
 - Created extensive cross-browser test suite and maintained CI _(Node, Bamboo CI, Selenium)_
 - Maintained UI elements across all modern browsers _(AngularJS)_
+
+
+## Principle, [User Space](https://userspace.com.au)
+
+**April 2006 -- Present**, Melbourne, Asia & remote
+
+Melbourne based hosting, development and consulting services to Australian and
+SE Asian clients.
+
+Most recently:
+
+- Development of ISO 20248 (DigSig) solutions for Thailand government agencies _(Go, Javascript)_
+- Development custom machine learning pipelines for Thailand language customers _(Go, Python)_
+- Maintained 30+ Linux and BSD virtual machines including highly available databases and load balanced servers _(BSD, Ansible, HAProxy, Postgresql)_
+- Administered free DNS service, custom dynamic DNS and OpenNIC services _(PowerDNS, TinyDNS, Python)_
+
+Over the years:
+
+- Developed custom hosting control panels _(Go, AngularJS, Ruby on Rails, Shell)_
+- Developed and maintained custom support and monitoring software for clients _(Python, Shell)_
+- Built custom REST API for a number of SaaS clients _(Go, Sinatra)_
+- Built custom e-commerce integrations for international clients _(Magento, Spree, Ruby, SQL, PHP, XML)_
 
 
 ## Software Engineer, [Ayuda Hosting](http://ayudahosting.com.au)
 
 **February 2010 -- February 2015**, Melbourne & remote
 
-A traditional, "bare-metal" hosting and development business with a small team
+A traditional, "bare-metal" hosting and consulting company with a small team
 based in the Melbourne CBD.
 
-As part of a small team I was involved in all areas of network design and
-installation, project planning and cost estimation. I worked for one year in
-the Melbourne office and then remotely from interstate and overseas.
+I was involved in all areas of network design and installation, project
+planning and cost estimation. I worked for one year in the Melbourne office
+and then remotely from interstate and overseas.
 
 - Managed large, redundant networks, firewalls and VMs _(Xen, Keepalived, IPTables, IPSec, PF)_
 - Developed client websites and applications _(PHP, Javascript, HTML/CSS)_
@@ -130,25 +149,6 @@ the Melbourne office and then remotely from interstate and overseas.
 - Implemented large configuration systems _(CFEngine, Puppet)_
 - Administrated highly available and redundant server clusters _(Apache, Nagios, Postfix)_
 - Brought many large projects to deployment
-
-
-## Principle, [User Space](https://userspace.com.au)
-
-**April 2006 -- Present**, Melbourne, Asia & remote
-
-Melbourne based hosting and development services to Australian and SE Asian
-clients.
-
-Managed my own consulting, development and hosting business.
-
-- Development of ISO 20248 (DigSig) solutions for government agencies _(Go, Javascript)_
-- Development custom machine learning pipelines for Thai language customers _(Go, Zig)_
-- Developed custom hosting control panels _(Go, AngularJS, Ruby on Rails, Shell)_
-- Maintained 30+ Linux and BSD virtual machines including highly available databases and load balanced servers _(BSD, Ansible, HAProxy, Postgresql)_
-- Administered free DNS service, custom dynamic DNS and OpenNIC services _(PowerDNS, TinyDNS, Python)_
-- Developed and maintained custom support and monitoring software for clients _(Python, Shell)_
-- Built custom REST API for a number of SaaS clients _(Go, Sinatra)_
-- Built custom e-commerce integrations for international clients _(Magento, Spree, Ruby, SQL, PHP, XML)_
 
 
 ## Web developer, [Sensory Networks](https://web.archive.org/web/20070105091228/http://www.sensorynetworks.com)
