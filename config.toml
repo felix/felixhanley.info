@@ -11,6 +11,9 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
 [frontmatter]
 lastmod = ["lastmod", ":fileModTime", ":default"]
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [[menu.main]]
     name = "PDF Résumé"
     identifier = "resume"
