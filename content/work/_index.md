@@ -87,7 +87,7 @@ required to consume this data by the rest of the system.
 
 - Developed distributed network stream processing engines handling many 1000s of messages per second _(Go)_
 - Designed and implemented numerous supporting APIs _(Python, Awk, Shell, Docker, AWS)_
-- Designed, implemented and administered supporting services (PostgreSQL, PL/pgSQL, InfluxDB, TimescaleDB)_
+- Designed, implemented and administered supporting services _(PostgreSQL, PL/pgSQL, InfluxDB, TimescaleDB)_
 - Maintained excellent test coverage and CI services _(TAP, Jenkins, Groovy)_
 
 
