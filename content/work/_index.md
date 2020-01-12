@@ -8,7 +8,7 @@ menu:
 
 # Pandoc related
 title-meta: Résumé of Felix Hanley
-keywords: [programmer,software,engineer,encryption,devops,go,golang,javascript,ruby,python,php,css,html,openbsd,freebsd,linux,node,asn1,ansible,postgresql]
+keywords: [programmer,software,engineer,applied cryptography,encryption,devops,go,golang,javascript,ruby,python,php,css,html,openbsd,freebsd,linux,node,asn1,ansible,postgresql]
 author: Felix Hanley
 papersize: a4
 mainfont: DejaVuSerifCondensed
@@ -27,8 +27,8 @@ geometry: [ margin=1.5cm ]
 
 I am a software engineer with many years experience producing software and
 systems in a variety of industries. My experience covers ETL pipelines, PKI &
-client side encryption, network security, API & micro-service design, large
-scale hosting and general consulting.
+applied cryptography, network security, API & micro-service design, large scale
+hosting and general consulting.
 
 As an Australian I am a native English speaker but I am also fluent in Thai. I
 am available for full-time, part-time, and contract positions with remote work
@@ -96,14 +96,14 @@ required to consume this data by the rest of the system.
 **March 2015 -- December 2016**, Melbourne & remote
 
 A small team developing a cross-platform, encrypted storage solution much like
-'Dropbox' but using client-side, PKI encryption. Products in use by multiple
+'Dropbox' but using client-side, PKI cryptography. Products in use by multiple
 government organisations.
 
 I was instrumental in the transition from a Java based product to a platform
-independent solution, developing the core encryption and business logic library
-used by multiple front-ends.
+independent solution, developing the core cryptographic library used by
+multiple front-ends.
 
-- Lead development of core promise based Javascript encryption library _(Javascript)_
+- Lead development of core promise based Javascript cryptographic library _(Javascript)_
 - Developed custom ASN.1 schemas for CMS (RFC 5952) communications _(ASN.1)_
 - Created extensive cross-browser test suite and maintained CI _(Node, Bamboo CI, Selenium)_
 - Maintained UI elements across all modern browsers _(AngularJS)_
