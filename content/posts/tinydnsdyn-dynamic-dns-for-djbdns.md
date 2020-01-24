@@ -16,15 +16,12 @@ software.
 
 ## Why tinydnsdyn
 
-I have been using the [djbdns](http://cr.yp.to/djbdns.html) DNS server package
-for many years and I seem to like the 'DJB way' (although I use
-'[runit](http://smarden.org/runit/)' instead of 'daemontools'). I like knowing
-my services are monitored and restarted if they die. Almost all my services on
-each of my services are run this way and I have had no troubles whatsoever with
-their performance or uptime.
+- [djbdns](http://cr.yp.to/djbdns.html) is a simple, fast DNS server.
+- I like the 'DJB way' (although I use '[runit](http://smarden.org/runit/)' instead of 'daemontools').
+- Dynamic DNS is handy.
 
 [Tinydnsdyn](/projects/tinydnsdyn/) is a simple script to enable dynamic DNS
-for the DNS server written by Dan Bernstein, tinydns. It filled a small hole
+for the DNS server written by Dan Bernstein, tinydns. It fills a small hole
 that was missing on one of my previous jobs and was written quickly and roughly
 to fill that void.
 
@@ -40,11 +37,9 @@ It is pretty simple but here are some of its features:
 - Simple logging
 - You can use it from your OpenWRT box
 
-So see how it fits you. 
+So see how it fits you.
 
 ## Getting it
 
 Code can be grabbed from the [tinydnsdyn Git
-repository](http://src.userspace.com.au/tinydnsdyn) and you can tell me
-about all the bugs and mistakes on the [tinydnsdyn ticket
-tracker](http://support.userspace.com.au/projects/tinydnsdyn/)
+repository](http://src.userspace.com.au/tinydnsdyn).

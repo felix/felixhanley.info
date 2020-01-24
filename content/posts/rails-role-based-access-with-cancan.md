@@ -15,8 +15,7 @@ The basics of a role based access control system using Ruby on Rails,
 
 ## Goals
 
-This are often the requirements/desires I have with an
-authentication/authorisation system:
+Common requirements/desires for a authentication/authorisation system:
 
 - customisable
 - a variety of storage choices (DB, YAML etc.)
@@ -42,7 +41,7 @@ So we will be able to access a user's permissions (using DataMapper) like so:
 ## Models
 
 First of all, get devise and cancan installed and basically configured within
-your application. I won't cover this here.
+your application. This is not covered here.
 
 These are the models that we will eventually have and their corresponding
 relationships. These examples use DataMapper.

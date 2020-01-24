@@ -11,28 +11,24 @@ tags:
 - i18n
 ---
 
-For a project I am currently working on I am using the nice i18n library
-_[r18n](http://github.com/ai/r18n)_ which provides i18n for
-[Rails](http://rubyonrails.org/), [Sinatra](http://sinatrarb.org/) and most
-general Ruby projects. It also is reasonably ORM agnostic and so I am using it
-quite easily with [DataMapper](http://datamapper.org/).
+# Goal
 
-I have decided to use a subdomain to specify the locale rather than having it be
+To use a sub-domain to specify the locale rather than having it be
 part of the path. So instead of this:
 
     http://example.com/en/foo/
 
-I have this:
+we want this:
 
     http://en.example.com/foo/
 
-I find this makes it easier by being able to specify relative paths everywhere
+This makes it easier by being able to specify relative paths everywhere
 that don't need to have the locale played with. Switching the locale for the
 site is also just a matter of changing the domain.
 
-That said, r18n expects the locale to be placed in the 'params' array for
-Sinatra and I thought a simple Rack middleware would do this well. So here it
-is:
+That said, [r18n](http://github.com/ai/r18n) expects the locale to be placed in
+the 'params' array for Sinatra so a simple Rack middleware would do this well.
+So here it is:
 
 
 ~~~ ruby

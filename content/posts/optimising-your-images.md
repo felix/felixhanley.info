@@ -32,23 +32,6 @@ Pngcrush uses a number of techniques to reduce the size of your PNGs such as
 reducing the palette or applying different compression algorithms to the image
 data.
 
-## An example
-
-A good example of the size difference is the [menu image used on this
-site](/images/menu.png). An initial save of the PNG image was 159Kb. This same
-image when run through pngcrush resulted in a size of 14.5Kb, with no reduction
-in quality. It is a simple as this:
-
-    pngcrush infile.png outfile.png
-
-or trying more methods to reduce size:
-
-    pngcrush -brute infile.png outfile.png
-
-For my site, I am already using the sprite technique to combine images for my
-main menu so together I am able to reduce, not only the total amount to be
-downloaded, but also the number of HTTP requests needed to create my menu.
-
 ## Alternatives
 
 There are several other alternatives to pngcrush such as its fork,

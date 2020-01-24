@@ -146,16 +146,15 @@ We adjust our module's config file to looke like this:
 
     </config>
 
-I have removed the code from the [previous
-post](/posts/creating-a-custom-magento-module/) for clarity. What you
-will notice is that we have added a section under 'routers' both for 'global'
-and 'frontend'. The naming scheme, again, must match the module folder
-structure.  Here we have told Magento that requests to 'customer/account' will
-be rewritten to the new controller which will override some actions. The
-frontend section also allows us to modify view for this controller. I include
-it here for completeness but with the preDispatch function we defined in the
-controller all frontend rendering will still go through the core defined
-process.
+The code from the [previous post](/posts/creating-a-custom-magento-module/) has
+been removed for clarity. What you will notice is that we have added a section
+under 'routers' both for 'global' and 'frontend'. The naming scheme, again,
+must match the module folder structure.  Here we have told Magento that
+requests to 'customer/account' will be rewritten to the new controller which
+will override some actions. The frontend section also allows us to modify view
+for this controller. It is included here for completeness but with the
+preDispatch function we defined in the controller all frontend rendering will
+still go through the core defined process.
 
 If we still have our module activated in _app/etc/modules/Seconddrawer_All.xml_
 then our modified controller should start being used immediately, as seen in

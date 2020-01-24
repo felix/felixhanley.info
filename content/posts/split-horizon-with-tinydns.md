@@ -113,15 +113,3 @@ an IP _prefix_, not a range or a list of hosts. So for a situation where you
 have a number of hosts where the private addresses that are supplied are part
 of a large network block which other hosts belong, the IP prefix is not
 useful.
-
-This is the case with Linode where I have a number of VPSs which have
-non-consecutive private IPs which are in the same network block as other
-customers. I don't want other people to be able to resolve my internal IP
-addresses.
-
-The only way I could think to get around this is to set the source location of
-internal addresses to localhost and then create another instance of tinyDNS
-listen for those. Then the dnscache instances listen on the internal private
-addresses but use the 'localhost' tinyDNS services for _some_ requests.
-
-
