@@ -10,14 +10,14 @@ tags:
 ---
 
 For most languages there is already a keyboard layout you can use to enter the
-unique characters for that language. There is no such thing for Lahu, a language
-that I am trying to learn. This has led me to create my own keyboard mapping to
-enable me to enter the various tone marks required in Lahu.  Previously I had
-not bothered to learn how to do it properly and had been installing this
-keyboard map system wide. This has meant that changes were being lost each time
-the system was updated (often in Archlinux) and became fustrating. So while this
-is how I have done it for the Lahu language, it could easily be adjusted for any
-other special keyboard requirements.
+unique characters for that language. There is no such thing for
+[Lahu](http://lahu.felixhanley.info) This has led me to create my own keyboard
+mapping to enable me to enter the various tone marks required in Lahu.
+Previously I had not bothered to learn how to do it properly and had been
+installing this keyboard map system wide. This has meant that changes were
+being lost each time the system was updated (often in Archlinux) and became
+fustrating. So while this is how I have done it for the Lahu language, it could
+easily be adjusted for any other special keyboard requirements.
 
 ## Create your custom key map
 

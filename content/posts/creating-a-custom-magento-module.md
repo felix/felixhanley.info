@@ -77,8 +77,8 @@ a structure like this:
 Notice that we have used our company name (Seconddrawer) in place of 'Mage' and
 our own module name (SDCustomer) in place of the core 'Customer'. While it is
 not essential to create a different name for 'customer' it really helps avoid
-naming conflicts for routing etc. in the future. I recommend not naming it the
-same. Don\'t add the 'AccountController.php' file yet, we will do that soon!
+naming conflicts for routing etc. in the future. Don't name it the same. Don't
+add the 'AccountController.php' file just yet.
 
 ## Adding additional fields
 
@@ -140,10 +140,10 @@ will be merged (not replaced) with the existing core one.
 ### Create the extra fields
 
 We now need to actually put the fields in the database for Magento to find.
-This only needs to be done once. I place the following code in the root
-index.php file and hit any page within Magento. For development this is fine.
-Once the database fields have been created you should comment out or remove the
-extra code.
+This only needs to be done once. Place the following code in the root index.php
+file and hit any page within Magento. For development this is fine.  Once the
+database fields have been created you should comment out or remove the extra
+code.
 
 (There is a way to get this to work by creating SQL files within your module
 but lets go with this simpler hack!)

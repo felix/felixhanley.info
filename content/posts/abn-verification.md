@@ -1,6 +1,5 @@
 ---
 title: ABN verfication code in Ruby
-kind: article
 date: 2009-01-15
 keywords: ruby ABN Australian business number
 description: Snippet of Ruby code to check an ABN
