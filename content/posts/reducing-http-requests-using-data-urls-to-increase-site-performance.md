@@ -5,6 +5,8 @@ title: Reducing HTTP requests using data URLs to increase performance
 description: How to squeeze a little bit more out of your websites performance
 tags:
 - performance
+aliases:
+- /articles/reducing-http-requests-using-data-urls-to-increase-site-performance/
 ---
 
 There are many ways you can increase the performance of your website. One of

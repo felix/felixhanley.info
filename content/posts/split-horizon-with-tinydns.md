@@ -5,6 +5,8 @@ date: 2011-02-22
 tags:
   - djbdns
   - dns
+aliases:
+- /articles/split-horizon-with-tinydns/
 ---
 
 ## What is 'split horizon' DNS?

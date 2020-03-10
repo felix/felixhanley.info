@@ -9,6 +9,8 @@ tags:
 - rack
 - ruby
 - i18n
+aliases:
+- /articles/rack-locale-setter-middleware/
 ---
 
 # Goal

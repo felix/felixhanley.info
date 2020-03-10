@@ -7,6 +7,8 @@ keywords: optimisation pngcrush optipng
 tags:
 - performance
 - www
+aliases:
+- /articles/optimising-your-images/
 ---
 
 In an effort to reduce your website's page size, whether it be to just provide a

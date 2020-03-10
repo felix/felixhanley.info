@@ -7,6 +7,8 @@ tags:
 - logwatch
 - runit
 - socklog
+aliases:
+- /articles/logwatch-with-runit/
 ---
 
 [Runit](http://smarden.org/runit/) is a great package that provides process

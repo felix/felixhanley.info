@@ -7,6 +7,8 @@ description: A way to easily customise your keyboard in Linux
 tags:
 - lahu
 - keyboard
+aliases:
+- /articles/custom-keyboard-layout-in-xorg/
 ---
 
 For most languages there is already a keyboard layout you can use to enter the

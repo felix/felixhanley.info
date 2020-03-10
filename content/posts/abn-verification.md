@@ -5,6 +5,8 @@ keywords: ruby ABN Australian business number
 description: Snippet of Ruby code to check an ABN
 tags:
 - ruby
+aliases:
+- /articles/abn-verification/
 ---
 
 The Australian Business Number (ABN) is a self-checking series of numbers. The

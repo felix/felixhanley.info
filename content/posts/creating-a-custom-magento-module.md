@@ -6,6 +6,8 @@ description: How to create a basic custom module for Magento Ecommerce using Mag
 tags:
 - magento
 - php
+aliases:
+- /articles/creating-a-custom-megento-module/
 ---
 
 Magento has become one of the best open source commerce systems for the web but

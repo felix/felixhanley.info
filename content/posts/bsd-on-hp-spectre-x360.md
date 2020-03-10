@@ -7,6 +7,8 @@ tags:
 - hardware
 - bsd
 - linux
+aliases:
+- /articles/bsd-on-hp-spectre-x360/
 ---
 
 Current employment contract gives me an HP Spectre x360. It has an Intel i7 and

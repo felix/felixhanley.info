@@ -1,7 +1,7 @@
 pdopts=	-f markdown+yaml_metadata_block+smart --data-dir=.
 src=	$(shell find content static layouts -type f)
 
-all: public public/felix_hanley.pdf
+build: public public/felix_hanley.pdf
 
 public: $(src)
 	hugo -v

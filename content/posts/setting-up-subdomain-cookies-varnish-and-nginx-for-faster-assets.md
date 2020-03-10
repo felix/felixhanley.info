@@ -8,6 +8,8 @@ tags:
 - performance
 - nginx
 - varnish
+aliases:
+- /articles/setting-up-subdomain-cookies-varnish-and-nginx-for-faster-assets/
 ---
 
 Combine subdomains, cookies, Varnish and Nginx to speed up your site.

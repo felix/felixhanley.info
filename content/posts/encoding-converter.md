@@ -7,6 +7,8 @@ tags:
 - encoding
 - javascript
 - tools
+aliases:
+- /articles/encoding-converter/
 ---
 
 Convert between HEX, Base64, ASCII or binary, from and to files.

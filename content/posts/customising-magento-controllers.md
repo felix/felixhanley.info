@@ -6,6 +6,8 @@ description: How to customise a Magento controller using Magento 1.4
 tags:
 - magento
 - php
+aliases:
+- /articles/customising-magento-controllers/
 ---
 
 How to customize a Magento controller. This follows from another note about

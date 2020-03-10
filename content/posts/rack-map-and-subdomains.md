@@ -8,6 +8,8 @@ tags:
 - rack
 - ruby
 - nginx
+aliases:
+- /articles/rack-map-and-subdomains/
 ---
 
 The situation: you are using subdomains for locales such as _en.example.com_

@@ -7,6 +7,8 @@ tags:
 - rails
 - ruby
 - datamapper
+aliases:
+- /articles/rails-role-based-access-with-cancan/
 ---
 
 The basics of a role based access control system using Ruby on Rails,

@@ -6,6 +6,8 @@ description: Changes to Ningx's mime types for serving your own webfonts
 tags:
 - nginx
 - webfonts
+aliases:
+- /articles/webfonts-with-nginx/
 ---
 
 To serve your own webfonts from NginX they need to be served with the correct

@@ -5,6 +5,8 @@ date: 2016-04-28
 tags:
 - money
 - tools
+aliases:
+- /articles/contracting-rate-calculator/
 ---
 
 Calculate a contractor rate from a full-time (5 days a week) salary.

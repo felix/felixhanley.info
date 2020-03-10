@@ -9,6 +9,8 @@ tags:
 - python
 - djbdns
 - dns
+aliases:
+- /articles/tinydnsdyn-dynamic-dns-for-djbdns/
 ---
 
 A simple Python script to enable dynamic DNS services for the tinyDNS DNS
