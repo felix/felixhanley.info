@@ -46,17 +46,17 @@ _References available on request_
 
 **April 2019 -- Present**, Melbourne
 
-An Australian multinational corporation that provides tax, accounting and other
+An Australian multi-national corporation that provides tax, accounting and other
 business services software to small and medium businesses.
 
 As a member of the observability team I am involved in all things related to
-logging, tracing and metrics, working exclusively in Go. This includes
-development of cross-platform tools and internal products to increase developer
+logging, tracing and metrics, working almost exclusively in Go. This includes
+development of cross-platform tools and internal products to increase company
 productivity.
 
-- Development of a distributed tracing service _(Go, Kubernetes, AWS)_
 - Design and development of a centralised log processing pipeline _(Go, AWS)_
-- Implemented various cross-platform utilities to manage internal services _(Go)_
+- Development of a distributed tracing service _(Go, OpenTracing, Kubernetes, AWS)_
+- Strong focus on system performance, reliability and cost efficiency
 
 ## Senior Software Developer, [Seer Security](https://seersec.com.au)
 
