@@ -1,7 +1,7 @@
 ---
 title: Contracting rate calculator
+linktitle: Rate calculator
 description: Calculate a good contractor rate
-date: 2016-04-28
 tags:
 - money
 - tools

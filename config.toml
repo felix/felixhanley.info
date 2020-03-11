@@ -2,6 +2,7 @@ baseurl = "http://felixhanley.info/"
 languageCode = "en-au"
 title = "Felix Hanley"
 relativeURLs = true
+sectionPagesMenu = "main"
 
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 
@@ -15,7 +16,9 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
 unsafe= true
 
 [permalinks]
-posts = "/:year/:month/:title/"
+posts = "/posts/:year/:month/:title/"
+
+[menu]
 
 [[menu.main]]
 name = "PDF Résumé"

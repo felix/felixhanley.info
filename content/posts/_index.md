@@ -1,8 +1,5 @@
 ---
 title: Blog
-menu:
-  main:
-    identifier: blog
-    weight: 30
+weight: 20
 ---
-Not really for public consumption!
+Mainly notes-to-self.

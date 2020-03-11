@@ -1,13 +1,17 @@
 pdopts=	-f markdown+yaml_metadata_block+smart --data-dir=.
-src=	$(shell find content static layouts -type f)
+src=	$(shell find content static layouts resume -type f)
 
-build: public public/felix_hanley.pdf
+.PHONY: build
+build: public resume
 
 public: $(src)
 	hugo -v
 
-public/felix_hanley.pdf: content/work/_index.md public templates/default.html templates/default.latex
-	pandoc $(pdopts) --standalone -o public/felix_hanley.pdf $<
+.PHONY: resume
+resume: public/felix_hanley.pdf
+
+public/felix_hanley.pdf: resume/data.md resume/meta.yaml templates/default.latex
+	pandoc $(pdopts) --standalone --metadata-file=resume/meta.yaml -o $@ $<
 
 .PHONY: deploy
 deploy: all
@@ -16,3 +20,4 @@ deploy: all
 .PHONY: clean
 clean:
 	rm -rf public
+	rm -rf resources

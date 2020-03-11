@@ -6,14 +6,11 @@
 
   <section class="content">
     <article class="content__article">
-        <h1 class="header--title">{{ .Title }}</h1>
-        {{ partial "meta-tags.html" . }}
+      <h1 class="header--title">{{ .Title }}</h1>
+      {{ partial "meta-tags.html" . }}
 
       {{ .Content }}
 
-      <footer class="footer--article">
-        {{ partial "meta-time.html" . }}
-      </footer>
     </article>
   </section>
 

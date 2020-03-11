@@ -1,9 +1,6 @@
 ---
 title: Projects
-menu:
-  main:
-    identifier: projects
-    weight: 30
+weight: 30
 ---
 
 Projects that I am actively working on or have contributed to. You may find

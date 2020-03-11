@@ -5,18 +5,17 @@
 
   <section class="content">
     <article class="content__article">
-      <header class="header header--article">
-        <h1 class="header__title">{{ .Title }}</h1>
-      </header>
+      <h1 class="header__title">{{ .Title }}</h1>
 
       {{ .Content }}
 
     </article>
 
-    <!--
-    <p>See also:</p>
+    {{ with .Data.Pages }}
 
-    {{ range .Data.Pages }}
+    <p>Related content:</p>
+
+    {{ range . }}
     <article>
       <a href="{{ .Permalink }}">{{ .Title }}</a>
       {{ if .Params.tags }}
@@ -31,7 +30,7 @@
       {{ end }}
     </article>
     {{ end }}
-    -->
+    {{ end }}
 
   </section>
 
