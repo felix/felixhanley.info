@@ -24,15 +24,9 @@ synchronises symlinks in your home directory to a central dotfile source.
 : A bit array structure with sub-byte methods like packing and shifting for
 arrays of arbitrary length
 
-[Encoding converter](/projects/encoding-converter/)
-: Convert between HEX, Base64, ASCII or binary, from and to files.
-
 [tinydnsdyn](https://src.userspace.com.au/tinydnsdyn/about/)
 : This is a basic dynamic client and server for the djbdns DNS server 'tinydns'
 by Dan Bernstein. Not maintained.
-
-[timetrackr](https://src.userspace.com.au/timetrackr/about/)
-: A simple CLI time tracking utility. Not maintained.
 
 ## Open Source Contributions
 

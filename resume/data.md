@@ -15,7 +15,7 @@ am available for full-time, part-time, and contract positions with remote work
 being preferred.
 
 All my publicly available source code is available at
-[http://src.userspace.com.au](http://src.userspace.com.au) and
+[https://src.userspace.com.au](https://src.userspace.com.au) and
 mirrored to [GitHub](https://github.com/felix) and
 [GitLab](https://gitlab.com/xilef).
 
