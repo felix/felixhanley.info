@@ -4,6 +4,7 @@ src=	$(shell find content static layouts resume -type f)
 .PHONY: build
 build: public resume
 
+.PHONY: public
 public: $(src)
 	hugo -v
 

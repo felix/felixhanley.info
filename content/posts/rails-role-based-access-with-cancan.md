@@ -34,11 +34,12 @@ permissions available for each of their roles is combined.
 
 So we will be able to access a user's permissions (using DataMapper) like so:
 
-    #!ruby
-    u = User.get(1)
-    u.roles.permissions.each {|perm|
-      #...
-    }
+```ruby
+u = User.get(1)
+u.roles.permissions.each {|perm|
+  #...
+}
+```
 
 ## Models
 
@@ -48,51 +49,52 @@ your application. This is not covered here.
 These are the models that we will eventually have and their corresponding
 relationships. These examples use DataMapper.
 
-    #!ruby
-    class User
-      include DataMapper::Resource
+```ruby
+class User
+  include DataMapper::Resource
 
-      # devise setup
-      devise :database_authenticatable, :registerable,
-        :recoverable, :rememberable, :trackable, :validatable
+  # devise setup
+  devise :database_authenticatable, :registerable,
+    :recoverable, :rememberable, :trackable, :validatable
 
 
-      property :id, Serial
-      property :email, String, :required => true, :unique => true, :format => :email_address
-      property :active, Boolean
-      # ...
+  property :id, Serial
+  property :email, String, :required => true, :unique => true, :format => :email_address
+  property :active, Boolean
+  # ...
 
-      has n, :roles, :through => Resource
-      # ...
+  has n, :roles, :through => Resource
+  # ...
 
-      # for assignment of roles
-      def role_ids=(ids)
-        self.roles.clear
-        ids.delete_if{|i| i.empty?}.each do |id|
-          self.roles << Role.get(id)
-        end
-      end
-
-      def has_role?(role_sym)
-        roles.any? { |r| r.name.underscore.to_sym == role_sym }
-      end
-
-      def role?(role)
-        return !!self.roles.first(:name => role.to_s.camelize)
-      end
+  # for assignment of roles
+  def role_ids=(ids)
+    self.roles.clear
+    ids.delete_if{|i| i.empty?}.each do |id|
+      self.roles << Role.get(id)
     end
+  end
 
-    class Role
-      include DataMapper::Resource
+  def has_role?(role_sym)
+    roles.any? { |r| r.name.underscore.to_sym == role_sym }
+  end
 
-      property :id, Serial
-      property :name, String
-      property :description, Text
-      # ...
+  def role?(role)
+    return !!self.roles.first(:name => role.to_s.camelize)
+  end
+end
 
-      has n, :users, :through => Resource
-      has n, :permissions, :through => Resource
-    end
+class Role
+  include DataMapper::Resource
+
+  property :id, Serial
+  property :name, String
+  property :description, Text
+  # ...
+
+  has n, :users, :through => Resource
+  has n, :permissions, :through => Resource
+end
+```
 
 We are using the anonymous join model _Resource_ to link users and roles. We
 could quite easily make an actual model to hold extra information (for a
@@ -113,59 +115,60 @@ We can then put the permissions in a static file (YAML) in this case and have it
 read by the app when needed. CanCan's 'ability' model is a good place to do
 this:
 
-    #!ruby
-    class Ability
-      include CanCan::Ability
+```ruby
+class Ability
+  include CanCan::Ability
 
-      @@permissions = nil
+  @@permissions = nil
 
-      def initialize(user)
-        self.clear_aliased_actions
+  def initialize(user)
+    self.clear_aliased_actions
 
-        alias_action :index, :show, :to => :read
-        alias_action :new,          :to => :create
-        alias_action :edit,         :to => :update
-        alias_action :destroy,      :to => :delete
+    alias_action :index, :show, :to => :read
+    alias_action :new,          :to => :create
+    alias_action :edit,         :to => :update
+    alias_action :destroy,      :to => :delete
 
-        user ||= User.new
+    user ||= User.new
 
-        # super user can do everything
-        if user.role? :super
-          can :manage, :all
-        else
-          # edit update self
-          can :read, User do |resource|
-            resource == user
-          end
-          can :update, User do |resource|
-            resource == user
-          end
-          # enables signup
-          can :create, User
+    # super user can do everything
+    if user.role? :super
+      can :manage, :all
+    else
+      # edit update self
+      can :read, User do |resource|
+        resource == user
+      end
+      can :update, User do |resource|
+        resource == user
+      end
+      # enables signup
+      can :create, User
 
-          user.roles.each do |role|
-            if role.permissions
-              role.permissions.each do |perm_name|
-                unless Ability.permissions[perm_name].nil?
-                  can(Ability.permissions[perm_name]['action'].to_sym, Ability.permissions[perm_name]['subject_class'].constantize) do |subject|
-                    Ability.permissions[perm_name]['subject_id'].nil? ||
-                      Ability.permissions[perm_name]['subject_id'] == subject.id
-                  end
-                end
+      user.roles.each do |role|
+        if role.permissions
+          role.permissions.each do |perm_name|
+            unless Ability.permissions[perm_name].nil?
+              can(Ability.permissions[perm_name]['action'].to_sym, Ability.permissions[perm_name]['subject_class'].constantize) do |subject|
+                Ability.permissions[perm_name]['subject_id'].nil? ||
+                  Ability.permissions[perm_name]['subject_id'] == subject.id
               end
             end
           end
         end
       end
-
-      def self.permissions
-        @@permissions ||= Ability.load_permissions
-      end
-
-      def self.load_permissions(file='permissions.yml')
-        YAML.load_file("#{::Rails.root.to_s}/config/#{file}")
-      end
     end
+  end
+
+  def self.permissions
+    @@permissions ||= Ability.load_permissions
+  end
+
+  def self.load_permissions(file='permissions.yml')
+    YAML.load_file("#{::Rails.root.to_s}/config/#{file}")
+  end
+end
+```
 
 This logic is up to you and your project but the above basic implementation does
 the following:
@@ -184,48 +187,49 @@ documentation has many examples.
 We can then define a few roles to seed the database with for use later. Put
 this in db/seed.rb:
 
-    #!ruby
-    super_user = User.create(:email => 'super@example.com',
-                             :firstname => 'Super',
-                             :surname => 'User',
-                             :password => 'password',
-                             :password_confirmation => 'password',
-                             :active => true,
-                             :date => Time.now)
-    admin_user = User.create(:email => 'admin@example.com',
-                             :firstname => 'Admin',
-                             :surname => 'User',
-                             :password => 'password',
-                             :password_confirmation => 'password',
-                             :active => true,
-                             :date => Time.now)
-    user = User.create(:email => 'user@example.com',
-                       :firstname => 'User',
-                       :surname => 'User',
-                       :password => 'password',
-                       :password_confirmation => 'password',
-                       :active => true,
-                       :date => Time.now)
+```ruby
+super_user = User.create(:email => 'super@example.com',
+                         :firstname => 'Super',
+                         :surname => 'User',
+                         :password => 'password',
+                         :password_confirmation => 'password',
+                         :active => true,
+                         :date => Time.now)
+admin_user = User.create(:email => 'admin@example.com',
+                         :firstname => 'Admin',
+                         :surname => 'User',
+                         :password => 'password',
+                         :password_confirmation => 'password',
+                         :active => true,
+                         :date => Time.now)
+user = User.create(:email => 'user@example.com',
+                   :firstname => 'User',
+                   :surname => 'User',
+                   :password => 'password',
+                   :password_confirmation => 'password',
+                   :active => true,
+                   :date => Time.now)
 
-    # create roles
-    super_role = Role.create(:name => 'super', :description => 'Super user')
-    admin_role = Role.create(:name => 'admin', :description => 'Admin user')
-    user_role  = Role.create(:name => 'user', :description => 'Normal user')
+# create roles
+super_role = Role.create(:name => 'super', :description => 'Super user')
+admin_role = Role.create(:name => 'admin', :description => 'Admin user')
+user_role  = Role.create(:name => 'user', :description => 'Normal user')
 
-    # get our permissions
-    permissions = YAML.load_file("#{::Rails.root.to_s}/config/permissions.yml")
+# get our permissions
+permissions = YAML.load_file("#{::Rails.root.to_s}/config/permissions.yml")
 
-    # assign permissions
-    admin_role.permissions = permissions.collect{|n,p| n}
-    admin_role.save
+# assign permissions
+admin_role.permissions = permissions.collect{|n,p| n}
+admin_role.save
 
-    # assign roles
-    super_user.roles << super_role
-    super_user.save
-    admin_user.roles << admin_role
-    admin_user.save
-    user.roles << user_role
-    user.save
+# assign roles
+super_user.roles << super_role
+super_user.save
+admin_user.roles << admin_role
+admin_user.save
+user.roles << user_role
+user.save
+```
 
 The actual permissions seeded will be entirely up to you and your application
 but this sets up a few basics for one model.
@@ -238,23 +242,24 @@ much like the following:
 
 This can be created in the view something like this:
 
-    #!ruby
-    = form_tag({:controller => 'roles', :action => 'report'}, :method => 'post') do
-      %table
-        %tr
-          %th= Role.human_attribute_name('permissions')
-          - @roles.sort.each do |role|
-            %th
-              = role.name
-              = hidden_field_tag "permissions[#{role.name}][]", ""
-        - Ability.permissions.each do |pname, pdetails|
-          %tr
-            %td= pdetails['description']
-            - @roles.sort.each do |role|
-              %td
-                = check_box_tag "permissions[#{role.name}][]", pname, role.permissions.include?(pname)
-      %fieldset.actions
-        = submit_tag 'Save'
+```ruby
+= form_tag({:controller => 'roles', :action => 'report'}, :method => 'post') do
+  %table
+    %tr
+      %th= Role.human_attribute_name('permissions')
+      - @roles.sort.each do |role|
+        %th
+          = role.name
+          = hidden_field_tag "permissions[#{role.name}][]", ""
+    - Ability.permissions.each do |pname, pdetails|
+      %tr
+        %td= pdetails['description']
+        - @roles.sort.each do |role|
+          %td
+            = check_box_tag "permissions[#{role.name}][]", pname, role.permissions.include?(pname)
+  %fieldset.actions
+    = submit_tag 'Save'
+```
 
 ## Dynamic Permissions
 

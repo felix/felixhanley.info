@@ -33,7 +33,7 @@ the 'params' array for Sinatra so a simple Rack middleware would do this well.
 So here it is:
 
 
-~~~ ruby
+``` ruby
 module Rack
   class LocaleSetter
     def initialize(app)
@@ -52,7 +52,7 @@ module Rack
     end
   end
 end
-~~~
+```
 
 Due to many peoples' habit of putting 'www' at the start of the domain, this
 should account for _en.example.com_ **and** _www.en.example.com_. It also

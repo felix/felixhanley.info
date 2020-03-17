@@ -6,11 +6,23 @@ sectionPagesMenu = "main"
 
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    style = "monokai"
+    tabWidth = 4
+
 [author]
 name = "Felix Hanley"
 
 [frontmatter]
-lastmod = ["lastmod", ":fileModTime", ":default"]
+lastmod = ["lastmod", ":default"]
 
 [markup.goldmark.renderer]
 unsafe= true

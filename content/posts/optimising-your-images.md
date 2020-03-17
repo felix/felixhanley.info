@@ -57,8 +57,9 @@ those colours, while using identical codes, in PNG files.
 
 The command line to remove all colour profiles from your PNG is as follows:
 
-    pngcrush -rem gAMA -rem cHRM -rem iCCP -rem sRGB infile.png outfile.png
-
+```shell
+pngcrush -rem gAMA -rem cHRM -rem iCCP -rem sRGB infile.png outfile.png
+```
 
 ## Conclusion
 

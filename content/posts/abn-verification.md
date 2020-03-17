@@ -12,7 +12,7 @@ aliases:
 The Australian Business Number (ABN) is a self-checking series of numbers. The
 following Ruby snippet can be used to verify an ABN.
 
-~~~ruby
+```ruby
 class ABN
   @@weight = Array[10,1,3,5,7,89,11,13,15,17,19]
 
@@ -35,6 +35,6 @@ class ABN
     sum.remainder(89) == 0
   end
 end
-~~~
+```
 
 *[ABN]: Australian Business Number

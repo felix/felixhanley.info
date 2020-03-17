@@ -66,15 +66,19 @@ The cons include the following:
 
 So in your CSS file, instead of this:
 
-    #foo {
-      background: transparent url(/images/bar.png) top left no-repeat;
-    }
+```css
+#foo {
+    background: transparent url(/images/bar.png) top left no-repeat;
+}
+```
 
 you would have this:
 
-    #foo {
-      background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kMEgYuCMdUaP4AAAAZdEVYd') top left no-repeat;
-    }
+```css
+#foo {
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kMEgYuCMdUaP4AAAAZdEVYd') top left no-repeat;
+}
+```
 
 Now this doesn't make your CSS file any nicer looking but if you happen to use
 a number of small images (like list/bullet images) then this technique can
@@ -84,19 +88,22 @@ Care must be taken, however. You may need to include conditional comments to
 load a legacy style sheet (for CSS embedded data URLs) for certain browsers,
 overriding the valid CSS properties. For example:
 
-    <link rel="stylesheet" type="text/css" href="/css/default.css" />
-    <!--[if lte IE 7]>
-    <link rel="stylesheet" type="text/css" href="/css/crappy-browsers.css" />
-    <![endif]-->
+```html
+<link rel="stylesheet" type="text/css" href="/css/default.css" />
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="/css/crappy-browsers.css" />
+<![endif]-->
+```
 
 ## Online tools
 
 There are many around, here is another one:
 
+```html
 <form id="data-url" enctype="multipart/form-data" action="/data-urls/encode/" method="post">
-File to encode:<input name="origfile" type="file" />
-<input id="data-url-submit" type="submit" value="Encode File" disabled="disabled" />
-<span id="data-url-loading"><img src="/images/loader.gif" alt="loading" /></span>
+    File to encode:<input name="origfile" type="file" />
+    <input id="data-url-submit" type="submit" value="Encode File" disabled="disabled" />
+    <span id="data-url-loading"><img src="/images/loader.gif" alt="loading" /></span>
 </form>
 <div id="data-url-response"></div>
 <script type="text/javascript">
@@ -117,3 +124,4 @@ $(document).ready(function(){
     });
   });
 </script>
+```

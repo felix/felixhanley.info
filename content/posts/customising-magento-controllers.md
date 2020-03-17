@@ -45,37 +45,39 @@ performed in the account controller\'s _\_welcomeCustomer_ function.
 Firstly, strip out all functions except the _\_welcomeCustomer_ function and make it look like
 this:
 
-    <?php
+```php
+<?php
 
-    require_once 'Mage/Customer/controllers/AccountController.php';
+require_once 'Mage/Customer/controllers/AccountController.php';
 
-    class Seconddrawer_SDCustomer_AccountController extends Mage_Customer_AccountController
-    {
-      public function preDispatch()
-      {
-        parent::preDispatch();
-        $this->getRequest()->setRouteName('customer');
-      }
+class Seconddrawer_SDCustomer_AccountController extends Mage_Customer_AccountController
+{
+  public function preDispatch()
+  {
+    parent::preDispatch();
+    $this->getRequest()->setRouteName('customer');
+  }
 
 
-      protected function _welcomeCustomer(Mage_Customer_Model_Customer $customer, $isJustConfirmed = false)
-      {
-        $this->_getSession()->addSuccess($this->__('Thank you for registering with %s', Mage::app()->getStore()->getName()));
+  protected function _welcomeCustomer(Mage_Customer_Model_Customer $customer, $isJustConfirmed = false)
+  {
+    $this->_getSession()->addSuccess($this->__('Thank you for registering with %s', Mage::app()->getStore()->getName()));
 
-        /* don't send any email
-        $customer->sendNewAccountEmail($isJustConfirmed ? 'confirmed' : 'registered');
-        */
+    /* don't send any email
+    $customer->sendNewAccountEmail($isJustConfirmed ? 'confirmed' : 'registered');
+    */
 
-        /* but log it */
-        error_log('Email was NOT sent');
+    /* but log it */
+    error_log('Email was NOT sent');
 
-        $successUrl = Mage::getUrl('*/*/index', array('_secure'=>true));
-        if ($this->_getSession()->getBeforeAuthUrl()) {
-          $successUrl = $this->_getSession()->getBeforeAuthUrl(true);
-        }
-        return $successUrl;
-      }
+    $successUrl = Mage::getUrl('*/*/index', array('_secure'=>true));
+    if ($this->_getSession()->getBeforeAuthUrl()) {
+      $successUrl = $this->_getSession()->getBeforeAuthUrl(true);
     }
+    return $successUrl;
+  }
+}
+```
 
 Note that our class name follows the same naming scheme as our module and that
 it extends the Mage controller (not the class the the core controller itself
@@ -105,48 +107,50 @@ routing to tell Magento to direct calls to our own controller.
 
 We adjust our module's config file to looke like this:
 
-    <?xml version="1.0"?>
-    <config>
-      <modules>
-        <Seconddrawer_SDCustomer>
-          <version>0.2.0</version>
-        </Seconddrawer_SDCustomer>
-      </modules>
+```xml
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Seconddrawer_SDCustomer>
+      <version>0.2.0</version>
+    </Seconddrawer_SDCustomer>
+  </modules>
 
-      <global>
-        <fieldsets>
-          <customer_account>
+  <global>
+    <fieldsets>
+      <customer_account>
 
-          <!-- snip -->
+      <!-- snip -->
 
-          </customer_account>
-        </fieldsets>
+      </customer_account>
+    </fieldsets>
 
-        <routers>
-          <customer>
-            <rewrite>
-              <account>
-                <to>Seconddrawer_SDCustomer/account</to>
-                <override_actions>true</override_actions>
-              </account>
-            </rewrite>
-          </customer>
-        </routers>
-      </global>
+    <routers>
+      <customer>
+        <rewrite>
+          <account>
+            <to>Seconddrawer_SDCustomer/account</to>
+            <override_actions>true</override_actions>
+          </account>
+        </rewrite>
+      </customer>
+    </routers>
+  </global>
 
-      <frontend>
-        <routers>
-          <sdcustomer>
-            <use>standard</use>
-            <args>
-              <module>Seconddrawer_SDCustomer</module>
-              <frontName>sdcustomer</frontName>
-            </args>
-          </sdustomer>
-        </routers>
-      </frontend>
+  <frontend>
+    <routers>
+      <sdcustomer>
+        <use>standard</use>
+        <args>
+          <module>Seconddrawer_SDCustomer</module>
+          <frontName>sdcustomer</frontName>
+        </args>
+      </sdustomer>
+    </routers>
+  </frontend>
 
-    </config>
+</config>
+```
 
 The code from the [previous post](/posts/creating-a-custom-magento-module/) has
 been removed for clarity. What you will notice is that we have added a section

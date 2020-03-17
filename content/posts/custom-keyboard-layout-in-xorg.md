@@ -29,21 +29,23 @@ of how a keyboard map can be defined. You can either define an entier map
 then adjust the bits you want changed. This is what I did for the Lahu
 keyboard. All I wanted to change were three keys which was six characters.
 
-    partial default alphanumeric_keys
-    xkb_symbols "basic" {
+```xorg
+partial default alphanumeric_keys
+xkb_symbols "basic" {
 
-        // adds the Lahu tone characters to the basic keyboard
+    // adds the Lahu tone characters to the basic keyboard
 
-        include "latin"
+    include "latin"
 
-        name[Group1]= "Lahu";
+    name[Group1]= "Lahu";
 
-        key <AD11> { [ UF1E7,  U02C6,  bracketleft,   braceleft  ] };
-        key <AD12> { [ U02EC,  U02C7,  bracketright,  braceright ] };
-        key <BKSL> { [ U02CD,  U02C9,  backslash,     brokenbar  ] };
+    key <AD11> { [ UF1E7,  U02C6,  bracketleft,   braceleft  ] };
+    key <AD12> { [ U02EC,  U02C7,  bracketright,  braceright ] };
+    key <BKSL> { [ U02CD,  U02C9,  backslash,     brokenbar  ] };
 
-        include "level3(ralt_switch_multikey)"
-    };
+    include "level3(ralt_switch_multikey)"
+};
+```
 
 Notice I declare this rule file as a 'partial' and the areas it will affect,
 'default' and 'alphanumeric_keys'. Further down I include the latin rule file
@@ -74,7 +76,9 @@ where xkbcomp will expect to find the rule file.
 Then it is simply a matter of constructing the command to load and compile your
 rules file. My command is:
 
-    setxkbmap -I$HOME/.xkb -option grp:shifts_toggle,grp_led:scroll "us,th,lah" -print | xkbcomp -I$HOME/.xkb - $DISPLAY
+```shell
+setxkbmap -I$HOME/.xkb -option grp:shifts_toggle,grp_led:scroll "us,th,lah" -print | xkbcomp -I$HOME/.xkb - $DISPLAY
+```
 
 There are two parts to this, the first part sets the options for the X session
 by defining the two shift keys pressed together as the keyboard map toggle

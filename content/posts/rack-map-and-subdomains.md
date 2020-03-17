@@ -16,23 +16,25 @@ The situation: you are using subdomains for locales such as _en.example.com_
 and _th.example.com_. Your app is Rack based and is behind Nginx with a
 'wildcard' *server_name* directive such as:
 
-    server {
-      server_name .example.com;
-      ...
-    }
+```nginx
+server {
+  server_name .example.com;
+  ...
+}
+```
 
 You are also using Rack's map abilities to have two different applications
 mounted on different paths on your domain. This could be done like this in your
 _config.ru_ file:
 
 ```ruby
-    map '/users' do
-      run Example::Admin
-    end
+map '/users' do
+  run Example::Admin
+end
 
-    map '/' do
-      run Example::Public
-    end
+map '/' do
+  run Example::Public
+end
 ```
 
 
@@ -51,20 +53,20 @@ to fix this is to simply set the environment's' SERVER_NAME' to equal
 your map calls:
 
 ```ruby
-    module Rack
-      class Blah
-        def initialize app
-          @app = app
-        end
-
-        def call env
-          env['SERVER_NAME'] = env['HTTP_HOST']
-          @app.call env
-        end
-      end
+module Rack
+  class Blah
+    def initialize app
+      @app = app
     end
-    use Rack::Blah
 
-    map '/users' do
-    ...etc.
+    def call env
+      env['SERVER_NAME'] = env['HTTP_HOST']
+      @app.call env
+    end
+  end
+end
+use Rack::Blah
+
+map '/users' do
+...etc.
 ```

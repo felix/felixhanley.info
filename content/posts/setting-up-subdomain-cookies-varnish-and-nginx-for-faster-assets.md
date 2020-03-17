@@ -20,39 +20,41 @@ Firstly, you need to set up a separate subdomain to serve your static,
 cookie-less content. Let's say http://static.example.com/. This requires a
 section in your Nginx server config as follows:
 
-    server {
-      server_name example.com www.example.com;
-      root   /var/www/.../example.com/htdocs/;
+```nginx
+server {
+    server_name example.com www.example.com;
+    root   /var/www/.../example.com/htdocs/;
 
-      # lets add www
-      if ($host !~* "^www\.") {
+    # lets add www
+    if ($host !~* "^www\.") {
         rewrite  ^/(.*)$  http://www.$host/$1  permanent;
-      }
+    }
 
-      # serve static files directly
-      if ($request_uri ~* "\.(jpe?g|gif|css|png|js|ico|pdf|zip|gz)$") {
+    # serve static files directly
+    if ($request_uri ~* "\.(jpe?g|gif|css|png|js|ico|pdf|zip|gz)$") {
         expires 30d;
         break;
-      }
+    }
 
-      #... other stuff here ...
+    #... other stuff here ...
 
     }
 
     server {
-      server_name static.example.com;
+        server_name static.example.com;
 
-      if ($request_uri !~* "\.(jpe?g|gif|css|png|js|ico|pdf|zip|gz)$") {
-        rewrite ^(.*) http://www.example.com$1 permanent;
-        break;
-      }
+        if ($request_uri !~* "\.(jpe?g|gif|css|png|js|ico|pdf|zip|gz)$") {
+            rewrite ^(.*) http://www.example.com$1 permanent;
+            break;
+        }
 
-      location / {
-        root   /var/www/.../example.com/htdocs/;
-        expires max;
-        add_header Cache-Control private;
-      }
-    }
+        location / {
+            root   /var/www/.../example.com/htdocs/;
+            expires max;
+            add_header Cache-Control private;
+        }
+}
+```
 
 Some of the important points to notice:
 

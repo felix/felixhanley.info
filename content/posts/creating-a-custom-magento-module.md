@@ -97,37 +97,39 @@ remove all the XML nodes that don't interest us, adding additional ones also.
 The resulting _app/code/local/Seconddrawer/SDCustomer/etc/config.xml_ file will
 look something like this:
 
-    <?xml version="1.0"?>
-    <config>
-      <modules>
-        <Seconddrawer_SDCustomer>
-          <version>0.1.0</version>
-        </Seconddrawer_SDCustomer>
-      </modules>
+```xml
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Seconddrawer_SDCustomer>
+      <version>0.1.0</version>
+    </Seconddrawer_SDCustomer>
+  </modules>
 
-      <global>
-        <fieldsets>
-          <customer_account>
-            <prefix><create>1</create><update>1</update><name>1</name></prefix>
-            <firstname><create>1</create><update>1</update><name>1</name></firstname>
-            <middlename><create>1</create><update>1</update><name>1</name></middlename>
-            <lastname><create>1</create><update>1</update><name>1</name></lastname>
-            <suffix><create>1</create><update>1</update><name>1</name></suffix>
-            <email><create>1</create><update>1</update></email>
-            <password><create>1</create></password>
-            <confirmation><create>1</create></confirmation>
-            <dob><create>1</create><update>1</update></dob>
-            <taxvat><create>1</create><update>1</update></taxvat>
+  <global>
+    <fieldsets>
+      <customer_account>
+        <prefix><create>1</create><update>1</update><name>1</name></prefix>
+        <firstname><create>1</create><update>1</update><name>1</name></firstname>
+        <middlename><create>1</create><update>1</update><name>1</name></middlename>
+        <lastname><create>1</create><update>1</update><name>1</name></lastname>
+        <suffix><create>1</create><update>1</update><name>1</name></suffix>
+        <email><create>1</create><update>1</update></email>
+        <password><create>1</create></password>
+        <confirmation><create>1</create></confirmation>
+        <dob><create>1</create><update>1</update></dob>
+        <taxvat><create>1</create><update>1</update></taxvat>
 
-            <customfield1><create>1</create><update>1</update></customfield1>
-            <customfield2><create>1</create><update>1</update></customfield2>
-            <customfield3><create>1</create><update>1</update></customfield3>
-            <customfield4><create>1</create><update>1</update></customfield4>
+        <customfield1><create>1</create><update>1</update></customfield1>
+        <customfield2><create>1</create><update>1</update></customfield2>
+        <customfield3><create>1</create><update>1</update></customfield3>
+        <customfield4><create>1</create><update>1</update></customfield4>
 
-          </customer_account>
-        </fieldsets>
-      </global>
-    </config>
+      </customer_account>
+    </fieldsets>
+  </global>
+</config>
+```
 
 The important points to notice here are the section at the top under 'modules'.
 Here is where we define the module name and version. The module name must match
@@ -152,15 +154,17 @@ but lets go with this simpler hack!)
 
 So we put this at the end of _/index.php_:
 
-    <?php
+```php
+<?php
 
-    /* right at the end of the file */
+/* right at the end of the file */
 
-    $setup = new Mage_Eav_Model_Entity_Setup('core_setup');
-    $setup->addAttribute('1', 'Custom Field 1', array('label' => 'Customer Field 1', 'type' => 'int', 'input' => 'select', 'required' => false, 'source' => 'eav/entity_attribute_source_boolean'));
-    $setup->addAttribute('1', 'Custom Field 2', array('label' => 'Custom Field 2', 'type' => 'text', 'required' => false));
-    $setup->addAttribute('1', 'Custom Field 3', array('label' => 'Custom Field 3', 'type' => 'text', 'required' => false));
-    $setup->addAttribute('1', 'Custom Field 4', array('label' => 'Custom Field 4', 'type' => 'text', 'required' => false));
+$setup = new Mage_Eav_Model_Entity_Setup('core_setup');
+$setup->addAttribute('1', 'Custom Field 1', array('label' => 'Customer Field 1', 'type' => 'int', 'input' => 'select', 'required' => false, 'source' => 'eav/entity_attribute_source_boolean'));
+$setup->addAttribute('1', 'Custom Field 2', array('label' => 'Custom Field 2', 'type' => 'text', 'required' => false));
+$setup->addAttribute('1', 'Custom Field 3', array('label' => 'Custom Field 3', 'type' => 'text', 'required' => false));
+$setup->addAttribute('1', 'Custom Field 4', array('label' => 'Custom Field 4', 'type' => 'text', 'required' => false));
+```
 
 You can read the documentation on the parameters for 'addAttribute' to see what
 else can be included. **Remember to comment or delete this code once it has
@@ -173,15 +177,17 @@ database but the module has not yet been loaded. To do this we need to tell
 Magento about our module. We add an extra XML file in the _app/etc/modules_
 folder called Seconddrawer_All.xml:
 
-    <?xml version="1.0"?>
-    <config>
-      <modules>
-        <Seconddrawer_SDCustomer>
-          <active>true</active>
-          <codePool>local</codePool>
-        </Seconddrawer_SDCustomer>
-      </modules>
-    </config>
+```xml
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Seconddrawer_SDCustomer>
+      <active>true</active>
+      <codePool>local</codePool>
+    </Seconddrawer_SDCustomer>
+  </modules>
+</config>
+```
 
 The naming scheme needs to be exactly the same as the module\'s config file we
 added earlier. It tells Magento where to find the module (by the naming scheme

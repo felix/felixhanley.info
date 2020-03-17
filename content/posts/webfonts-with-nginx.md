@@ -14,9 +14,11 @@ To serve your own webfonts from NginX they need to be served with the correct
 content-type.  Add the following to my mime.types file in the Nginx config
 directory:
 
-    application/x-font-ttf                ttf;
-    font/opentype                         otf;
-    application/vnd.ms-fontobject         eot;
+```nginx
+application/x-font-ttf                ttf;
+font/opentype                         otf;
+application/vnd.ms-fontobject         eot;
+```
 
 and reload Nginx. Now they are served correctly instead of
 'application/octet-stream'.

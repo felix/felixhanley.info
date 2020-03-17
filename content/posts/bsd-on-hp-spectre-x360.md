@@ -38,8 +38,10 @@ It has a USB dongle for ethernet which worked without issue. For wireless the iw
 driver seems to be fine with the correct firmware loaded in
 `/boot/loader.conf`, though test it first:
 
-    if_iwm_load="YES"
-    iwm7265fw_load="YES"
+```shell
+if_iwm_load="YES"
+iwm7265fw_load="YES"
+```
 
 ## Graphics
 
@@ -53,7 +55,9 @@ run quite well considering it is the bleeding edge.
 The ACPI seems to follow a load path for Windows 2012 or 2013 so these need to
 be disabled in your `/boot/loader.conf`:
 
-    hw.acpi.remove_interface="Windows 2012,Windows 2013"
+```shell
+hw.acpi.remove_interface="Windows 2012,Windows 2013"
+```
 
 I then had to reboot twice to get the analog audio device to be recognised.
 
@@ -66,7 +70,9 @@ The equivalent in Debian was an addition to the kernel parameter in Grub:
 
 Enable synaptics support in `/boot/loader.conf`:
 
-    hw.psm.synaptics_support="1"
+```shell
+hw.psm.synaptics_support="1"
+```
 
 The touch pad is too big so I get palm-ing issues which are annoying. Synclient
 cannot be used with this new driver yet so will need another solution.

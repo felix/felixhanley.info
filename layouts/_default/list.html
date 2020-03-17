@@ -20,8 +20,8 @@
       <a href="{{ .Permalink }}">{{ .Title }}</a>
       {{ if .Params.tags }}
       <dl class="meta">
-        <dt class="tags">Tagged</dt>
-        <dd class="tags">
+        <dt class="meta__label meta__label--tag">Tagged</dt>
+        <dd class="meta__data meta__data--tag">
         {{ range .Params.tags }}
         <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
         {{ end }}
