@@ -14,7 +14,7 @@ public/felix_hanley.pdf: resume/data.md resume/meta.yaml templates/default.latex
 	pandoc $(pdopts) --standalone --metadata-file=resume/meta.yaml -o $@ $<
 
 .PHONY: deploy
-deploy: all
+deploy: build
 	rsync -Prtc --delete public/ felixhanley.info@silver.userspace.com.au:htdocs/
 
 .PHONY: clean
