@@ -1,38 +1,25 @@
 {{ partial "head.html" . }}
 <body>
 
-  {{ partial "body-header.html" . }}
+  {{ partial "nav.html" . }}
 
-  <section class="content">
+  <main class="content">
     <article class="content__article">
-      <h1 class="header__title">{{ .Title }}</h1>
-
+      {{ partial "title.html" . }}
+      {{ partial "meta.html" . }}
       {{ .Content }}
-
     </article>
 
     {{ with .Data.Pages }}
-
-    <p>Related content:</p>
-
     {{ range . }}
     <article>
       <a href="{{ .Permalink }}">{{ .Title }}</a>
-      {{ if .Params.tags }}
-      <dl class="meta">
-        <dt class="meta__label meta__label--tag">Tagged</dt>
-        <dd class="meta__data meta__data--tag">
-        {{ range .Params.tags }}
-        <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
-        {{ end }}
-        </dd>
-      </dl>
-      {{ end }}
+      {{ partial "meta.html" . }}
     </article>
     {{ end }}
     {{ end }}
 
-  </section>
+  </main>
 
   {{ partial "footer.html" . }}
 

@@ -1,7 +1,10 @@
 ---
 title: Contracting rate calculator
-linktitle: Rate calculator
+linktitle: Contract Rate
 description: Calculate a good contractor rate
+menu:
+  main:
+    parent: tools
 tags:
 - money
 - tools
@@ -93,11 +96,7 @@ var calculate = function () {
 }
 Array.prototype.forEach.call(document.querySelectorAll('.param'), function (e) {
   e.addEventListener('change', calculate)
-  e.addEventListener('keypress', function (e) {
-    if (e.which === 13 || e.keyCode === 13) {
-      calculate()
-    }
-  })
+  e.addEventListener('input', calculate)
 })
 calculate()
 </script>

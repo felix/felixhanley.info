@@ -2,16 +2,16 @@
 
 <body class="error">
 
-    {{ partial "body-header.html" . }}
+  {{ partial "nav.html" . }}
 
-    <section class="content">
+  <section class="content">
 
-        <h1>Page not found</h1>
+    <h1>Page not found</h1>
 
-        <p>You find yourself at the end of a short dark passage. <a href="{{ .Site.BaseURL }}">Return to the brightly lit cavern</a> and continue your journey.</p>
-    </section>
+    <p>You find yourself at the end of a short dark passage. <a href="{{ .Site.BaseURL }}">Return to the brightly lit cavern</a> and continue your journey.</p>
+  </section>
 
-    {{ partial "footer.html" . }}
+  {{ partial "footer.html" . }}
 
 </body>
 </html>

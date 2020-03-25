@@ -22,7 +22,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
 name = "Felix Hanley"
 
 [frontmatter]
-lastmod = ["lastmod", ":default"]
+lastmod = ["lastmod", "publishDate"]
 
 [markup.goldmark.renderer]
 unsafe= true

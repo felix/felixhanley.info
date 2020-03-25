@@ -25,7 +25,7 @@ keyboard will disconnect and require a _hard_ reconnect using the USB cable.
 The fix found requires re-programming the keyboard to appear to be an 'Apple
 Magic' USB keyboard. Enter the following:
 
-1. Press & hold `Fn` + `Alt` + `p` for 3 seconds (several keys will light up red and remain on).
+1. Press & hold <kbd>Fn</kbd> + <kbd>Alt</kbd> + <kbd>p</kbd> for 3 seconds (several keys will light up red and remain on).
 2. Type `05aC024f` (or for ISO layout `05ac0250`).
 3. Unplug the keyboard to restart it.
 
@@ -33,5 +33,5 @@ The code entered (`024f`) sets the VID and PID to an Apple authorised USB keyboa
 
 To restore the original VID and PID codes, perform the following to reset to factory defaults:
 
-1. Press and hold `left win` + `right win` for 3s.
+1. Press and hold <kbd>left win</kbd> + <kbd>right win</kbd> for 3s.
 2. Unplug the keyboard to restart it.
