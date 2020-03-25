@@ -83,7 +83,7 @@ kbd {
 }
 .tag {
 	display: inline-block;
-	padding: 3px;
+	padding: 3px 5px;
 	line-height: 1;
 	font-family: sans-serif;
 	border: 1px solid #ddd !important;
@@ -120,11 +120,12 @@ h2 {
 .content > header {
 	margin-bottom: 1em;
 }
-.content .list {
+.list--articles {
 	max-width: 100%;
 }
-.content p,
-.content .list article {
+.list--articles article {
+}
+.content p {
 	max-width: 40em;
 }
 
@@ -178,28 +179,31 @@ h2 {
 }
 
 .menu__toggle {
-	display: block;
-	position: fixed;
-	top: 1.5rem;
-	right: 2rem;
-	width: 28px;
-	height: 27px;
-	margin: 0;
-	padding: 0;
-	font-size: 0;
-	text-indent: -9999px;
 	appearance: none;
-	box-shadow: none;
+	background-color: #222;
 	border-radius: none;
 	border: none;
+	box-shadow: none;
 	cursor: pointer;
-	transition: background 0.3s;
-	overflow: hidden;
+	display: block;
+	font-size: 0;
+	height: 27px;
+	margin: 0;
 	outline: 2px solid #222;
-	background-color: #222;
+	overflow: hidden;
+	padding: 0;
+	position: fixed;
+	right: 2rem;
+	text-indent: -9999px;
+	top: 1.75rem;
+	transition: background 0.3s;
+	width: 28px;
 }
 .menu__toggle::focus {
 	outline: none;
+}
+.menu__toggle:hover {
+	border: none;
 }
 .menu__toggle span {
 	display: block;
@@ -313,16 +317,6 @@ article.filtered {
 	padding: 0;
 }
 
-.posts .list  {
-	column-count: 2;
-	column-gap: 2rem;
-}
-.posts .list article {
-	display: inline-block;
-	break-inside: avoid-column;
-	break-before: column;
-}
-
 .dict article {
 	white-space: pre;
 }
@@ -380,6 +374,14 @@ input[type=number] {
 	}
 	.menu__link--active + .menu__group {
 		display: block;
+	}
+	.list--articles {
+		column-count: auto;
+		column-width: 20em;
+		column-gap: 2rem;
+	}
+	.list--articles article {
+		break-inside: avoid;
 	}
 }
 

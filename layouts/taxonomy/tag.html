@@ -7,9 +7,9 @@
     <h1>Pages tagged <span class="tag">{{ .Title }}</span></h1>
     <input type="text" id="filter" placeholder="Filter&hellip;" />
 
-    <div class="list">
+    <div class="list list--articles">
       {{ range .Data.Pages }}
-      <article>
+      <article class="list__item">
         <a class="title" href="{{ .Permalink }}">{{ .Title }}</a>
         {{ partial "meta.html" . }}
       </article>

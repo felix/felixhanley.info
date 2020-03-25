@@ -18,7 +18,7 @@ if (links) {
   })
 }
 
-var posts = document.getElementsByTagName('article')
+var posts = document.querySelectorAll('.list__item')
 
 var filter = document.getElementById('filter')
 if (filter) {
