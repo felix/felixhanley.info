@@ -3,8 +3,8 @@ title: Projects
 weight: 30
 ---
 
-Projects that I am actively working on or have contributed to. You may find
-others on [my personal Git hosting](https://src.userspace.com.au) and
+Projects that I am actively working on or have contributed to. You will find
+others on [UserSpace Git hosting](https://src.userspace.com.au) and
 [GitHub](https://github.com/felix/).
 
 ## Personal projects
@@ -12,6 +12,9 @@ others on [my personal Git hosting](https://src.userspace.com.au) and
 [Lahu language resources](http://lahu.felixhanley.info)
 : Lahu language project page. A collection of information about the language
 spoken by the Lahu hill tribe group.
+
+[Simplg Web Stats](http://src.userspace.com.au/sws/about/)
+: Simple Web Stats. Javascript free, GDPR compliant, self-hosted web statistics.
 
 [dm](http://src.userspace.com.au/dm/about/)
 : A single-file "dotfile" manager written in POSIX shell. It creates and

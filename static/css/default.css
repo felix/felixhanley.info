@@ -114,7 +114,7 @@ h2 {
 
 .content {
 	line-height: 1.5;
-	margin: 24px;
+	padding: 24px;
 	overflow: auto;
 }
 .content > header {

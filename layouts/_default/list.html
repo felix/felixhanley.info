@@ -10,7 +10,9 @@
       {{ .Content }}
     </article>
 
+    {{ if .Data.Pages }}
     <input type="text" id="filter" placeholder="Filter&hellip;" />
+    {{ end }}
 
     <div class="list list--articles">
       {{ range .Data.Pages }}
