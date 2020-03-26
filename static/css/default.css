@@ -120,6 +120,9 @@ h2 {
 .content > header {
 	margin-bottom: 1em;
 }
+.content__article {
+	margin-bottom: 5em;
+}
 .list--articles {
 	max-width: 100%;
 }
