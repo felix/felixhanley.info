@@ -16,7 +16,8 @@ public/felix_hanley.pdf: resume/data.md resume/meta.yaml templates/default.latex
 
 .PHONY: deploy
 deploy: build
-	rsync -Prtc --delete public/ felixhanley.info@silver.userspace.com.au:htdocs/
+	rsync -Prtc --delete --exclude '*.pdf' public/ felixhanley.info@silver.userspace.com.au:htdocs/
+	rsync -Put public/felix_hanley.pdf felixhanley.info@silver.userspace.com.au:htdocs/
 
 .PHONY: clean
 clean:

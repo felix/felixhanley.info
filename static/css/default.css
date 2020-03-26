@@ -128,7 +128,10 @@ h2 {
 }
 .list--articles article {
 }
-.content p {
+.content p,
+.content ul,
+.content ol,
+.content dl {
 	max-width: 40em;
 }
 
