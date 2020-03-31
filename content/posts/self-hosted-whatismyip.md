@@ -86,7 +86,7 @@ $ curl -4 ip.example.com
 14.201.108.199
 
 $ curl -6 ip.example.com
-2001:44b8:41ae:b001:2a16:adff:fe76:a485
+2001:44b8:dead:beef:2a16:adff:fe76:a485
 
 $ curl ip4.example.com
 14.201.108.199
