@@ -126,12 +126,14 @@ h2 {
 .list--articles {
 	max-width: 100%;
 }
-.list--articles article {
+.list--projects .list__item {
+	margin-bottom: 1em;
 }
 .content p,
 .content ul,
 .content ol,
-.content dl {
+.content dl,
+.content .list {
 	max-width: 40em;
 }
 
@@ -347,6 +349,21 @@ input {
 }
 input[type=number] {
 	width: 6em;
+}
+
+.toggler {
+	margin-bottom: 1em;
+}
+.toggle-me {
+	display: none;
+}
+#toggle:checked ~ .toggle-me {
+	display: block;
+}
+
+.toggler input {
+    position: absolute;
+    left: -100vw;
 }
 
 @media (min-width: 48em) {

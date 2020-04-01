@@ -4,11 +4,9 @@
   {{ partial "nav.html" . }}
 
   <main class="content">
-    <article class="content__article">
       {{ partial "title.html" . }}
       {{ partial "meta.html" . }}
       {{ .Content }}
-    </article>
 
     {{ if .Data.Pages }}
     <input type="text" id="filter" placeholder="Filter&hellip;" />

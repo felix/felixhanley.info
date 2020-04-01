@@ -1,0 +1,30 @@
+{{ partial "head.html" . }}
+<body>
+
+  {{ partial "nav.html" . }}
+
+  <main class="content">
+    {{ partial "title.html" . }}
+
+    {{ .Content }}
+
+    <div class="list list--projects">
+
+      {{ range .Data.Pages.ByWeight }}
+
+      <article class="list__item">
+        <h3><a class="title" href="{{ if .Params.link }}{{ .Params.link }}{{ else }}{{ .Permalink }}{{ end }}">{{ .Title }}</a></h3>
+
+        {{ .Summary }}
+
+      </article>
+
+      {{ end }}
+
+    </div>
+  </main>
+
+  {{ partial "footer.html" . }}
+
+</body>
+</html>
