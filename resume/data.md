@@ -135,21 +135,7 @@ and then remotely from interstate and overseas.
 
 **February 2005 -- April 2006**, Sydney
 
-<!---
-A provider of hardware accelerated pattern matching and content processing
-solutions with US, London and Sydney offices.
-
-I was part of a two person team that developed and maintained all the internal
-software used by the company for tracking stock, sales and hardware testing
-results.
-
-- Developed and maintained internal, cross-continent warehouse application _(PHP, HTML, CSS, Lua)_
-- Maintained large, replicated database cluster _(MySQL)_
-- Implemented standard documentation schemas for multi-format output
-- Performed security and performance audits & penetration testing
-- Reduced delays in testing and warehousing by improved UX design and reporting
-- Implemented code documentation framework _(XSLT)_
--->
+Developed and maintained internal, cross-continent warehouse application _(PHP, HTML, CSS, Lua, MySQL, XSLT)_
 
 
 ## Programmer, [Freelance](http://felixhanley.info)
@@ -158,15 +144,6 @@ results.
 
 Deployment of BSD VPNs, LDAP and email systems.
 
-<!---
-I worked in remote mining towns supporting local contractors and government
-departments in Western Australia.
-
-- Developed custom web applications for contractor reporting _(PHP, MySQL)_
-- Installed and maintained large LDAP, firewall and email system for a local high school
-- Installed and maintained numerous BSD VPNs and redundant links for local mine contractors
--->
-
 
 ## Programmer/DBA, [National Telecoms Group](https://web.archive.org/web/20080718172405/http://www.ntgroup.com.au/)
 
@@ -174,30 +151,12 @@ departments in Western Australia.
 
 Developed large CRM used by 300+ seat call centers _(VB, SalesLogix)_
 
-<!---
-At the time it was one of Australia's largest supplier of corporate phone
-systems.
-
-As a small team of 2 we were drove the development and maintenance of
-the company's call-centre software and large lead database.
-
-- Developed and maintained a large CRM used by 6 call centers _(VB, SalesLogix)_
-- Administered 300+ seat Citrix Meta-frame installation, the largest in Australia (at the time)
--->
-
 
 ## Programmer, [DefineIT/Macquarine Health](http://machealth.com.au)
 
 **2000 -- 2001**, Sydney
 
 Maintained embedded C/C++ code for monitoring units.
-
-<!---
-Supplier of medical monitoring equipment.
-
-- Maintained embedded C/C++ code for monitoring units
-- Administered 50+ seat network and medical records database
--->
 
 
 ## Education
