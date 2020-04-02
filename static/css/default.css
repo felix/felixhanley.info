@@ -26,17 +26,25 @@ ul, ol {
 	padding-left: 1rem;
 }
 pre {
-	padding: 1em;
 	background-color: #eee;
-	border: 1px solid #d8d8d8;
-	border-radius: 4px;
+	font-family: monospace;
+	font-size: .825em;
 	overflow-x: auto;
-	margin-right: 1em;
 }
 li code,
 p code {
 	background-color: #eee;
 	padding: 2px;
+}
+.chroma .lntd:first-child {
+	border-right: 1px solid #dbd8cb;
+}
+.chroma .lntd:first-child,
+.chroma .lntd:first-child .chroma {
+	background-color: #e6e3d8;
+}
+.chroma .lntd:nth-child(2) {
+	padding-left: 5px;
 }
 kbd {
 	background-color: #e1e3e5;
@@ -56,7 +64,7 @@ kbd {
 }
 .textarea--code {
 	font-family: monospace;
-	font-size: .875em;
+	font-size: .825em;
 }
 .meta {
 	margin: 0;
@@ -99,10 +107,10 @@ h1,h2,h3 {
 	font-weight: normal;
 	line-height: 1;
 	margin-bottom: .5rem;
-	margin-top: 0;
 }
 h1 {
 	font-size: 2em;
+	margin-top: 0;
 }
 h1 a, h1 a:hover {
 	border-bottom: none;
@@ -289,6 +297,9 @@ a:hover {
 .content--article {
 	margin-bottom: 2rem;
 }
+#filter {
+	margin-bottom: 2em;
+}
 article.filtered {
 	display: none !important;
 }
@@ -405,6 +416,25 @@ input[type=number] {
 	}
 	.list--articles article {
 		break-inside: avoid;
+	}
+
+	#pdf-resume {
+		left: 21vw;
+		position: absolute;
+		text-align: right;
+		width: 40em;
+	}
+	#pdf-resume a {
+		background-color: #ff3333;
+		border-radius: 3px;
+		color: white;
+		display: inline-block;
+		padding: 3px 5px;
+		font-family: sans-serif;
+	}
+	#pdf-resume a,
+	#pdf-resume a:hover {
+		border-bottom: 0;
 	}
 }
 

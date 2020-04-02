@@ -12,7 +12,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
     guessSyntax = false
     hl_Lines = ""
     lineNoStart = 1
-    lineNos = false
+    lineNos = true
     lineNumbersInTable = true
     noClasses = false
     style = "monokai"
@@ -29,12 +29,3 @@ unsafe= true
 
 [permalinks]
 posts = "/posts/:year/:month/:title/"
-
-[menu]
-
-[[menu.main]]
-name = "PDF Résumé"
-identifier = "resume"
-parent = "work"
-url = "/felix_hanley.pdf"
-weight = 15

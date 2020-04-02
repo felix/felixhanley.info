@@ -1,4 +1,4 @@
-# [Felix Hanley](http://felixhanley.info)
+# Felix Hanley
 
 <felix@userspace.com.au>  
 [https://felixhanley.info](https://felixhanley.info)  

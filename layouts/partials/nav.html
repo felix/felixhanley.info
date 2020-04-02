@@ -4,11 +4,11 @@
   <nav class="menu__group">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-    <a class="menu__link{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} menu__link--active{{ end }}" href="{{ .URL }}"> {{ .Name }} </a>
+    <a class="menu__link{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} menu__link--active{{ end }}" href="{{ .URL }}" title="{{ .Title }}"> {{ .Name }} </a>
     {{ if .HasChildren }}
     <nav class="menu__group">
     {{ range $child := .Children }}
-      <a class="menu__link menu__link--nested {{if $currentPage.IsMenuCurrent "main" . }}menu__link--active{{ end }}" href="{{ $child.URL }}"> {{ $child.Name }} </a>
+      <a class="menu__link menu__link--nested {{if $currentPage.IsMenuCurrent "main" . }}menu__link--active{{ end }}" href="{{ $child.URL }}" title="{{ $child.Title }}"> {{ $child.Name }} </a>
     {{ end }}
     </nav>
     {{ end }}
