@@ -18,10 +18,9 @@ if (links) {
   })
 }
 
-var posts = document.querySelectorAll('.list__item')
-
 var filter = document.getElementById('filter')
 if (filter) {
+  var posts = document.querySelectorAll('.list__item')
   filter.addEventListener('keyup', function () {
     var term = this.value
     if (term.length > 1) {
