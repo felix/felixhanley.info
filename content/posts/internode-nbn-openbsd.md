@@ -8,9 +8,11 @@ tags:
 - networking
 ---
 
-I run an OpenBSD router on a PC Engines APU2 for my home network connectivity.
-Internode provides their HFC uplink on VLAN tagged 2. The APU2 has 3 RJ45
-ports, em{0,1,2} with `em0` being my uplink, configured in `/etc/hostname.em0`:
+I run an [OpenBSD](https://www.openbsd.org) router on a [PC Engines
+APU2](https://pcengines.ch/apu2.htm) for my home network connectivity.
+[Internode](https://internode.on.net) provides their HFC uplink on VLAN tagged
+2. The APU2 has 3 RJ45 ports, em{0,1,2} with `em0` being my uplink, configured
+   in `/etc/hostname.em0`:
 
 ```shell
 up

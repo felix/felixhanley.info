@@ -1,4 +1,15 @@
+---
+title: garcia
+nested: true
+tags:
+- hardware
+- network
+- linux
+---
+
 Media center and docker host.
+
+<!--more-->
 
 Hardware:
 

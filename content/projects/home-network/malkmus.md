@@ -1,6 +1,15 @@
-## malkmus
+---
+title: malkmus
+nested: true
+tags:
+- hardware
+- network
+- bsd
+---
 
 Internet gateway and reverse proxy.
+
+<!--more-->
 
 Hardware:
 

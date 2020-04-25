@@ -1,4 +1,14 @@
+---
+title: bowie
+nested: true
+tags:
+- hardware
+- network
+- macOS
+---
 
-## bowie
+Primary employer-supplied MacBook Pro
 
-Primary employer-supplied MacBook Pro 15" 2018 running 10.14.6 (Mojave)
+<!--more-->
+
+A MacBook Pro 15" 2018 running 10.14.6 (Mojave)

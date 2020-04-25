@@ -210,9 +210,9 @@ h3 {
 	overflow: hidden;
 	padding: 0;
 	position: fixed;
-	right: 2rem;
+	right: 1.5rem;
 	text-indent: -9999px;
-	top: 1.75rem;
+	top: 1.85rem;
 	transition: background 0.3s;
 	width: 28px;
 }
@@ -256,6 +256,7 @@ h3 {
 	position: absolute;
 	top: 0;
 	height: 100%;
+	z-index: 10;
 }
 
 .menu--active .menu__toggle span {
