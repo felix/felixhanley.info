@@ -1,10 +1,12 @@
 ---
-title: Self-hosted whatismyip.com
+title: Self-hosted public IP API
 date: 2020-03-26
 keywords: IP address self-hosted
 description: Implementing a self-hosted IP service
 tags:
 - self-hosted
+aliases:
+- /posts/2020/03/self-hosted-whatismyip.com/
 ---
 
 There are various sites and services around the interwebs you can use to find
