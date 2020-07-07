@@ -1,0 +1,24 @@
+define(`__title', `Contact')dnl
+define(`__description', `Contact Felix Hanley')dnl
+include(header.m4)
+
+Email is my preferred means of contact. Note, if you are sending any sensitive
+information be sure to use the GPG key below.
+
+### Email
+
+[felix@userspace.com.au](mailto:felix@userspace.com.au)
+
+### Social
+
+- [GitHub](https://github.com/felix)
+- [GitLab](https://gitlab.com/xilef)
+- [LinkedIn](https://www.linkedin.com/in/felix-hanley/)
+
+### GnuPG/PGP
+
+My [GPG public
+key](https://keys.openpgp.org/vks/v1/by-fingerprint/971CF7B2913AD16370AC02C3B6F229D77E20D10B) is
+available with a fingerprint of  
+971C&nbsp;F7B2&nbsp;913A&nbsp;D163&nbsp;70AC 02C3&nbsp;B6F2&nbsp;29D7&nbsp;7E20&nbsp;D10B.
+include(footer.m4)

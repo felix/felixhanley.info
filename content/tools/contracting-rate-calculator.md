@@ -40,9 +40,9 @@ with the calculations a little.
 <input class="param" type="number" id="sickLeave" value="10" min="0"></input>
 <br>
 <br>
-<strong>Total work days = <span id="workDays"></span></strong> <em>= ((52 * 5) - sick days - leave - holidays</em>
+<label title="(52 * 5) - sick days - leave - holidays">Total work days =</label> <span id="workDays"></span>
 <br>
-<strong>Total work hours = <span id="workHours"></span></strong> <em>= work days * work hours</em>
+<label title="work days * work hours">Total work hours =</label> <span id="workHours"></span>
 <br>
 <br>
 <label>Superannuation rate (%)</label>
@@ -52,10 +52,12 @@ with the calculations a little.
 <input class="param" type="number" id="salary" value="" min="0"></input>
 <br>
 <br>
-<strong>Salary package = <span id="totalSalary"></span></strong> <em>= salary + super</em>
+<label title="salary + super">Salary package =</label> <span id="totalSalary"></span>
 <br>
 <br>
-<strong>Hourly rate = <span id="hourlyRate"></span></strong> <em>= salary package / work hour</em>
+<label title="salary package / work hour">Hourly rate =</label> <span id="hourlyRate"></span>
+<br>
+<label title="hourly rate * hours">Daily rate =</label> <span id="dailyRate"></span>
 </fieldset>
 </form>
 
@@ -67,7 +69,8 @@ var sickLeaveEl = document.getElementById('sickLeave')
 var superRateEl = document.getElementById('superRate')
 var salaryEl = document.getElementById('salary')
 
-var rateEl = document.getElementById('hourlyRate')
+var hRateEl = document.getElementById('hourlyRate')
+var dRateEl = document.getElementById('dailyRate')
 var workDaysEl = document.getElementById('workDays')
 var workHoursEl = document.getElementById('workHours')
 var totalSalaryEl = document.getElementById('totalSalary')
@@ -91,8 +94,10 @@ var calculate = function () {
   totalSalaryEl.textContent = '$' + totalSalary.toFixed(0).replace(/(\d)(?=(\d{3})+$)/g, '$1,')
 
   var hourlyRate = totalSalary / workHours
+  var dailyRate = hourlyRate * hours
 
-  rateEl.textContent = '$' + parseFloat(Math.round(hourlyRate * 100) / 100).toFixed(2)
+  hRateEl.textContent = '$' + parseFloat(Math.round(hourlyRate * 100) / 100).toFixed(2)
+  dRateEl.textContent = '$' + parseFloat(Math.round(dailyRate * 100) / 100).toFixed(2)
 }
 Array.prototype.forEach.call(document.querySelectorAll('.param'), function (e) {
   e.addEventListener('change', calculate)
