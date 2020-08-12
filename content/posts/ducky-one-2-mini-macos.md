@@ -1,6 +1,7 @@
 ---
 title: Ducky One 2 Mini on macOS
 date: 2020-03-19
+lastmod: 2020-08-12
 keywords: ducky macOS
 description: Fixing regular disconnects for Ducky One 2 mini on macOS
 tags:

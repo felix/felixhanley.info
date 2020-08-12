@@ -1,7 +1,7 @@
 ---
 kind: article
 date: 2010-03-11
-updated_at: 2011-03-07
+lastmod: 2011-03-07
 title: 'tinydnsdyn - Dynamic DNS for DJBDNSs tinydns'
 description: tinydnsdyn is a script to enable dynamic DNS for DJB's tinydns DNS server
 tags:

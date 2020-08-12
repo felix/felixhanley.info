@@ -1,7 +1,7 @@
 ---
 kind: article
 date: 2009-06-23
-updated_at: 2011-03-08
+lastmod: 2011-03-08
 title: Setting up subdomain cookies, varnish and Nginx for faster asset serving
 description: How to set up your subdomain cookies for faster static asset serving
 tags:
