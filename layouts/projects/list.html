@@ -10,7 +10,7 @@
 
     <div class="list list--projects">
 
-      {{ range .Data.Pages.ByWeight }}
+      {{ range .Data.Pages.ByWeight  }}
 
       <article class="list__item">
         <h3><a class="title" href="{{ if .Params.link }}{{ .Params.link }}{{ else }}{{ .Permalink }}{{ end }}">{{ .Title }}</a></h3>

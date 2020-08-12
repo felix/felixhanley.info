@@ -1,5 +1,6 @@
 ---
-title: zappa.yelnah
+title: zappa
+nested: true
 tags:
 - hardware
 - network
@@ -7,6 +8,8 @@ tags:
 ---
 
 Main file server, downloader and jail host.
+
+<!--more-->
 
 Hardware:
 
@@ -28,7 +31,7 @@ Hardware:
 
 Main software:
 
-- Freebsd 12.1-RELEASE-p3
+- [Freebsd 12.1-RELEASE-p3](https://freebsd.org)
 - Samba 4.10
 - NFSd
 - Syncthing

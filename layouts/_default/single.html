@@ -6,8 +6,10 @@
 
   <main class="content">
     <article class="content__article">
-      {{ partial "title.html" . }}
-      {{ partial "meta.html" . }}
+      <header>
+        {{ partial "title.html" . }}
+        {{ partial "meta.html" . }}
+      </header>
       {{ .Content }}
     </article>
   </main>
