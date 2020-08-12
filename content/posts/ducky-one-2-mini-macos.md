@@ -14,6 +14,9 @@ Reds which is a reasonably solid, compact keyboard for work. It works fine with
 FreeBSD and Linux but on macOS it has a habit of disconnecting regularly. This
 is a fix for the disconnection issue that works for me.
 
+UPDATE 20200812: It seems a recent firmware update fixes this. See [the Ducky product
+page](https://www.duckychannel.com.tw/en/Ducky-One2-Mini-RGB) for the firmware download.
+
 ## Cause
 
 As found in a couple of forum posts, it only occurs when macOS does an update
