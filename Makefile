@@ -6,6 +6,7 @@ build: public resume
 
 .PHONY: public
 public: $(src)
+	hugo gen chromastyles --style=solarized-light >static/css/syntax.css
 	hugo -v
 
 .PHONY: resume

@@ -18,7 +18,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
-h1,h2,h3,h4,p,div,ul,ol {
+h1,h2,h3,h4,p,div,ul,ol,pre {
 	margin-top: 0;
 	margin-bottom: 1.5rem;
 }
@@ -31,15 +31,12 @@ ul, ol {
 	padding-left: 1rem;
 }
 pre {
-	background-color: #eee;
 	font-family: monospace;
 	font-size: .825em;
 	overflow-x: auto;
 }
-li code,
-p code {
-	background-color: #eee;
-	padding: 2px;
+pre.chroma {
+	margin-bottom: 0;
 }
 .chroma .lntd:first-child {
 	border-right: 1px solid #dbd8cb;

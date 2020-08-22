@@ -1,4 +1,6 @@
 /* Background */ .chroma { color: #586e75; background-color: #eee8d5 }
+/* Other */ .chroma .x {  }
+/* Error */ .chroma .err {  }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
 /* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
@@ -55,7 +57,9 @@
 /* LiteralNumberInteger */ .chroma .mi { color: #2aa198; font-weight: bold }
 /* LiteralNumberIntegerLong */ .chroma .il { color: #2aa198; font-weight: bold }
 /* LiteralNumberOct */ .chroma .mo { color: #2aa198; font-weight: bold }
+/* Operator */ .chroma .o {  }
 /* OperatorWord */ .chroma .ow { color: #859900 }
+/* Punctuation */ .chroma .p {  }
 /* Comment */ .chroma .c { color: #93a1a1; font-style: italic }
 /* CommentHashbang */ .chroma .ch { color: #93a1a1; font-style: italic }
 /* CommentMultiline */ .chroma .cm { color: #93a1a1; font-style: italic }
@@ -75,3 +79,4 @@
 /* GenericSubheading */ .chroma .gu { color: #d33682 }
 /* GenericTraceback */ .chroma .gt { color: #d33682 }
 /* GenericUnderline */ .chroma .gl { color: #d33682 }
+/* TextWhitespace */ .chroma .w {  }
