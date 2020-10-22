@@ -3,12 +3,12 @@
 <felix@userspace.com.au>  
 [https://felixhanley.info](https://felixhanley.info)  
 [+61 457 092 803](tel:+61457092803)  
-[skype:felix.hanley](skype:felix.hanley?chat)  
 
 I am a software engineer with many years experience producing software and
-systems in a variety of industries. My experience covers ETL pipelines, PKI &
-applied cryptography, network security, API & micro-service design, large scale
-hosting and general consulting.
+systems in a variety of industries. My experience covers data pipelines and
+content classification, distributed systems, PKI & applied cryptography,
+network security, API & micro-service design, large scale hosting and general
+consulting.
 
 As an Australian I am a native English speaker but I am also fluent in Thai. I
 am available for full-time, part-time, and contract positions with remote work
@@ -29,28 +29,27 @@ _References available on request_
 An Australian multi-national corporation that provides tax, accounting and other
 business services software to small and medium businesses.
 
-As a member of the observability team I am involved in all things related to
-logging, tracing and metrics, working almost exclusively in Go. This includes
-development of cross-platform tools and internal products to increase company
-productivity.
+In the observability team I am involved in all things related to logging,
+tracing and metrics. I am also a key player in the company's public API uplift.
 
 - Design and development of a centralised log processing pipeline _(Go, AWS)_
 - Development of a distributed tracing service _(Go, OpenTracing, Kubernetes, AWS)_
-- Strong focus on system performance, reliability and cost efficiency
+- Strong focus on system performance, reliability, and cost efficiency
+
 
 ## Senior Software Developer, [Seer Security](https://seersec.com.au)
 
 **July 2018 -- April 2019**, Melbourne
 
-A small security business with a flagship product used by a number of
-government agencies.
+A small security business with products used by a number of government
+agencies.
 
-I was instrumental in the design and implementation of a content extraction,
-processing and classification engine.
+I was the technical lead for a social network content extraction and
+classification engine.
 
 - Developed a distributed and configurable content extraction engine _(Go, Flatbuffers)_
 - Designed and developed a distributed plugin architecture _(Python, Django, PostgreSQL)_
-- Maintained extensive tests and CI integration using machine learned datasets _(Gitlab, Docker, AWS)_
+- Maintained extensive tests and CI integration using machine learning datasets _(Gitlab, Docker, AWS)_
 
 
 ## Senior Software Engineer, [Freestyle Technology](https://freestyleiot.com)
@@ -61,32 +60,14 @@ An IoT technology company providing hardware and software solutions to service
 providers and municipalities across SE Asia and Australasia. Their solution
 involves "smart" devices and real time control.
 
-As a member of the data team I developed a custom ETL and rules processing
-pipeline to cope with data from large deployments of devices, and the APIs
-required to consume this data by the rest of the system.
+I developed a custom ETL and rules processing pipeline to ingest from large
+deployments of devices, and the APIs required to consume this data by the rest
+of the system.
 
 - Developed distributed network stream processing engines handling many 1000s of messages per second _(Go)_
 - Designed and implemented numerous supporting APIs _(Python, Awk, Shell, Docker, AWS)_
 - Designed, implemented and administered supporting services _(PostgreSQL, PL/pgSQL, InfluxDB, TimescaleDB)_
 - Maintained excellent test coverage and CI services _(TAP, Jenkins, Groovy)_
-
-
-## Senior Software Engineer, [KL Data/ARKpX](https://web.archive.org/web/20161203050431/http://arkpx.com)
-
-**March 2015 -- December 2016**, Melbourne & remote
-
-A small team developing a cross-platform, encrypted storage solution much like
-'Dropbox' but using client-side, PKI cryptography. Products in use by multiple
-government organisations.
-
-I was instrumental in the transition from a Java based product to a platform
-independent solution, developing the core cryptographic library used by
-multiple front-ends.
-
-- Lead development of core promise based Javascript cryptographic library _(Javascript)_
-- Developed custom ASN.1 schemas for CMS (RFC 5952) communications _(ASN.1)_
-- Created extensive cross-browser test suite and maintained CI _(Node, Bamboo CI, Selenium)_
-- Maintained UI elements across all modern browsers _(AngularJS)_
 
 
 ## Principle, [User Space](https://userspace.com.au)
@@ -111,6 +92,22 @@ Over the years:
 - Built custom e-commerce integrations for international clients _(Magento, Spree, Ruby, SQL, PHP, XML)_
 
 
+## Senior Software Engineer, [KL Data/ARKpX](https://web.archive.org/web/20161203050431/http://arkpx.com)
+
+**March 2015 -- December 2016**, Melbourne & remote
+
+A small team developing a cross-platform, encrypted storage solution much like
+'Dropbox' but using client-side, PKI cryptography. Products in use by multiple
+government departments.
+
+I was lead developer on the core crypto library to be used by multiple front-ends.
+
+- Lead development of core Javascript cryptographic library _(Javascript)_
+- Developed custom ASN.1 schemas for CMS (RFC 5952) communications _(ASN.1)_
+- Created extensive cross-browser test suite and maintained CI _(Node, Bamboo CI, Selenium)_
+- Maintained UI elements across all modern browsers _(AngularJS)_
+
+
 ## Software Engineer, [Ayuda Hosting](http://ayudahosting.com.au)
 
 **February 2010 -- February 2015**, Melbourne & remote
@@ -118,9 +115,9 @@ Over the years:
 A traditional, "bare-metal" hosting and consulting company with a small team
 based in the Melbourne CBD.
 
-I was involved in all areas of network design and installation, project
-planning and cost estimation. I worked for one year in the Melbourne office
-and then remotely from interstate and overseas.
+I was involved in all areas of network design, data centre rack planning &
+installation, project planning & cost estimation, client programming and
+consulting.
 
 - Managed large, redundant networks, firewalls and VMs _(Xen, Keepalived, IPTables, IPSec, PF)_
 - Developed client websites and applications _(PHP, Javascript, HTML/CSS)_
@@ -128,7 +125,7 @@ and then remotely from interstate and overseas.
 - Developed in-house CMS software with a custom ORM and plugin system
 - Implemented large configuration systems _(CFEngine, Puppet)_
 - Administrated highly available and redundant server clusters _(Apache, Nagios, Postfix)_
-- Brought many large projects to deployment
+- Brought many large projects to completion
 
 
 ## Web developer, [Sensory Networks](https://web.archive.org/web/20070105091228/http://www.sensorynetworks.com)
