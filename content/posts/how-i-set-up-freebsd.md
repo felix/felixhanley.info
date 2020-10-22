@@ -85,6 +85,17 @@ Install some basic packages I will need next:
 pkg install git tmux rsync
 ```
 
+Aggregate the wifi and ethernet links:
+
+```sh
+sysrc wlans_iwm0="wlan0"
+sysrc ifconfig_wlan0="WPA"
+sysrc ifconfig_em0="ether $(ifconfig wlan0 ether |awk '/ether/ {print $2}')"
+sysrc cloned_interfaces="lagg0"
+sysrc ifconfig_lagg0="laggproto failover laggport em0 laggport wlan0 DHCP"
+
+```
+
 ## Personalisation
 
 At this stage I should be able to sync and configure some of my basic tools. I
@@ -140,7 +151,7 @@ working on FreeBSD there are a few required tweaks.
 
 First is access to the `/dev/input/*` devices which by default are only
 accessible by root. I still don't know if there is a proper fix for this but I
-just add the following to `/etc/devfs.conf` so they are usable by the video
+just add the following to `/etc/devfs.rules` so they are usable by the video
 group (which is needed to run sway anyway):
 
 ```ini
