@@ -21,6 +21,7 @@ Convert between HEX, Base64, ASCII or binary, from and to files.
 
 Auto detection is a bit hit-and-miss.
 
+<form>
 <select id="srcType">
   <option value="auto">Auto</option>
   <option value="hex">Hexadecimal</option>
@@ -47,5 +48,3 @@ Auto detection is a bit hit-and-miss.
 <button id="convert">Convert</button>
 <button id="srcReset">Clear</button>
 </form>
-
-<script src="/js/tools.js"></script>

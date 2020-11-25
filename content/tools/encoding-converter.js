@@ -136,116 +136,122 @@ var bytesToFile = function (data) {
   document.location = 'data:Application/octet-stream,' + encodeURIComponent(data)
 }
 
-var srcEl = document.getElementById('src')
-var srcIsFileEl = document.getElementById('srcIsFile')
-var srcFileEl = document.getElementById('srcFile')
-var dstEl = document.getElementById('dst')
-var srcTypeEl = document.getElementById('srcType')
-var dstTypeEl = document.getElementById('dstType')
-var dstIsFileEl = document.getElementById('dstIsFile')
+window.addEventListener('DOMContentLoaded', (event) => {
+  var srcEl = document.getElementById('src')
+  var srcIsFileEl = document.getElementById('srcIsFile')
+  var srcFileEl = document.getElementById('srcFile')
+  var dstEl = document.getElementById('dst')
+  var srcTypeEl = document.getElementById('srcType')
+  var dstTypeEl = document.getElementById('dstType')
+  var dstIsFileEl = document.getElementById('dstIsFile')
 
-// Output data as requested
-var output = function (data) {
-  var dstType = dstTypeEl.options[dstTypeEl.selectedIndex].value
-  console.log('Input data', data)
-  console.log('Output set to', dstType)
-  var fixedWidth = document.getElementById('fixedWidth').checked
-  var out
-  if (dstType === 'ascii') {
-    out = bytesToStr(data)
-  } else if (dstType === 'hex') {
-    out = bytesToHex(data)
-  } else if (dstType === 'base64') {
-    out = bytesToBase64(data)
-  } else if (dstType === 'array') {
-    out = data.toString().split(',').join(', ')
-  }
-  if (fixedWidth) {
-    out = out.replace(/(.{80})/g, '$1\n')
-  }
-  // console.log('Output data', out)
-  if (dstIsFileEl.checked) {
-    bytesToFile(out)
-  } else {
-    dstEl.value = out
-  }
-}
-
-// Import data to Uint8 array
-var convert = function () {
-  var srcType = srcTypeEl.options[srcTypeEl.selectedIndex].value
-  console.log('Source set to', srcType)
-
-  if (srcType === 'auto') {
-    if (base64Regexp.test(srcEl.value)) {
-      console.log('Could be base64')
-      srcType = 'base64'
+  // Output data as requested
+  var output = function (data) {
+    var dstType = dstTypeEl.options[dstTypeEl.selectedIndex].value
+    console.log('Input data', data)
+    console.log('Output set to', dstType)
+    var fixedWidth = document.getElementById('fixedWidth').checked
+    var out
+    if (dstType === 'ascii') {
+      out = bytesToStr(data)
+    } else if (dstType === 'hex') {
+      out = bytesToHex(data)
+    } else if (dstType === 'base64') {
+      out = bytesToBase64(data)
+    } else if (dstType === 'array') {
+      out = data.toString().split(',').join(', ')
     }
-    if (hexRegexp.test(srcEl.value)) {
-      console.log('Could be hex')
-      srcType = 'hex'
+    if (fixedWidth) {
+      out = out.replace(/(.{80})/g, '$1\n')
+    }
+    // console.log('Output data', out)
+    if (dstIsFileEl.checked) {
+      bytesToFile(out)
+    } else {
+      dstEl.value = out
     }
   }
 
-  var convertFunc
+  // Import data to Uint8 array
+  var convert = function (evt) {
+    evt.preventDefault()
 
-  if (srcType === 'hex') {
-    convertFunc = function (src) {
-      // Strip unknown chars
-      src = src.replace(/[^0-9a-f]/gi, '')
-      output(hexToBytes(src))
+    var srcType = srcTypeEl.options[srcTypeEl.selectedIndex].value
+    console.log('Source set to', srcType)
+
+    if (srcType === 'auto') {
+      if (base64Regexp.test(srcEl.value)) {
+        console.log('Could be base64')
+        srcType = 'base64'
+      }
+      if (hexRegexp.test(srcEl.value)) {
+        console.log('Could be hex')
+        srcType = 'hex'
+      }
     }
-  } else if (srcType === 'base64') {
-    convertFunc = function (src) {
-      // Strip unknown chars
-      src = src.replace(/[^0-9a-z+/=]/gi, '')
-      output(base64ToBytes(src))
+
+    var convertFunc = function (src) {
+        output(strToBytes(src))
     }
-  } else if (srcType === 'ascii') {
-    convertFunc = function (src) {
-      output(strToBytes(src))
+
+    if (srcType === 'hex') {
+      convertFunc = function (src) {
+        // Strip unknown chars
+        src = src.replace(/[^0-9a-f]/gi, '')
+        output(hexToBytes(src))
+      }
+    } else if (srcType === 'base64') {
+      convertFunc = function (src) {
+        // Strip unknown chars
+        src = src.replace(/[^0-9a-z+/=]/gi, '')
+        output(base64ToBytes(src))
+      }
+    } else if (srcType === 'ascii') {
+      convertFunc = function (src) {
+        output(strToBytes(src))
+      }
+    } else if (srcType === 'bin') {
+      convertFunc = function (src) {
+        output(src)
+      }
     }
-  } else if (srcType === 'bin') {
-    convertFunc = function (src) {
-      output(src)
+
+    if (srcIsFileEl.checked) {
+      var file = srcFileEl.files[0]
+      var reader = new window.FileReader()
+      reader.onload = function (e) {
+        convertFunc(new Uint8Array(e.target.result))
+      }
+      reader.readAsArrayBuffer(file)
+    } else {
+      convertFunc(srcEl.value)
     }
   }
 
-  if (srcIsFileEl.checked) {
-    var file = srcFileEl.files[0]
-    var reader = new window.FileReader()
-    reader.onload = function (e) {
-      convertFunc(new Uint8Array(e.target.result))
+  // DOM manipulation
+  document.getElementById('convert').addEventListener('click', convert)
+  var srcReset = document.getElementById('srcReset')
+  srcReset.addEventListener('click', function () {
+    srcEl.value = ''
+  })
+  srcIsFileEl.addEventListener('change', function () {
+    if (srcIsFileEl.checked) {
+      srcEl.style.display = 'none'
+      srcFileEl.style.display = 'block'
+    } else {
+      srcEl.style.display = 'block'
+      srcFileEl.style.display = 'none'
     }
-    reader.readAsArrayBuffer(file)
-  } else {
-    convertFunc(srcEl.value)
-  }
-}
+  })
+  srcIsFileEl.dispatchEvent(new window.Event('change'))
 
-// DOM manipulation
-document.getElementById('convert').addEventListener('click', convert)
-var srcReset = document.getElementById('srcReset')
-srcReset.addEventListener('click', function () {
-  srcEl.value = ''
+  dstTypeEl.addEventListener('change', function () {
+    var dstType = dstTypeEl.options[dstTypeEl.selectedIndex].value
+    if (dstType === 'file') {
+      dstEl.style.display = 'none'
+    } else {
+      dstEl.style.display = 'block'
+    }
+  })
+  dstTypeEl.dispatchEvent(new window.Event('change'))
 })
-srcIsFileEl.addEventListener('change', function () {
-  if (srcIsFileEl.checked) {
-    srcEl.style.display = 'none'
-    srcFileEl.style.display = 'block'
-  } else {
-    srcEl.style.display = 'block'
-    srcFileEl.style.display = 'none'
-  }
-})
-srcIsFileEl.dispatchEvent(new window.Event('change'))
-
-dstTypeEl.addEventListener('change', function () {
-  var dstType = dstTypeEl.options[dstTypeEl.selectedIndex].value
-  if (dstType === 'file') {
-    dstEl.style.display = 'none'
-  } else {
-    dstEl.style.display = 'block'
-  }
-})
-dstTypeEl.dispatchEvent(new window.Event('change'))

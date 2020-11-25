@@ -106,22 +106,4 @@ There are many around, here is another one:
     <span id="data-url-loading"><img src="/images/loader.gif" alt="loading" /></span>
 </form>
 <div id="data-url-response"></div>
-<script type="text/javascript">
-$(document).ready(function(){
-  $.getScript('/js/jquery.form.min.js', function(){
-    $('#data-url-loading').hide();
-    $('#data-url-submit').attr('disabled','');
-    $('#data-url').ajaxForm({
-      target: '#data-url-response',
-      beforeSubmit: function(){
-        $('#data-url-loading').show();
-        },
-      success: function(){
-        $('#data-url-loading').hide();
-        $('#data-url-response').show();
-        }
-      });
-    });
-  });
-</script>
 ```
