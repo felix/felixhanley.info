@@ -4,19 +4,21 @@
 [https://felixhanley.info](https://felixhanley.info)  
 [+61 457 092 803](tel:+61457092803)  
 
-I am a software engineer with many years experience producing software and
-systems in a variety of industries. My experience covers data pipelines and
-content classification, distributed systems, PKI & applied cryptography,
-network security, API & micro-service design, large scale hosting and general
-consulting.
+I am a software engineer with many years experience in a variety of industries.
+This includes the full SDLC process, modern DevOps, and Agile practices.
+
+My experience covers technical team leadership, consulting, the design and
+implementation of large data pipelines, content classifiers, distributed
+systems, PKI & applied cryptography, network security, API & micro-service
+design, and large scale hosting.
 
 As an Australian I am a native English speaker but I am also fluent in Thai. I
 am available for full-time, part-time, and contract positions with remote work
 being preferred.
 
-All my publicly available source code is available at
+My publicly available source code is available at
 [https://src.userspace.com.au](https://src.userspace.com.au) and
-mirrored to [GitHub](https://github.com/felix) and
+mirrors at [GitHub](https://github.com/felix) and
 [GitLab](https://gitlab.com/xilef).
 
 _References available on request_
@@ -29,8 +31,8 @@ _References available on request_
 An Australian multi-national corporation that provides tax, accounting and other
 business services software to small and medium businesses.
 
-In the observability team I am involved in all things related to logging,
-tracing and metrics. I am also a key player in the company's public API uplift.
+I am currently the technical lead for the observability team, providing an
+internal service. I have also been involved in the company's public API uplift.
 
 - Design and development of a centralised log processing pipeline _(Go, AWS)_
 - Development of a distributed tracing service _(Go, OpenTracing, Kubernetes, AWS)_
@@ -44,7 +46,7 @@ tracing and metrics. I am also a key player in the company's public API uplift.
 A small security business with products used by a number of government
 agencies.
 
-I was the technical lead for a social network content extraction and
+I was the technical lead for a social-network content extraction and
 classification engine.
 
 - Developed a distributed and configurable content extraction engine _(Go, Flatbuffers)_
@@ -70,7 +72,7 @@ of the system.
 - Maintained excellent test coverage and CI services _(TAP, Jenkins, Groovy)_
 
 
-## Principle, [User Space](https://userspace.com.au)
+## Principle, [UserSpace](https://userspace.com.au)
 
 **April 2006 -- Present**, Melbourne, Asia & remote
 
@@ -135,11 +137,12 @@ consulting.
 Developed and maintained internal, cross-continent warehouse application _(PHP, HTML, CSS, Lua, MySQL, XSLT)_
 
 
-## Programmer, [Freelance](http://felixhanley.info)
+## Programmer/analyst, [Contract](http://felixhanley.info)
 
 **October 2002 -- February 2005**, Outback Australia
 
-Deployment of BSD VPNs, LDAP and email systems.
+Custom solutions for mining contractors. Deployment of BSD VPNs, LDAP and email
+systems.
 
 
 ## Programmer/DBA, [National Telecoms Group](https://web.archive.org/web/20080718172405/http://www.ntgroup.com.au/)
