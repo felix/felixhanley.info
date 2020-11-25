@@ -1,26 +1,24 @@
-pdopts=	-f markdown+yaml_metadata_block+smart --data-dir=.
-src=	$(shell find content static layouts resume -type f)
+.POSIX:
+.SUFFIXES:
 
-.PHONY: build
-build: public resume
+src	!= find content static layouts resume -type f
 
-.PHONY: public
-public: $(src)
-	hugo gen chromastyles --style=solarized-light >static/css/syntax.css
+build: $(src) public/felix_hanley.pdf static/css/syntax.css
 	hugo -v
 
-.PHONY: resume
-resume: public/felix_hanley.pdf
+static/css/syntax.css:
+	hugo gen chromastyles --style=solarized-light >$@
 
 public/felix_hanley.pdf: resume/data.md resume/meta.yaml templates/default.latex
-	pandoc $(pdopts) --standalone --metadata-file=resume/meta.yaml -o $@ $<
+	mkdir -p public
+	pandoc -f markdown+yaml_metadata_block+smart \
+		--data-dir=. --standalone --metadata-file=resume/meta.yaml \
+		-o $@ resume/data.md
 
-.PHONY: deploy
 deploy: build
-	rsync -Prtc --delete --exclude '*.pdf' public/ felixhanley.info@silver.userspace.com.au:htdocs/
-	rsync -Put public/felix_hanley.pdf felixhanley.info@silver.userspace.com.au:htdocs/
+	rsync -Pa --delete public/ felixhanley.info@ftp01.userspace.com.au:htdocs/
 
-.PHONY: clean
 clean:
-	rm -rf public
+	rm -f static/css/syntax.css
+	rm -rf public/*
 	rm -rf resources
