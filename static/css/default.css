@@ -61,6 +61,14 @@ kbd {
 	text-shadow: 0 1px 0 #fff;
 	white-space: nowrap;
 }
+img[alt~="Felix"] {
+	border-radius: 50%;
+	clip-path: circle();
+	float: right;
+	margin: 10px;
+	max-width: 200px;
+	shape-outside: circle();
+}
 .textarea {
 	width: 100%;
 }
