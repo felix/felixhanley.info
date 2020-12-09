@@ -61,12 +61,13 @@ kbd {
 	text-shadow: 0 1px 0 #fff;
 	white-space: nowrap;
 }
+img {
+	max-width: 100%;
+	margin-bottom: 1em;
+}
 img[alt~="Felix"] {
 	border-radius: 50%;
 	clip-path: circle();
-	float: right;
-	margin: 10px;
-	max-width: 200px;
 	shape-outside: circle();
 }
 .textarea {
@@ -193,6 +194,7 @@ h3 {
 }
 .menu__link--title {
 	text-align: left;
+	font-size: 1.75rem;
 	color: white;
 }
 .menu__link--nested {
@@ -220,6 +222,7 @@ h3 {
 	top: 1.85rem;
 	transition: background 0.3s;
 	width: 28px;
+	z-index: 10;
 }
 .menu__toggle::focus {
 	outline: none;
@@ -378,6 +381,11 @@ input[type=number] {
 		flex-direction: row;
 		height: 100%;
 	}
+	img[alt~="Felix"] {
+		float: right;
+		margin: 10px;
+		max-width: 200px;
+	}
 	.menu {
 		flex: 0 0 21vw;
 	}
@@ -385,6 +393,7 @@ input[type=number] {
 		flex: 1;
 	}
 	.menu__link--title {
+		font-size: 2rem;
 		margin-bottom: 1.5rem;
 	}
 	.menu__link--nested {
