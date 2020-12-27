@@ -68,6 +68,9 @@ img {
 img[alt~="Felix"] {
 	border-radius: 50%;
 	clip-path: circle();
+	float: right;
+	margin: 10px;
+	max-width: 100px;
 	shape-outside: circle();
 }
 .textarea {
@@ -133,6 +136,9 @@ h2 {
 }
 h3 {
 	margin-bottom: 0;
+}
+h2 em {
+	font-size: 1rem;
 }
 
 .content {
@@ -298,6 +304,23 @@ h3 {
 	padding-top: 0;
 }
 
+#pdf-resume {
+	position: absolute;
+	right: 2rem;
+}
+#pdf-resume a {
+	background-color: #ff3333;
+	border-radius: 3px;
+	color: white;
+	display: inline-block;
+	padding: 3px 5px;
+	font-family: sans-serif;
+}
+#pdf-resume a,
+#pdf-resume a:hover {
+	border-bottom: 0;
+}
+
 a {
 	border-bottom: 1px solid #ffaaaa;
 }
@@ -382,8 +405,6 @@ input[type=number] {
 		height: 100%;
 	}
 	img[alt~="Felix"] {
-		float: right;
-		margin: 10px;
 		max-width: 200px;
 	}
 	.menu {
@@ -422,30 +443,15 @@ input[type=number] {
 	.list--articles article {
 		break-inside: avoid;
 	}
-
-	#pdf-resume {
-		left: 21vw;
-		position: absolute;
-		text-align: right;
-		width: 40em;
-	}
-	#pdf-resume a {
-		background-color: #ff3333;
-		border-radius: 3px;
-		color: white;
-		display: inline-block;
-		padding: 3px 5px;
-		font-family: sans-serif;
-	}
-	#pdf-resume a,
-	#pdf-resume a:hover {
-		border-bottom: 0;
-	}
 }
 
 @media (min-width: 96rem) {
 	#TableOfContents {
 		display: block;
+	}
+
+	#pdf-resume {
+		right: calc(100% - 21vw - 40em);
 	}
 }
 

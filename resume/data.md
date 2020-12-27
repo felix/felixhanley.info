@@ -8,9 +8,9 @@ I am a software engineer with many years experience in a variety of industries.
 This includes the full SDLC process, modern DevOps, and Agile practices.
 
 My experience covers technical team leadership, consulting, the design and
-implementation of large data pipelines, content classifiers, distributed
-systems, PKI & applied cryptography, network security, API & micro-service
-design, and large scale hosting.
+implementation of large data pipelines, distributed systems, applied
+cryptography, API & micro-service design, and most aspects of cloud
+infrastructure.
 
 As an Australian I am a native English speaker but I am also fluent in Thai. I
 am available for full-time, part-time, and contract positions with remote work
@@ -24,7 +24,7 @@ mirrors at [GitHub](https://github.com/felix) and
 _References available on request_
 
 
-## Senior DevOps Engineer, [MYOB](https://myob.com) (April 2019 -- , Melbourne)
+## Senior DevOps Engineer, [MYOB](https://myob.com) _(April 2019 -- , Melbourne)_
 
 An Australian multi-national corporation that provides tax, accounting and other
 business services software to small and medium businesses.
@@ -38,7 +38,7 @@ involved in the company's public API uplift.
 - Strong focus on system performance, reliability, and cost efficiency
 
 
-## Senior Software Developer, [Seer Security](https://seersec.com.au) (July 2018 -- April 2019, Melbourne)
+## Senior Software Developer, [Seer Security](https://seersec.com.au) _(July 2018 -- April 2019, Melbourne)_
 
 A small security business with products used by a number of government
 agencies.
@@ -51,7 +51,7 @@ classification engine.
 - Maintained extensive tests and CI integration using machine learning datasets _(Gitlab, Docker, AWS)_
 
 
-## Senior Software Engineer, [Freestyle Technology](https://freestyleiot.com) (June 2017 -- July 2018, Melbourne)
+## Senior Software Engineer, [Freestyle Technology](https://freestyleiot.com) _(June 2017 -- July 2018, Melbourne)_
 
 An IoT technology company providing hardware and software solutions to service
 providers and municipalities across SE Asia and Australasia. Their solution
@@ -67,7 +67,7 @@ of the system.
 - Maintained excellent test coverage and CI services _(TAP, Jenkins, Groovy)_
 
 
-## Principle, [UserSpace](https://userspace.com.au) (2006 -- , Melbourne, Asia & remote)
+## Principle, [UserSpace](https://userspace.com.au) _(2006 -- , Melbourne, Asia & remote)_
 
 Melbourne based hosting, development and consulting services to Australian and
 SE Asian clients.
@@ -87,7 +87,7 @@ Over the years:
 - Built custom e-commerce integrations for international clients _(Magento, Spree, Ruby, SQL, PHP, XML)_
 
 
-## Senior Software Engineer, [KL Data/ARKpX](https://web.archive.org/web/20161203050431/http://arkpx.com) (2015 -- 2017, Remote)
+## Senior Software Engineer, [KL Data/ARKpX](https://web.archive.org/web/20161203050431/http://arkpx.com) _(2015 -- 2017, Remote)_
 
 A small team developing a cross-platform, encrypted storage solution much like
 'Dropbox' but using client-side, PKI cryptography. Products in use by multiple
@@ -101,7 +101,7 @@ I was the lead developer on the core crypto library to be used by multiple front
 - Maintained UI elements across all modern browsers _(AngularJS)_
 
 
-## Software Engineer, [Ayuda Hosting](http://ayudahosting.com.au) (2010 -- 2015, Melbourne & remote)
+## Software Engineer, [Ayuda Hosting](http://ayudahosting.com.au) _(2010 -- 2015, Melbourne & remote)_
 
 A traditional, "bare-metal" hosting and consulting company with a small team
 based in the Melbourne CBD.
@@ -119,23 +119,23 @@ consulting.
 - Brought many large projects to completion
 
 
-## Web developer, [Sensory Networks](https://web.archive.org/web/20070105091228/http://www.sensorynetworks.com) (2005 -- 2006, Sydney)
+## Web developer, [Sensory Networks](https://web.archive.org/web/20070105091228/http://www.sensorynetworks.com) _(2005 -- 2006, Sydney)_
 
 Developed and maintained internal, cross-continent warehouse application _(PHP, HTML, CSS, Lua, MySQL, XSLT)_
 
 
-## Programmer/analyst, [Contract](http://felixhanley.info) (2002 -- 2005, Outback Australia)
+## Programmer/analyst, [Contract](http://felixhanley.info) _(2002 -- 2005, Outback Australia)_
 
 Custom solutions for mining contractors. Deployment of BSD VPNs, LDAP and email
 systems.
 
 
-## Programmer/DBA, [National Telecoms Group](https://web.archive.org/web/20080718172405/http://www.ntgroup.com.au/) (2001 -- 2002, Sydney)
+## Programmer/DBA, [National Telecoms Group](https://web.archive.org/web/20080718172405/http://www.ntgroup.com.au/) _(2001 -- 2002, Sydney)_
 
 Development on a large CRM used by 300+ seat call centers _(VB, SalesLogix)_
 
 
-## Programmer, [DefineIT/Macquarine Health](http://machealth.com.au) (2000 -- 2001, Sydney)
+## Programmer, [DefineIT/Macquarine Health](http://machealth.com.au) _(2000 -- 2001, Sydney)_
 
 Maintained embedded C/C++ code for monitoring units.
 
