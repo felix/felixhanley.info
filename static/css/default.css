@@ -66,12 +66,8 @@ img {
 	margin-bottom: 1em;
 }
 img[alt~="Felix"] {
-	border-radius: 50%;
-	clip-path: circle();
 	float: right;
 	margin: 10px;
-	max-width: 100px;
-	shape-outside: circle();
 }
 .textarea {
 	width: 100%;
@@ -202,6 +198,7 @@ h2 em {
 	text-align: left;
 	font-size: 1.75rem;
 	color: white;
+	line-height: 1.2;
 }
 .menu__link--nested {
 	font-size: 1.5rem;

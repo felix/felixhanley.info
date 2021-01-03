@@ -2,6 +2,7 @@
 title: Contracting rate calculator
 linktitle: Contract Rate
 description: Calculate a good contractor rate
+date: 2021-01-03
 menu:
   main:
     parent: tools
@@ -56,5 +57,8 @@ with the calculations a little.
 <br>
 <br>
 <strong>Hourly rate = <span id="hourlyRate"></span></strong> <em>= salary package / work hour</em>
+<br>
+<br>
+<strong>Daily rate = <span id="dailyRate"></span></strong> <em>= salary package / work days</em>
 </fieldset>
 </form>

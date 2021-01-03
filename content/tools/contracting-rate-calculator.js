@@ -6,7 +6,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
   var superRateEl = document.getElementById('superRate')
   var salaryEl = document.getElementById('salary')
 
-  var rateEl = document.getElementById('hourlyRate')
+  var hRateEl = document.getElementById('hourlyRate')
+  var dRateEl = document.getElementById('dailyRate')
   var workDaysEl = document.getElementById('workDays')
   var workHoursEl = document.getElementById('workHours')
   var totalSalaryEl = document.getElementById('totalSalary')
@@ -30,8 +31,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
     totalSalaryEl.textContent = '$' + totalSalary.toFixed(0).replace(/(\d)(?=(\d{3})+$)/g, '$1,')
 
     var hourlyRate = totalSalary / workHours
+    var dailyRate = totalSalary / workDays
 
-    rateEl.textContent = '$' + parseFloat(Math.round(hourlyRate * 100) / 100).toFixed(2)
+    hRateEl.textContent = '$' + parseFloat(Math.round(hourlyRate * 100) / 100).toFixed(2)
+    dRateEl.textContent = '$' + parseFloat(Math.round(dailyRate * 100) / 100).toFixed(2)
   }
   Array.prototype.forEach.call(document.querySelectorAll('.param'), function (e) {
     e.addEventListener('change', calculate)

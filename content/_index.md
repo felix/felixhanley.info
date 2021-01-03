@@ -1,18 +1,18 @@
 ---
-title: About me
+title: Hello, I'm Felix Hanley
 ---
 
 ![Photo of the protagonist, Felix](/img/profile.jpg) I am an Australian based
-Software Engineer. I also run [UserSpace](https://userspace.com.au), a business
-providing bespoke programming and hosting solutions to local and international
-clients.
+software engineer & architect.
 
-I have worked on distributed systems, network security, applied cryptography,
-document and stream processing engines, and more, in a variety of languages and
-environments.
+My interests are in distributed systems, applied cryptography, and measuring
+everything.  I am currently employed in the observability space, and am
+involved in the development of [ISO
+20248](https://en.wikipedia.org/wiki/ISO/IEC_20248) for small (bit size)
+digital signatures.
 
-I prefer working remotely and have done so for over 10 years from around
-Australia and South East Asia.
+I run [UserSpace](https://userspace.com.au) which provides bespoke programming
+and hosting solutions.
 
-I am usually available for hire, [contact me](/contact/) or read [my
+I am sometimes available for hire, [contact me](/contact/) or read [my
 résumé](/work/).
