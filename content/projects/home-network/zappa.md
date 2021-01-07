@@ -31,11 +31,11 @@ Hardware:
 
 Main software:
 
-- [Freebsd 12.1-RELEASE-p3](https://freebsd.org)
-- Samba 4.10
+- [Freebsd latest RELEASE](https://freebsd.org)
+- Samba
 - NFSd
 - Syncthing
-- Postgresql 12
-- Nginx
-- Prometheus
-- Transmision
+- Jailed Postgresql (with PostGIS & TimescaleDB extensions)
+- Jailed Nginx
+- Jailed Prometheus & Grafana
+- Jailed Transmission

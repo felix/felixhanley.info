@@ -1,6 +1,7 @@
 ---
 title: Simple Web Stats
 link: http://src.userspace.com.au/sws/about/
+weight: 20
 tags:
 - go
 ---
