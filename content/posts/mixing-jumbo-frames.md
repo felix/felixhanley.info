@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Making Jumbo frames play nicely with others
 date: 2021-01-07
 keywords: jumbo frames, vlan
@@ -85,7 +84,7 @@ subnets.
 
 ## Configuration
 
-###FreeBSD
+### FreeBSD
 
 The FreeBSD server has the following permanent configuration:
 
@@ -127,7 +126,7 @@ Ethernet frames larger than 1500 so there is no point joining the VLAN. But at
 least the NFS server is still available on the untagged network with standard
 frame sizes.
 
-## NFS & Samba
+### NFS & Samba
 
 By default my NFS clients seemed to negotiate with a rsize and wsize of 131072
 using NFSv3 (because it is simpler) so they are already larger than the MTU
