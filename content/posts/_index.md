@@ -1,4 +1,5 @@
 ---
-title: Blog
+linkTitle: Blog
+title: Blog entries
 weight: 20
 ---
