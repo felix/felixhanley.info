@@ -4,21 +4,24 @@
 [https://felixhanley.info](https://felixhanley.info)  
 [+61 457 092 803](tel:+61457092803)  
 
-I am a software engineer & architect with experience in a variety of industries
-and environments.  This includes the full SDLC process, modern DevOps, and
-Agile practices.
+I am a software engineer & architect with a broad range of experience. This
+includes the full SDLC process, modern DevOps, and Agile practices.
 
-My experience covers technical team leadership, consulting, the design and
-implementation of large data pipelines, distributed systems, applied
-cryptography, API & micro-service design, and most aspects of hosting
-infrastructure.
+Over many teams and years of experience in a variety of environments I have
+developed a broad range of skills and designed & delivered some high quality
+software. I enjoy the "craft" of software development and try to keep abreast
+of current research (in more areas than I often need!) and practices,
+evaluating them in current projects and teams.
+
+I have been pivotal in the success of many teams, both as a player and lead,
+with much experience in training and mentoring, being able to explain technical
+topics clearly.
 
 As an Australian I am a native English speaker but am also fluent in Thai.
 
 My publicly available source code is available at
-[https://src.userspace.com.au](https://src.userspace.com.au) and
-mirrors at [GitHub](https://github.com/felix) and
-[GitLab](https://gitlab.com/xilef).
+[https://src.userspace.com.au](https://src.userspace.com.au) and mirrored at
+[GitHub](https://github.com/felix).
 
 _References available on request_
 
@@ -28,13 +31,33 @@ _References available on request_
 An Australian multi-national corporation that provides tax, accounting and other
 business services software to small and medium businesses.
 
-I am currently the technical lead for the observability team, providing an
-internal service and consulting to other engineers and teams. I have also been
-involved in the company's public API uplift.
+I am currently the technical lead for the observability team, leading the
+design and implementation of the internal observability platform.
 
-- Design and development of a centralised event processing pipeline _(Go, AWS)_
+- Architecture and implementation of centralised event processing service _(Go, AWS)_
 - Development of a distributed tracing service _(Go, OpenTracing, Kubernetes, AWS)_
 - Strong focus on system performance, reliability, and cost efficiency
+
+
+## Principle, [UserSpace](https://userspace.com.au) _(2006 -- , Melbourne, Asia & remote)_
+
+Melbourne based hosting, development and consulting services to Australian and
+SE Asian clients.
+
+Most recently:
+
+- Consulting for the ISO/IEC 20248 (DigSig) 2021 revision, particularly the applied crytography components.
+- Development of DigSig solutions for Thailand government agencies _(Go, Javascript)_
+- Development of custom machine learning pipelines for Thai language customers _(Go, Python)_
+- Provisioning of BSD based hosting services including highly available databases and load balanced servers _(BSD, Ansible, HAProxy, Postgresql)_
+- Providing free DNS service, custom dynamic DNS and OpenNIC services _(PowerDNS, TinyDNS, Python)_
+
+Over the years:
+
+- Developed custom hosting control panels _(Go, AngularJS, Ruby on Rails, Shell)_
+- Developed and maintained custom support and monitoring software for clients _(Python, Shell)_
+- Built custom REST API for a number of SaaS clients _(Go, Sinatra)_
+- Built custom e-commerce integrations for international clients _(Magento, Spree, Ruby, SQL, PHP, XML)_
 
 
 ## Senior Software Developer, [Seer Security](https://seersec.com.au) _(July 2018 -- April 2019, Melbourne)_
@@ -45,7 +68,7 @@ agencies.
 I was the technical lead/architect for a social-network content extraction and
 classification engine.
 
-- Developed a distributed and configurable content extraction engine _(Go, Flatbuffers)_
+- Developed a distributed and configurable content extraction engine _(Go)_
 - Designed and developed a distributed plugin architecture _(Python, Django, PostgreSQL)_
 - Maintained extensive tests and CI integration using machine learning datasets _(Gitlab, Docker, AWS)_
 
@@ -56,34 +79,14 @@ An IoT technology company providing hardware and software solutions to service
 providers and municipalities across SE Asia and Australasia. Their solution
 involves "smart" devices and real time control.
 
-I developed a custom ETL and rules processing pipeline to ingest from large
-deployments of devices, and the APIs required to consume this data by the rest
-of the system.
+I was pivotal in the design and architecture of a custom ETL and rules
+processing pipeline, ingesting from large deployments of devices, and the APIs
+required to consume this data.
 
-- Developed distributed network stream processing engines handling many 1000s of messages per second _(Go)_
+- Developed distributed network stream processing engines ingesting from millions of devices _(Go)_
 - Designed and implemented numerous supporting APIs _(Python, Awk, Shell, Docker, AWS)_
-- Designed, implemented and administered supporting services _(PostgreSQL, PL/pgSQL, InfluxDB, TimescaleDB)_
+- Designed, implemented and administered supporting services  and infrastructure _(PostgreSQL, PL/pgSQL, InfluxDB, TimescaleDB)_
 - Maintained excellent test coverage and CI services _(TAP, Jenkins, Groovy)_
-
-
-## Principle, [UserSpace](https://userspace.com.au) _(2006 -- , Melbourne, Asia & remote)_
-
-Melbourne based hosting, development and consulting services to Australian and
-SE Asian clients.
-
-Most recently:
-
-- Development of ISO 20248 (DigSig) solutions for Thailand government agencies _(Go, Javascript)_
-- Development custom machine learning pipelines for Thailand language customers _(Go, Python)_
-- Maintained 30+ Linux and BSD virtual machines including highly available databases and load balanced servers _(BSD, Ansible, HAProxy, Postgresql)_
-- Administered free DNS service, custom dynamic DNS and OpenNIC services _(PowerDNS, TinyDNS, Python)_
-
-Over the years:
-
-- Developed custom hosting control panels _(Go, AngularJS, Ruby on Rails, Shell)_
-- Developed and maintained custom support and monitoring software for clients _(Python, Shell)_
-- Built custom REST API for a number of SaaS clients _(Go, Sinatra)_
-- Built custom e-commerce integrations for international clients _(Magento, Spree, Ruby, SQL, PHP, XML)_
 
 
 ## Senior Software Engineer, [KL Data/ARKpX](https://web.archive.org/web/20161203050431/http://arkpx.com) _(2015 -- 2017, Remote)_

@@ -7,7 +7,7 @@ software engineer & architect.
 
 My interests are in distributed systems, applied cryptography, and measuring
 everything.  I am currently employed in the observability space, and am
-involved in the development of [ISO
+involved in the development of [ISO/IEC
 20248](https://en.wikipedia.org/wiki/ISO/IEC_20248) for small (bit size)
 digital signatures.
 
