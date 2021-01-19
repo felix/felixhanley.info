@@ -16,7 +16,7 @@ public/felix_hanley.pdf: resume/data.md resume/meta.yaml templates/default.latex
 		-o $@ resume/data.md
 
 deploy: build
-	rsync -Pruct --delete public/ felixhanley.info@ftp01.userspace.com.au:htdocs/
+	rsync -Pruct --delete public/ --exclude '*.swp' --delete-excluded felixhanley.info@ftp01.userspace.com.au:htdocs/
 
 clean:
 	rm -f static/css/syntax.css

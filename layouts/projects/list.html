@@ -3,12 +3,12 @@
 
   {{ partial "nav.html" . }}
 
-  <main class="content">
+  <main class="page">
     {{ partial "title.html" . }}
 
     {{ .Content }}
 
-    <div class="list list--projects">
+    <div class="content list list--projects">
 
       {{ range .Data.Pages.ByWeight  }}
 

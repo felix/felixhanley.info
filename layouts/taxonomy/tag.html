@@ -3,11 +3,11 @@
 
   {{ partial "nav.html" . }}
 
-  <main class="content">
-    <h1>Pages tagged <span class="tag">{{ .Title }}</span></h1>
+  <main class="page">
+    <h1 class="content">Pages tagged <span class="tag">{{ .Title }}</span></h1>
     <input type="text" id="filter" placeholder="Filter&hellip;" />
 
-    <div class="list list--articles">
+    <div class="content list list--articles">
       {{ range .Data.Pages }}
       <article class="list__item">
         <a class="title" href="{{ .Permalink }}">{{ .Title }}</a>

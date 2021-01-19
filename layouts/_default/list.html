@@ -3,7 +3,7 @@
 
   {{ partial "nav.html" . }}
 
-  <main class="content">
+  <main class="page">
       {{ partial "title.html" . }}
       {{ partial "meta.html" . }}
       {{ .Content }}
@@ -12,7 +12,7 @@
     <input type="text" id="filter" placeholder="Filter&hellip;" />
     {{ end }}
 
-    <div class="list list--articles">
+    <div class="content list list--articles">
       {{ range .Data.Pages }}
       <article class="list__item">
         <a class="title" href="{{ .Permalink }}">{{ .Title }}</a>

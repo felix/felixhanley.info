@@ -78,7 +78,8 @@ img[alt~="Felix"] {
 }
 .meta {
 	margin: 0;
-	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
 }
 header .meta {
 	position: relative;
@@ -91,16 +92,16 @@ header .meta {
 	margin: 0;
 }
 .meta__label {
+	display: none;
 }
 .meta__data {
 	color: #888;
 	margin-right: .5em;
 }
-.meta__label:after {
-	content: ":";
-}
 .time {
 	font-style: italic;
+}
+.meta .tags {
 }
 .tag {
 	display: inline-block;
@@ -137,21 +138,21 @@ h2 em {
 	font-size: 1rem;
 }
 
-.content {
+.page {
 	padding: 1.5rem;
 	overflow: auto;
 }
-.content__article {
+.page__article {
 	margin-bottom: 5em;
 }
 .list--articles {
 	max-width: 100%;
 }
-.content p,
-.content ul,
-.content ol,
-.content dl,
-.content .list {
+.page p,
+.page ul,
+.page ol,
+.page dl,
+.content {
 	max-width: 40em;
 }
 .list__item {
@@ -251,7 +252,7 @@ h2 em {
 	width: 100%;
 	height: 3px;
 	background-color: #fff;
-	content: "";
+	page: "";
 	transition-duration: 0.3s, 0.3s;
 	transition-delay: 0.3s, 0s;
 }
@@ -407,7 +408,7 @@ input[type=number] {
 	.menu {
 		flex: 0 0 21vw;
 	}
-	.content {
+	.page {
 		flex: 1;
 	}
 	.menu__link--title {
