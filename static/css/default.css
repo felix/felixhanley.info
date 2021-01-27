@@ -30,6 +30,9 @@ ul, ol {
 	list-style-position: outside;
 	padding-left: 1rem;
 }
+.highlight {
+	outline: 1px solid #d7d1be;
+}
 pre {
 	font-family: monospace;
 	font-size: .825em;
@@ -37,6 +40,7 @@ pre {
 }
 pre.chroma {
 	margin-bottom: 0;
+	padding: 5px;
 }
 .chroma .lntd:first-child {
 	border-right: 1px solid #dbd8cb;
