@@ -66,7 +66,7 @@ kbd {
 	white-space: nowrap;
 }
 img {
-	max-width: 100%;
+	max-width: 50%;
 	margin-bottom: 1em;
 }
 img[alt~="Felix"] {
@@ -85,21 +85,26 @@ img[alt~="Felix"] {
 	display: flex;
 	justify-content: space-between;
 }
-header .meta {
+header .meta,
+h1 ~ .meta {
 	position: relative;
 	top: -1.5rem;
+}
+main > .meta {
+	display: none;
 }
 .meta__label,
 .meta__data {
 	display: inline;
+	color: #888;
 	font-size: .75rem;
+	text-transform: lowercase;
 	margin: 0;
 }
-.meta__label {
+.meta__label--tag {
 	display: none;
 }
 .meta__data {
-	color: #888;
 	margin-right: .5em;
 }
 .time {
@@ -173,6 +178,64 @@ h2 em {
 	background-position: 100% 100%;
 	background-size: 100% auto;
 }
+
+/* menu toggler */
+.menu__icon {
+	cursor: pointer;
+	display: inline-block;
+	padding: 28px 20px;
+	position: absolute;
+	right: 1.5rem;
+	top: 0.75rem;
+	user-select: none;
+}
+.menu__icon span {
+	background: #fff;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+}
+.menu__icon span:before,
+.menu__icon span:after {
+	background: #fff;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+.menu__icon span:before {
+	top: 5px;
+}
+.menu__icon span:after {
+	top: -5px;
+}
+.menu__btn {
+	display: none;
+}
+.menu__btn:checked ~ nav {
+	max-height: 240px;
+	margin-top: 1rem;
+}
+.menu__btn:checked ~ .menu__icon span {
+	background: transparent;
+}
+.menu__btn:checked ~ .menu__icon span:before {
+	transform: rotate(-45deg);
+}
+.menu__btn:checked ~ .menu__icon span:after {
+	transform: rotate(45deg);
+}
+.menu__btn:checked ~ .menu__icon:not(.steps) span:before,
+.menu__btn:checked ~ .menu__icon:not(.steps) span:after {
+	top: 0;
+}
+/* menu toggler end */
+
+
 .menu__link {
 	border: none;
 	display: block;
@@ -184,11 +247,10 @@ h2 em {
 	text-transform: uppercase;
 	transition: color 0.2s ease-in-out 0s;
 }
-.menu__group {
-	height: 0;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 0.5s linear 0s;
+nav {
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+	overflow: hidden;
 }
 .menu__link {
 	color: #aaa;
@@ -210,89 +272,8 @@ h2 em {
 	padding-left: 1em;
 }
 
-.menu__toggle {
-	appearance: none;
-	background-color: #222;
-	border-radius: none;
-	border: none;
-	box-shadow: none;
-	cursor: pointer;
-	display: block;
-	font-size: 0;
-	height: 27px;
-	margin: 0;
-	outline: 2px solid #222;
-	overflow: hidden;
-	padding: 0;
-	position: fixed;
-	right: 1.5rem;
-	text-indent: -9999px;
-	top: 1.85rem;
-	transition: background 0.3s;
-	width: 28px;
-	z-index: 10;
-}
-.menu__toggle::focus {
-	outline: none;
-}
-.menu__toggle:hover {
-	border: none;
-}
-.menu__toggle span {
-	display: block;
-	position: absolute;
-	top: 13px;
-	left: 0;
-	right: 0;
-	height: 3px;
-	background: white;
-	transition: background 0s 0.3s;
-}
-.menu__toggle span::before,
-.menu__toggle span::after {
-	position: absolute;
-	display: block;
-	left: 0;
-	width: 100%;
-	height: 3px;
-	background-color: #fff;
-	page: "";
-	transition-duration: 0.3s, 0.3s;
-	transition-delay: 0.3s, 0s;
-}
-.menu__toggle span::before {
-	top: -8px;
-	transition-property: top, transform;
-}
-.menu__toggle span::after {
-	bottom: -8px;
-	transition-property: bottom, transform;
-}
-.menu--active {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	z-index: 10;
-}
 
-.menu--active .menu__toggle span {
-	background: none;
-}
 
-.menu--active .menu__toggle span::before {
-	top: 0;
-	transform: rotate(45deg);
-}
-
-.menu--active .menu__toggle span::after {
-	bottom: 0;
-	transform: rotate(-45deg);
-}
-
-.menu--active .menu__toggle span::before,
-.menu--active .menu__toggle span::after {
-	transition-delay: 0s, 0.3s;
-}
 .menu--active .menu__group {
 	height: auto;
 	visibility: visible;
@@ -422,13 +403,13 @@ input[type=number] {
 	.menu__link--nested {
 		font-size: 1em;
 	}
-	.menu__group {
-		height: auto;
+	nav {
+		max-height: none;
 		visibility: visible;
 		opacity: 1;
 		margin-bottom: 1em;
 	}
-	.menu__toggle {
+	.menu__icon {
 		display: none;
 	}
 	.menu__link + .menu__group {

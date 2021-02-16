@@ -3,9 +3,6 @@ title: Contracting rate calculator
 linktitle: Contract Rate
 description: Calculate a good contractor rate
 date: 2021-01-03
-menu:
-  main:
-    parent: tools
 tags:
 - money
 - tools

@@ -2,11 +2,6 @@ console.log('Hi there!')
 
 window.addEventListener('DOMContentLoaded', (event) => {
 
-  // Mobile menu toggler
-  document.getElementById('nav-toggle').addEventListener('click', function () {
-    this.parentNode.classList.toggle('menu--active')
-  })
-
   // Change external links' targets
   var links = document.getElementsByTagName('a')
   if (links) {

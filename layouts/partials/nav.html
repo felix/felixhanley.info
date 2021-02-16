@@ -1,6 +1,7 @@
 <header class="menu">
   <a class="menu__link menu__link--title" href="{{ .Site.BaseURL }}">Felix Hanley</a>
-  <a class="menu__toggle" id="nav-toggle" href="#"><span></span></a>
+  <input class="menu__btn" type="checkbox" id="menu-toggle" />
+  <label class="menu__icon" for="menu-toggle"><span></span></label>
   <nav class="menu__group">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
