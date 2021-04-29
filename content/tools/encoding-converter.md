@@ -25,6 +25,7 @@ Auto detection is a bit hit-and-miss.
   <option value="base64">Base64</option>
   <option value="ascii">ASCII</option>
   <option value="bin">Binary</option>
+  <option value="array">Binary array</option>
 </select>
 <label>from file <input type="checkbox" id="srcIsFile" value="1" /></label>
 <br>

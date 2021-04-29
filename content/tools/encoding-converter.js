@@ -148,7 +148,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   // Output data as requested
   var output = function (data) {
     var dstType = dstTypeEl.options[dstTypeEl.selectedIndex].value
-    console.log('Input data', data)
+    //console.log('Input data', data)
     console.log('Output set to', dstType)
     var fixedWidth = document.getElementById('fixedWidth').checked
     var out
@@ -188,8 +188,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
         console.log('Could be hex')
         srcType = 'hex'
       }
+      if (srcEl.value[0] == '[') {
+        console.log('Could be binary array')
+        srcType = 'array'
+      }
     }
 
+    // This is the default
     var convertFunc = function (src) {
         output(strToBytes(src))
     }
@@ -212,6 +217,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
       }
     } else if (srcType === 'bin') {
       convertFunc = function (src) {
+        output(src)
+      }
+    } else if (srcType === 'array') {
+      convertFunc = function (src) {
+        src = src.replace(/[\[\]]/g, '').split(/[\s,]/).map(x => parseInt(x))
         output(src)
       }
     }
