@@ -1,5 +1,5 @@
 ---
-linkTitle: Blog
-title: Blog entries
+linkTitle: Posts
+title: Note to self...
 weight: 20
 ---
