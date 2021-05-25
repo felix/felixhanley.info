@@ -26,28 +26,30 @@ My publicly available source code is available at
 _References available on request_
 
 
-## Senior DevOps Engineer, [MYOB](https://myob.com) _(April 2019 -- , Melbourne)_
+## Principal Software Engineer, [MYOB](https://myob.com) _(April 2019 -- present, Australia)_
 
 An Australian multi-national corporation that provides tax, accounting and other
 business services software to small and medium businesses.
 
-I am currently the technical lead for the observability team, leading the
-design and implementation of the internal observability platform.
+As a principal engineer I am across a number of areas as a technical lead,
+particularly in the observability space and DevOps services.
 
-- Architecture and implementation of centralised event processing service _(Go, AWS)_
+- Architecture and implementation of centralised event processing service _(Go, AWS, OpenTelemetry)_
 - Development of a distributed tracing service _(Go, OpenTracing, Kubernetes, AWS)_
+- Architecture and lead for centralised service catalogue _(TypeScript)_
+- Mentoring and coaching across multiple teams
 - Strong focus on system performance, reliability, and cost efficiency
 
 
-## Principle, [UserSpace](https://userspace.com.au) _(2006 -- , Melbourne, Asia & remote)_
+## Principle, [UserSpace](https://userspace.com.au) _(2006 -- present, Melbourne, Asia & remote)_
 
 Melbourne based hosting, development and consulting services to Australian and
 SE Asian clients.
 
 Most recently:
 
-- Consulting for the ISO/IEC 20248 (DigSig) 2021 revision, particularly the applied crytography components.
-- Development of DigSig solutions for Thailand government agencies _(Go, Javascript)_
+- Consulting for the ISO/IEC 20248 (DigSig) 2021 revision, particularly the applied crytography components
+- Development of DigSig solutions for Thailand government agencies _(Go, Javascript, WASM)_
 - Development of custom machine learning pipelines for Thai language customers _(Go, Python)_
 - Provisioning of BSD based hosting services including highly available databases and load balanced servers _(BSD, Ansible, HAProxy, Postgresql)_
 - Providing free DNS service, custom dynamic DNS and OpenNIC services _(PowerDNS, TinyDNS, Python)_
@@ -66,10 +68,10 @@ A small security business with products used by a number of government
 agencies.
 
 I was the technical lead/architect for a social-network content extraction and
-classification engine.
+classification engine, built to government specifications.
 
-- Developed a distributed and configurable content extraction engine _(Go)_
-- Designed and developed a distributed plugin architecture _(Python, Django, PostgreSQL)_
+- Developed a distributed content extraction engine and plugin architecture _(Go, Python, PostgreSQL)_
+- Developed content extraction logic for multiple platforms and APIs _(Javascript, Python)_
 - Maintained extensive tests and CI integration using machine learning datasets _(Gitlab, Docker, AWS)_
 
 
@@ -95,10 +97,11 @@ A small team developing a cross-platform, encrypted storage solution much like
 'Dropbox' but using client-side, PKI cryptography. Products in use by multiple
 government departments.
 
-I was the lead developer on the core crypto library to be used by multiple front-ends.
+I was the lead developer on the core cryptographic library to be used by
+multiple front-ends.
 
 - Lead development of core Javascript cryptographic library _(Javascript)_
-- Developed custom ASN.1 schemas for CMS (RFC 5952) communications _(ASN.1)_
+- Developed custom ASN.1 schemas for CMS (RFC 5952) communications _(ASN.1, X.509)_
 - Created extensive cross-browser test suite and maintained CI _(Node, Bamboo CI, Selenium)_
 - Maintained UI elements across all modern browsers _(AngularJS)_
 
@@ -113,8 +116,8 @@ installation, project planning & cost estimation, client programming and
 consulting.
 
 - Managed large, redundant networks, firewalls and VMs _(Xen, Keepalived, IPTables, IPSec, PF)_
-- Developed client websites and applications _(PHP, Javascript, HTML/CSS)_
-- Developed and improved control panel and billing software _(PHP, SQL, Shell)_
+- Developed numerous client websites and applications _(PHP, Javascript, HTML/CSS)_
+- Developed custom control panel and billing software _(PHP, SQL, Shell)_
 - Developed in-house CMS software with a custom ORM and plugin system
 - Implemented large configuration systems _(CFEngine, Puppet)_
 - Administrated highly available and redundant server clusters _(Apache, Nagios, Postfix)_
