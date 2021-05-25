@@ -22,14 +22,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
       var term = this.value
       if (term.length > 1) {
         Array.prototype.forEach.call(posts, function (el, i) {
-          var titles = Array.prototype.filter.call(el.querySelectorAll('.title'), function (el, i) {
+          var results = Array.prototype.filter.call(el.querySelectorAll('.title,.tag'), function (el, i) {
             return new RegExp(term, 'i').test(el.textContent)
           })
-          var tags = Array.prototype.filter.call(el.querySelectorAll('tag'), function (el, i) {
-            return new RegExp(term, 'i').test(el.textContent)
-          })
-          if (titles.length || tags.length) {
-            console.log('Filtering on', term)
+          if (results.length) {
             el.classList.remove('filtered')
           } else {
             el.classList.add('filtered')
