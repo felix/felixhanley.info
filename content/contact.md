@@ -16,7 +16,7 @@ information be sure to use the GPG key below.
 ### Social
 
 - [GitHub](https://github.com/felix)
-- [GitLab](https://gitlab.com/xilef)
+- [GitLab](https://gitlab.com/felix)
 - [LinkedIn](https://www.linkedin.com/in/felix-hanley/)
 
 ### GnuPG/PGP
