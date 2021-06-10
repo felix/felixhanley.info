@@ -17,11 +17,11 @@ I have been pivotal in the success of many teams, both as a player and lead,
 with much experience in training and mentoring, being able to explain technical
 topics clearly.
 
-As an Australian I am a native English speaker but am also fluent in Thai.
-
 My publicly available source code is available at
 [https://src.userspace.com.au](https://src.userspace.com.au) and some things mirrored at
 [GitHub](https://github.com/felix) and/or [GitLab](https://gitlab.com/felix).
+
+English is my main language, but am also fluent in Thai.
 
 _References available on request_
 
@@ -41,7 +41,7 @@ particularly in the observability space and DevOps services.
 - Strong focus on system performance, reliability, and cost efficiency
 
 
-## Principle, [UserSpace](https://userspace.com.au) _(2006 -- present, Melbourne, Asia & remote)_
+## Solutions Architect, [UserSpace](https://userspace.com.au) _(2006 -- present, Melbourne, Asia & remote)_
 
 Melbourne based hosting, development and consulting services to Australian and
 SE Asian clients.
@@ -49,8 +49,8 @@ SE Asian clients.
 Most recently:
 
 - Consulting for the ISO/IEC 20248 (DigSig) 2021 revision, particularly the applied crytography components
-- Development of DigSig solutions for Thailand government agencies _(Go, Javascript, WASM)_
-- Development of custom machine learning pipelines for Thai language customers _(Go, Python)_
+- Design and development of DigSig solutions for Thailand government agencies _(Go, Javascript, WASM)_
+- Design and development of custom machine learning pipelines for Thai language customers _(Go, Python)_
 - Provisioning of BSD based hosting services including highly available databases and load balanced servers _(BSD, Ansible, HAProxy, Postgresql)_
 - Providing free DNS service, custom dynamic DNS and OpenNIC services _(PowerDNS, TinyDNS, Python)_
 
@@ -58,8 +58,8 @@ Over the years:
 
 - Developed custom hosting control panels _(Go, AngularJS, Ruby on Rails, Shell)_
 - Developed and maintained custom support and monitoring software for clients _(Python, Shell)_
-- Built custom REST API for a number of SaaS clients _(Go, Sinatra)_
-- Built custom e-commerce integrations for international clients _(Magento, Spree, Ruby, SQL, PHP, XML)_
+- Designed and built custom REST API for a number of SaaS clients _(Go, Sinatra)_
+- Designed and built custom e-commerce integrations for international clients _(Magento, Spree, Ruby, SQL, PHP, XML)_
 
 
 ## Senior Software Developer, [Seer Security](https://seersec.com.au) _(July 2018 -- April 2019, Melbourne)_
