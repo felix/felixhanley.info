@@ -21,8 +21,6 @@ My publicly available source code is available at
 [https://src.userspace.com.au](https://src.userspace.com.au) and some things mirrored at
 [GitHub](https://github.com/felix) and/or [GitLab](https://gitlab.com/felix).
 
-English is my main language, but am also fluent in Thai.
-
 _References available on request_
 
 
