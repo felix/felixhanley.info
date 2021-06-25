@@ -33,14 +33,21 @@ ul, ol {
 .highlight {
 	outline: 1px solid #d7d1be;
 }
+p code {
+	background-color: #eee;
+	padding-left: 2px;
+	padding-right: 2px;
+}
 pre {
+	background-color: #eee;
+	border: 1px solid #ddd;
 	font-family: monospace;
 	font-size: .825em;
 	overflow-x: auto;
+	padding: 5px;
 }
 pre.chroma {
 	margin-bottom: 0;
-	padding: 5px;
 }
 .chroma .lntd:first-child {
 	border-right: 1px solid #dbd8cb;
