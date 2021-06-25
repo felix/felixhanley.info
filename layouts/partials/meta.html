@@ -10,8 +10,8 @@
   {{ $date = $stat.ModTime }}
   {{ end }}
 
-  <span class="meta__label meta__label--time">Updated
-  <time class="meta__data meta__data--time time time--updated" datetime="{{ $date.Format "2006-01-02T15:04:05" }}"> {{ $date.Format "2006-01-02" }} </time>
+  <span class="meta__label meta__label--time">Updated <time
+      class="meta__data meta__data--time time time--updated" datetime="{{ $date.Format "2006-01-02T15:04:05" }}"> {{ $date.Format "2006-01-02" }} </time>
   </span>
 
   {{ if .Params.tags }}
