@@ -34,7 +34,8 @@ From the logs we can see that something is sending packets (via UDP or TCP) to
 a port that is closed.
 
 The first step then, is to view some of those ICMP packets to determine the
-protocol and port. Using tcpdump we need to capture packets that are ICMP and of type "destination unreachable and code "port unreachable".
+protocol and port. Using tcpdump we need to capture packets that are ICMP and
+of type "destination unreachable and code "port unreachable".
 
 ```console
 $ man icmp
@@ -76,9 +77,13 @@ listening on em0, link-type EN10MB (Ethernet), capture size 262144 bytes
 12:50:01.354087 IP 10.0.1.2 > 10.0.1.1: ICMP 10.0.1.2 udp port 514 unreachable, length 253
 ```
 
-So we can see that a syslog service (UDP port 514) is sending to a closed port. The _recipient_ of the `unreach` ICMP messages captured above indicates that host has an IP of `10.0.1.1`.
+So we can see that a syslog service (UDP port 514) is sending to a closed port.
+The _recipient_ of the `unreach` ICMP messages captured above indicates that
+host has an IP of `10.0.1.1`.
 
-As it turns out, my syslog config was not allowed to receive logs from the peer `10.0.1.1`. An updated line in `rc.conf` fixed that:
+As it turns out, I had enabled remote syslog on `10.0.1.1` but the receiving
+host was not allowed to receive logs from the peer `10.0.1.1`. An updated line
+in `rc.conf` fixed that:
 
 ```conf
 syslogd_flags="-b 127.0.0.1 -b 10.0.1.2 -a 10.0.0.0/16"
