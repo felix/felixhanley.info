@@ -24,7 +24,10 @@ h1,h2,h3,h4,p,div,ul,ol,pre {
 }
 a {
 	color: inherit;
-	text-decoration: none;
+	text-decoration: underline solid #ffaaaa;
+}
+a:hover {
+	text-decoration: underline solid #555;
 }
 ul, ol {
 	list-style-position: outside;
@@ -120,15 +123,17 @@ main > .meta {
 .meta .tags {
 }
 .tag {
-	display: inline-block;
-	padding: 3px 5px;
-	line-height: 1;
-	font-family: sans-serif;
-	border: 1px solid #ddd !important;
 	border-radius: 5px;
+	border: 1px solid #ddd !important;
+	display: inline-block;
+	font-family: sans-serif;
+	line-height: 1;
+	padding: 3px 5px;
+	text-decoration: none;
 }
 .tag:hover {
 	border: 1px solid #555 !important;
+	text-decoration: none;
 }
 
 h1,h2,h3 {
@@ -251,8 +256,12 @@ h2 em {
 	font-weight: normal;
 	letter-spacing: .1em;
 	padding: 0;
+	text-decoration: none;
 	text-transform: uppercase;
 	transition: color 0.2s ease-in-out 0s;
+}
+.menu__link:hover {
+	text-decoration: none;
 }
 nav {
 	max-height: 0;
@@ -308,15 +317,9 @@ nav {
 }
 #pdf-resume a,
 #pdf-resume a:hover {
-	border-bottom: 0;
+	text-decoration: none;
 }
 
-a {
-	border-bottom: 1px solid #ffaaaa;
-}
-a:hover {
-	border-bottom: 1px solid #555;
-}
 #filter {
 	margin-bottom: 3em;
 }
