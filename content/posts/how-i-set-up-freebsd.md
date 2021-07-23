@@ -10,14 +10,11 @@ tags:
 ---
 
 I recently reclaimed a laptop and provisioned it for use as a development
-machine. I have done this a few times and this time I actually kept track of
-the steps I took.
+machine. For reference, these are the steps I took.
 
 ## OS installation
 
-FreeBSD has been my main OS of choice for quite some time. I usually have an
-install image on my file server and it does not matter if it is a version or
-two too old. Put this on a USB stick:
+Copy a new ISO onto a USB stick:
 
 ```sh
 dd if=FreeBSD-12.0-RELEASE-amd64-mini-memstick.img of=/dev/<the usb device> bs=1M
@@ -30,33 +27,33 @@ choose the following:
 - services: enable moused, ssh, powerd, ntpd
 - hardening: disable sendmail, clear tmp
 
-I create a user for myself and ensure I am also in the additional 'wheel',
-'operator', and 'video' groups.
+Create a user and ensure it is in the additional 'wheel', 'operator', and
+'video' groups.
 
 ## Initial configuration
 
-Once rebooted I usually do the following to get started (not always in this order):
+Once rebooted do the following to get started (not always in this order):
 
-- Run `freebsd-update fetch install` to get the latest release. I usually reboot after this.
+- Run `freebsd-update fetch install` to get the latest release. Reboot after this.
 - Update `/etc/pkg/FreeBSD.conf` to use latest instead of quarterly.
-- Add my own local package repository to `/usr/local/etc/pkg/repos/`.
+- Add any local package repositories to `/usr/local/etc/pkg/repos/`.
 - Run `pkg upgrade` which will install 'pkg' and do an update.
 
-For accelerated graphics I usually need the intel DRM module installed and loaded at boot:
+For accelerated graphics the intel DRM module is installed and loaded at boot:
 
 ```sh
 doas pkg install drm-kmod
 sysrc kld_list+="/boot/modules/i915kms.ko coretemp"
 ```
 
-I enable the following sysctl and powerd flags for suspend etc.:
+Enable the following sysctl and powerd flags for suspend etc.:
 
 ```sh
 echo 'hw.acpi.lid_switch_state=S3' >> /etc/sysctl.conf
 sysrc powerd_flags="-N"
 ```
 
-I like to shorten the boot time:
+Shorten the boot time:
 
 ```sh
 echo 'autoboot_delay="0"' >> /boot/loader.conf
@@ -79,7 +76,7 @@ echo 'acpi_video_load="YES"' >> /boot/loader.conf
 cp /usr/local/share/examples/intel-backlight/acpi-video-intel-backlight.conf /usr/local/etc/devd/
 ```
 
-Install some basic packages I will need next:
+Install some basic packages:
 
 ```sh
 pkg install git tmux rsync
@@ -98,32 +95,32 @@ sysrc ifconfig_lagg0="laggproto failover laggport em0 laggport wlan0 DHCP"
 
 ## Personalisation
 
-At this stage I should be able to sync and configure some of my basic tools. I
-start with a known set of files that I have on every machine. These are usually
-synchronised via syncthing or rsync but for the initial install I copy them
-from my file server or clone from git:
+At this stage sync and configure some basic tools. Start with a known set of
+files that are on every machine. These are usually synchronised via syncthing
+or rsync but for the initial install they are copied from a central file server
+or cloned from git:
 
-Copy my personal documents:
+Copy personal documents:
 
 ```sh
 rsync -Pa felix@zappa:Documents/ ~/Documents/
 ```
 
-Install my SSH key from the above documents:
+Install SSH keys from the above documents:
 
 ```sh
 cp ~/Documents/ssh/felix/id_ed25519* ~/.ssh/
 ssh-add
 ```
 
-Clone my password store and dotfiles:
+Clone password store and dotfiles:
 
 ```sh
-git clone git@<my password url> ~/.password-store
+git clone git@<password url> ~/.password-store
 git clone git@src.userspace.com.au:felix/dotfiles.git ~/.dotfiles
 ```
 
-Run my dotfile sync script to get all my current configs and settings:
+Run dotfile sync script to get all current configs and settings:
 
 ```sh
 ~/.dotfiles/bin/dm
@@ -131,8 +128,7 @@ Run my dotfile sync script to get all my current configs and settings:
 
 ## Package installation
 
-I install a whole bunch of stuff as I work but the following are a list of
-packages that I most _always_ want:
+Install minimal set of packages:
 
 ```sh
 pkg install git tmux rsync password-store
@@ -146,13 +142,12 @@ pkg install neovim neomutt
 
 ## Desktop configuration
 
-I am currently using Sway, see my dotfiles for my current config. To get things
-working on FreeBSD there are a few required tweaks.
+If using Sway there are a few required tweaks.
 
 First is access to the `/dev/input/*` devices which by default are only
-accessible by root. I still don't know if there is a proper fix for this but I
-just add the following to `/etc/devfs.rules` so they are usable by the video
-group (which is needed to run sway anyway):
+accessible by root. Is a proper fix for this? Add the following to
+`/etc/devfs.rules` so they are usable by the video group (which is needed to
+run sway anyway):
 
 ```ini
 [localrules=10]

@@ -30,8 +30,8 @@ On a FreeBSD box I recently started getting a bunch of the following messages:
 
 ## Diagnosing the cause
 
-From the logs we can see that something is sending packets (via UDP or TCP) to
-a port that is closed.
+From the logs it can be seen that something is sending packets (via UDP or TCP)
+to a port that is closed.
 
 The first step then, is to view some of those ICMP packets to determine the
 protocol and port. Using tcpdump we need to capture packets that are ICMP and

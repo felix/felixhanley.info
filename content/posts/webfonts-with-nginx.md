@@ -11,7 +11,7 @@ aliases:
 ---
 
 To serve your own webfonts from NginX they need to be served with the correct
-content-type.  Add the following to my mime.types file in the Nginx config
+content-type. Add the following to mime.types file in the Nginx config
 directory:
 
 ```nginx

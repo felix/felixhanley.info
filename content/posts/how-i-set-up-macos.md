@@ -26,7 +26,7 @@ I then install the following ports:
 - tmux
 - neovim
 - Go
-- neomutt (yes, I do)
+- neomutt (yes)
 - pass
 - pass-otp
 - pinentry-mac

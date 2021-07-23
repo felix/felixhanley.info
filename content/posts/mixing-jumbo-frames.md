@@ -73,7 +73,7 @@ iperf Done.
 in applications.
 
 You may notice that they are on a different subnet. The 10.0.5.0/24 subnet is
-separated via a VLAN (id 5 in this case). This allows my FreeBSD NAS to serve
+separated via a VLAN (id 5 in this case). This allows a FreeBSD NAS to serve
 NFS exports on both subnets but on the 10.0.5.0/24 to have a MTU of 9000.
 
 Running VLANs and jumbo frames will require the intermediate hardware to
@@ -128,7 +128,7 @@ frame sizes.
 
 ### NFS & Samba
 
-By default my NFS clients seemed to negotiate with a rsize and wsize of 131072
+By default NFS clients seemed to negotiate with a rsize and wsize of 131072
 using NFSv3 (because it is simpler) so they are already larger than the MTU
 being used. Adjusting this smaller and larger seemed to make no difference to
 the rate of reading and writing, generally 120MB/s and 90MB/s respectively.

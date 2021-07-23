@@ -3,7 +3,7 @@ title: Hello, I'm Felix Hanley
 ---
 
 ![Photo of the protagonist, Felix](/img/profile.jpg) I am an Australian based
-software engineer & architect.
+software engineer.
 
 My interests are in distributed systems, applied cryptography, and measuring
 everything.  I am currently employed in the observability space, and am
