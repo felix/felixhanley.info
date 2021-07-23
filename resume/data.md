@@ -4,8 +4,8 @@
 [https://felixhanley.info](https://felixhanley.info)  
 [+61 457 092 803](tel:+61457092803)  
 
-I am a software engineer & architect with a broad range of experience. This
-includes the full SDLC process, modern DevOps, and Agile practices.
+I am a software engineer with a broad range of experience. This includes the
+full SDLC process, modern DevOps, and Agile practices.
 
 Over many teams and years of experience in a variety of environments I have
 developed a broad range of skills and designed & delivered some high quality
@@ -138,9 +138,9 @@ systems.
 Development on a large CRM used by 300+ seat call centers _(VB, SalesLogix)_
 
 
-## Programmer, [DefineIT/Macquarine Health](http://machealth.com.au) _(2000 -- 2001, Sydney)_
+## Programmer/Sysadmin, [DefineIT/Macquarine Health](http://machealth.com.au) _(2000 -- 2001, Sydney)_
 
-Maintained embedded C/C++ code for monitoring units.
+Hardware support and maintenance of C/C++ code.
 
 
 ## Education
