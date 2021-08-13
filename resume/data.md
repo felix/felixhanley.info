@@ -4,8 +4,7 @@
 [https://felixhanley.info](https://felixhanley.info)  
 [+61 457 092 803](tel:+61457092803)  
 
-I am a software engineer with a broad range of experience. This includes the
-full SDLC process, modern DevOps, and Agile practices.
+I am a software engineer based in Australia.
 
 Over many teams and years of experience in a variety of environments I have
 developed a broad range of skills and designed & delivered some high quality
