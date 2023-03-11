@@ -4,21 +4,21 @@
 [https://felixhanley.info](https://felixhanley.info)  
 [+61 457 092 803](tel:+61457092803)  
 
-I am a software engineer based in Australia.
+Software engineer based in Australia and South East Asia.
 
 Over many teams and years of experience in a variety of environments I have
 developed a broad range of skills and designed & delivered some high quality
-software. I enjoy the "craft" of software development and try to keep abreast
-of current research (in more areas than I often need!) and practices,
-evaluating them in current projects and teams.
+software. I enjoy the "craft" of software development and enjoy helping others
+to get the same satisfaction from their work.
 
 I have been pivotal in the success of many teams, both as a player and lead,
 with much experience in training and mentoring, being able to explain technical
 topics clearly.
 
 My publicly available source code is available at
-[https://src.userspace.com.au](https://src.userspace.com.au) and some things mirrored at
-[GitHub](https://github.com/felix) and/or [GitLab](https://gitlab.com/felix).
+[https://src.userspace.com.au](https://src.userspace.com.au) and some things
+mirrored at [GitHub](https://github.com/felix) and/or
+[GitLab](https://gitlab.com/felix).
 
 _References available on request_
 
@@ -92,7 +92,7 @@ required to consume this data.
 
 A small team developing a cross-platform, encrypted storage solution much like
 'Dropbox' but using client-side, PKI cryptography. Products in use by multiple
-government departments.
+government departments. Previously called 'LockBox'.
 
 I was the lead developer on the core cryptographic library to be used by
 multiple front-ends.
