@@ -142,6 +142,12 @@ Development on a large CRM used by 300+ seat call centers _(VB, SalesLogix)_
 Hardware support and maintenance of C/C++ code.
 
 
+## Volunteering
+
+- Radio presenter for community radio station
+- Audio technician for multi-lingual translation office
+
+
 ## Education
 
 2001 Bachelor of Computer Science and Software Engineering, [The University of Sydney](https://sydney.edu.au/)
