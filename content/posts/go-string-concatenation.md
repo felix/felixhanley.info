@@ -1,7 +1,7 @@
 ---
-draft: true
 title: Go string concatenation comparison
 date: 2018-05-01
+lastmod: 2022-07-04
 keywords: go concatenation
 description: Comparing string concatenation methods in Go
 tags:
@@ -11,6 +11,8 @@ tags:
 
 There are a variety of methods of bulk string concatenation and some are faster
 than others:
+
+UPDATE 20220704: Re-ran the benchmarks, they got slower!
 
 ## Concatenation using '+'
 
@@ -63,6 +65,8 @@ func BenchmarkBuilder(b *testing.B) {
 ## Comparison
 
 ```shell
+$ go version
+go version go1.18.3 darwin/amd64
 $ go test -bench=. -test.benchmem
 goos: darwin
 goarch: amd64
@@ -71,7 +75,18 @@ BenchmarkFmt-12          1000000            128244 ns/op         1006374 B/op   
 BenchmarkPlus-12         1000000             62706 ns/op          503994 B/op          1 allocs/op
 BenchmarkBuilder-12     520606197                2.449 ns/op           5 B/op          0 allocs/op
 PASS
-ok      _/var/tmp/concat 194.673s
+ok      _/tmp/concat 194.673s
 ```
 
 Interesting!
+
+```shell
+$ go1.11.13 test -bench=. -test.benchmem
+goos: darwin
+goarch: amd64
+BenchmarkFmt-12          1000000             78188 ns/op          523073 B/op          2 allocs/op
+BenchmarkPlus-12         1000000             43801 ns/op          503992 B/op          1 allocs/op
+BenchmarkBuilder-12     300000000                3.35 ns/op            5 B/op          0 allocs/op
+PASS
+ok      _/tmp/concat     124.349s
+```

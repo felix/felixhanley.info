@@ -37,6 +37,7 @@ Auto detection is a bit hit-and-miss.
   <option value="base64">Base64</option>
   <option value="ascii">ASCII</option>
   <option value="array">Byte array</option>
+  <option value="bits">Bits</option>
 </select>
 <label>to file <input type="checkbox" id="dstIsFile" value="1" /></label>
 <label>80 char width <input type="checkbox" id="fixedWidth" value="1" /></label>

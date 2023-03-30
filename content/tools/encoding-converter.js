@@ -42,6 +42,23 @@ var bytesToStr = function (bytes) {
   return out
 }
 
+var bytesToBits = function (bytes) {
+  var out = ''
+  for (var i = 0; i < bytes.length; ++i) {
+    if (i > 0) {
+      out += ' '
+    }
+    var b = bytes[i]
+    if (b < 0 || b > 255) {
+      throw new Error('Invalid byte value')
+    }
+    for (var j = 7; j > -1; --j) {
+      out += 0x01 & (b >> j);
+    }
+  }
+  return out
+}
+
 var bytesToBase64 = function (bytes) {
   var base64 = ''
   var encodings = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
@@ -160,6 +177,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
       out = bytesToBase64(data)
     } else if (dstType === 'array') {
       out = data.toString().split(',').join(', ')
+    } else if (dstType === 'bits') {
+      out = bytesToBits(data)
     }
     if (fixedWidth) {
       out = out.replace(/(.{80})/g, '$1\n')
