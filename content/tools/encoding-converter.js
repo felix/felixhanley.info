@@ -25,21 +25,14 @@ var bytesToHex = function (bytes) {
 
 // Convert string to Uint8 array
 var strToBytes = function (str) {
-  var buf = new ArrayBuffer(str.length)
-  var out = new Uint8Array(buf)
-  for (var i = 0, j = str.length; i < j; i += 1) {
-    out[i] = str.charCodeAt(i)
-  }
-  return out
+  var encoder = new TextEncoder()
+  return encoder.encode(str)
 }
 
 // Convert Uint8 array to string
 var bytesToStr = function (bytes) {
-  var out = ''
-  for (var i = 0; i < bytes.length; i += 1) {
-    out += String.fromCharCode(bytes[i])
-  }
-  return out
+  var decoder = new TextDecoder()
+  return decoder.decode(bytes)
 }
 
 var bytesToBits = function (bytes) {
@@ -169,7 +162,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     console.log('Output set to', dstType)
     var fixedWidth = document.getElementById('fixedWidth').checked
     var out
-    if (dstType === 'ascii') {
+    if (dstType === 'utf8') {
       out = bytesToStr(data)
     } else if (dstType === 'hex') {
       out = bytesToHex(data)
@@ -230,7 +223,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         src = src.replace(/[^0-9a-z+/=]/gi, '')
         output(base64ToBytes(src))
       }
-    } else if (srcType === 'ascii') {
+    } else if (srcType === 'utf8') {
       convertFunc = function (src) {
         output(strToBytes(src))
       }
@@ -262,6 +255,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
   var srcReset = document.getElementById('srcReset')
   srcReset.addEventListener('click', function () {
     srcEl.value = ''
+  })
+  var swap = document.getElementById('swap')
+  swap.addEventListener('click', function (evt) {
+    evt.preventDefault()
+    var tmp = srcEl.value
+    srcEl.value = dstEl.value
+    dstEl.value = tmp
   })
   srcIsFileEl.addEventListener('change', function () {
     if (srcIsFileEl.checked) {

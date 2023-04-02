@@ -3,7 +3,7 @@ title: Encoding conversion tool
 linktitle: Encoding
 keywords: javascript convert encoding base64 hex
 description: A tool to convert encodings
-date: 2016-02-19
+date: 2023-04-02
 tags:
 - encoding
 - javascript
@@ -12,7 +12,7 @@ aliases:
 - /articles/encoding-converter/
 ---
 
-Convert between HEX, Base64, ASCII or binary, from and to files.
+Convert between HEX, Base64, UTF-8 or binary, from and to files.
 
 <!--more-->
 
@@ -23,7 +23,7 @@ Auto detection is a bit hit-and-miss.
   <option value="auto">Auto</option>
   <option value="hex">Hexadecimal</option>
   <option value="base64">Base64</option>
-  <option value="ascii">ASCII</option>
+  <option value="utf8">UTF-8</option>
   <option value="bin">Binary</option>
   <option value="array">Binary array</option>
 </select>
@@ -35,7 +35,7 @@ Auto detection is a bit hit-and-miss.
 <select id="dstType">
   <option value="hex">Hexadecimal</option>
   <option value="base64">Base64</option>
-  <option value="ascii">ASCII</option>
+  <option value="utf8">UTF-8</option>
   <option value="array">Byte array</option>
   <option value="bits">Bits</option>
 </select>
@@ -46,4 +46,5 @@ Auto detection is a bit hit-and-miss.
 <br>
 <button id="convert">Convert</button>
 <button id="srcReset">Clear</button>
+<button id="swap">Swap</button>
 </form>
