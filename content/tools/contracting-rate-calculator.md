@@ -26,7 +26,10 @@ with the calculations a little.
 <form id="contracting-calculator">
 <fieldset class="aligned">
 <label>Work day (hours)</label>
-<input class="param" type="number" id="hours" value="7.5" min="0"></input>
+<input class="param" type="number" id="hours" value="7.5" min="1"></input>
+<br>
+<label>Days per week</label>
+<input class="param" type="number" id="days" value="5" min="1"></input>
 <br>
 <label>Public holidays (days)</label>
 <input class="param" type="number" id="holidays" value="11" min="0"></input>

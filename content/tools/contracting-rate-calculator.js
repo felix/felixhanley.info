@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   var sickLeaveEl = document.getElementById('sickLeave')
   var superRateEl = document.getElementById('superRate')
   var salaryEl = document.getElementById('salary')
+  var daysEl = document.getElementById('days')
 
   var hRateEl = document.getElementById('hourlyRate')
   var dRateEl = document.getElementById('dailyRate')
@@ -19,8 +20,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     var sickLeave = parseInt(sickLeaveEl.value || 0, 10)
     var superRate = parseFloat(superRateEl.value || 0, 10)
     var salary = parseInt(salaryEl.value || 0, 10)
+    var days = parseInt(daysEl.value || 0, 10)
 
-    var workableDays = 52 * 5
+    var workableDays = 52 * days
     var restDays = holidays + leave + sickLeave
     var workDays = workableDays - restDays
     workDaysEl.textContent = workDays
