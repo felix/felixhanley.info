@@ -3,7 +3,9 @@
 
 src	!= find content static layouts resume -type f
 
-build: $(src) public/felix_hanley.pdf static/css/syntax.css
+build: public/felix_hanley.pdf html
+
+html: $(src) static/css/syntax.css
 	hugo -v
 
 static/css/syntax.css:
