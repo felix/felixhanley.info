@@ -10,7 +10,7 @@ aliases:
 - /articles/contracting-rate-calculator/
 ---
 
-Calculate a contractor rate from a full-time (5 days a week) salary.
+Calculate a contractor rate from a full-time or part-time salary.
 
 <!--more-->
 
@@ -41,7 +41,7 @@ with the calculations a little.
 <input class="param" type="number" id="sickLeave" value="10" min="0"></input>
 <br>
 <br>
-<strong>Total work days = <span id="workDays"></span></strong> <em>= ((52 * 5) - sick days - leave - holidays</em>
+<strong>Total work days = <span id="workDays"></span></strong> <em>= (52 * 'days per week') - sick days - leave - holidays</em>
 <br>
 <strong>Total work hours = <span id="workHours"></span></strong> <em>= work days * work hours</em>
 <br>
