@@ -1,5 +1,6 @@
 ---
-linktitle: work
+title: Résumé
+linkTitle: work
 description: Résumé of Felix Hanley
 weight: 10
 ---

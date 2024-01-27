@@ -5,7 +5,7 @@
   <nav class="menu__group">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-    <a class="menu__link{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} menu__link--active{{ end }}" href="{{ .URL }}" title="{{ .Title }}"> {{ .Title }} </a>
+    <a class="menu__link{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} menu__link--active{{ end }}" href="{{ .URL }}" title="{{ .Title }}"> {{ .Name }} </a>
     {{ if .HasChildren }}
     <nav class="menu__group">
     {{ range $child := .Children }}

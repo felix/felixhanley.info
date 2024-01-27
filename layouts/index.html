@@ -9,13 +9,6 @@
       <h1 class="header--title">{{ .Title }}</h1>
       {{ .Content }}
     </article>
-
-    <aside>
-      <h3>Some recent posts:</h3>
-      {{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
-      <a href="{{ .Permalink }}">{{ .Title }}</a><br>
-      {{end}}
-    </aside>
   </main>
 
   {{ partial "footer.html" . }}

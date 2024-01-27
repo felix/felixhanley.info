@@ -6,7 +6,7 @@ src	!= find content static layouts resume -type f
 build: public/felix_hanley.pdf html
 
 html: $(src) static/css/syntax.css
-	hugo -v
+	hugo --logLevel info
 
 static/css/syntax.css:
 	hugo gen chromastyles --style=solarized-light >$@
