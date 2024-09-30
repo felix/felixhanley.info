@@ -29,6 +29,9 @@ A world leader in secure vehicle identification.
 Currently leading the development of core services in a variety of environments
 and languages.
 
+- Implementing ISO/IEC 20248 and extensions _(Go, WASM)_
+- Architecture and implementation of custom PKI and related services _(Go, X.509, OpenTelemetry, AWS)_
+
 ## Principal DevOps Engineer, [MYOB](https://myob.com) _(April 2019 -- October 2023, Australia)_
 
 An Australian multi-national corporation that provides tax, accounting and
@@ -54,7 +57,7 @@ SE Asian clients.
 Most recently:
 
 - Consulting for the ISO/IEC 20248 (DigSig) 2021 revision, particularly the
-  applied crytography components
+  applied cryptography components
 - Design and development of DigSig solutions for Thailand government agencies
   _(Go, Javascript, WASM)_
 - Design and development of custom machine learning pipelines for Thai language
@@ -120,12 +123,12 @@ government departments. Previously called 'LockBox'.
 I was the lead developer on the core cryptographic library to be used by
 multiple front-ends.
 
-- Lead development of core Javascript cryptographic library _(Javascript)_
+- Lead development of core cryptographic library, implementing PKCS primitives
+  and Java key store (JKS) implementation _(Javascript)_
 - Developed custom ASN.1 schemas for CMS (RFC 5952) communications _(ASN.1,
   X.509)_
 - Created extensive cross-browser test suite and maintained CI _(Node, Bamboo
   CI, Selenium)_
-- Maintained UI elements across all modern browsers _(AngularJS)_
 
 
 ## Software Engineer, [Ayuda Hosting](http://ayudahosting.com.au) _(2010 -- 2015, Melbourne & remote)_
