@@ -1,19 +1,18 @@
 # Felix Hanley
 
-<felix@userspace.com.au>  
-[https://felixhanley.info](https://felixhanley.info)  
-[+61 457 092 803](tel:+61457092803)  
+<felix@userspace.com.au> &middot; [https://felixhanley.info](https://felixhanley.info) &middot; [+61 457 092 803](tel:+61457092803)
 
-Software engineer based in Australia and South East Asia.
+---
 
-Over many teams and years of experience in a variety of environments I have
-developed a broad range of skills and designed & delivered some high quality
-software. I enjoy the "craft" of software development and enjoy helping others
-to get the same satisfaction from their work.
+Software engineer based in Australia.
 
-I have been pivotal in the success of many teams, both as a player and lead,
-with much experience in training and mentoring, being able to explain technical
-topics clearly.
+Over many years of experience in a variety of environments I have developed a
+broad range of skills and have designed & delivered numerous high quality
+software projects.
+
+I have much experience in training and mentoring, being able to explain
+technical topics clearly. I enjoy the "craft" of software engineering and am
+interested in helping others get the same satisfaction.
 
 My publicly available source code is available at
 [https://src.userspace.com.au](https://src.userspace.com.au) and some things
@@ -24,20 +23,25 @@ _References available on request_
 
 ## Principal Software Engineer, [Tőnnjes](https://toennjes.com) _(October 2023 -- present, Australia)_
 
-A world leader in secure vehicle identification.
+A world leader in secure identification.
 
-Currently leading the development of core services in a variety of environments
-and languages.
+Currently the technical lead and architect for the core services, libraries and
+APIs for use in global manufacturing processes, a new SaaS, and mobile
+applications.
 
-- Implementing ISO/IEC 20248 and extensions _(Go, WASM)_
-- Architecture and implementation of custom PKI and related services _(Go, X.509, OpenTelemetry, AWS)_
+- Implementing ISO/IEC 20248 and extensions for use in RFID and NFC data carriers _(Go, WASM)_
+- Architecture and implementation of custom PKI and related services _(Go, X.509, ASN.1, OpenTelemetry, AWS)_
+- Strong focus on efficient, high performance services for use in global manufacturing
+- Design and lead for a new SaaS providing distributed PKI
+- Development of shared libraries to support device application development
+- Acting engineering manager
 
 ## Principal DevOps Engineer, [MYOB](https://myob.com) _(April 2019 -- October 2023, Australia)_
 
-An Australian multi-national corporation that provides tax, accounting and
-other business services software to small and medium businesses.
+An Australian multi-national corporation that provides accounting software to
+small and medium businesses.
 
-As a principal engineer I am across a number of areas as a technical lead,
+As a principal engineer I was across a number of areas as a technical lead,
 particularly in the observability space and DevOps services.
 
 - Architecture and implementation of centralised event processing service _(Go,
@@ -49,42 +53,12 @@ particularly in the observability space and DevOps services.
 - Strong focus on system performance, reliability, and cost efficiency
 
 
-## Solutions Architect, [UserSpace](https://userspace.com.au) _(2006 -- present, Melbourne, Asia & remote)_
-
-Melbourne based hosting, development and consulting services to Australian and
-SE Asian clients.
-
-Most recently:
-
-- Consulting for the ISO/IEC 20248 (DigSig) 2021 revision, particularly the
-  applied cryptography components
-- Design and development of DigSig solutions for Thailand government agencies
-  _(Go, Javascript, WASM)_
-- Design and development of custom machine learning pipelines for Thai language
-  customers _(Go, Python)_
-- Provisioning of BSD based hosting services including highly available
-  databases and load balanced servers _(BSD, Ansible, HAProxy, Postgresql)_
-- Providing free DNS service, custom dynamic DNS and OpenNIC services
-  _(PowerDNS, TinyDNS, Python)_
-
-Over the years:
-
-- Developed custom hosting control panels _(Go, AngularJS, Ruby on Rails,
-  Shell)_
-- Developed and maintained custom support and monitoring software for clients
-  _(Python, Shell)_
-- Designed and built custom REST API for a number of SaaS clients _(Go,
-  Sinatra)_
-- Designed and built custom e-commerce integrations for international clients
-  _(Magento, Spree, Ruby, SQL, PHP, XML)_
-
-
 ## Senior Software Developer, [Seer Security](https://seersec.com.au) _(July 2018 -- April 2019, Melbourne)_
 
 A small security business with products used by a number of government
 agencies.
 
-I was the technical lead/architect for a social-network content extraction and
+I was the architect and lead for a social-network content extraction and
 classification engine, built to government specifications.
 
 - Developed a distributed content extraction engine and plugin architecture
@@ -98,12 +72,10 @@ classification engine, built to government specifications.
 ## Senior Software Engineer, [Freestyle Technology](https://freestyleiot.com) _(June 2017 -- July 2018, Melbourne)_
 
 An IoT technology company providing hardware and software solutions to service
-providers and municipalities across SE Asia and Australasia. Their solution
-involves "smart" devices and real time control.
+providers and municipalities across SE Asia and Australasia.
 
-I was pivotal in the design and architecture of a custom ETL and rules
-processing pipeline, ingesting from large deployments of devices, and the APIs
-required to consume this data.
+I was pivotal in the design and architecture of a custom processing pipeline,
+ingesting a huge amount of data from large deployments of devices.
 
 - Developed distributed network stream processing engines ingesting from
   millions of devices _(Go)_
@@ -113,6 +85,7 @@ required to consume this data.
   infrastructure _(PostgreSQL, PL/pgSQL, InfluxDB, TimescaleDB)_
 - Maintained excellent test coverage and CI services _(TAP, Jenkins, Groovy)_
 
+\pagebreak
 
 ## Senior Software Engineer, [KL Data/ARKpX](https://web.archive.org/web/20161203050431/http://arkpx.com) _(2015 -- 2017, Remote)_
 
@@ -150,6 +123,35 @@ consulting.
 - Administrated highly available and redundant server clusters _(Apache,
   Nagios, Postfix)_
 - Brought many large projects to completion
+
+
+## Solutions Architect, [UserSpace](https://userspace.com.au) _(2006 -- present, Melbourne, Asia & remote)_
+
+Melbourne based hosting, development and consulting services to Australian and
+SE Asian clients. 
+
+Most recently:
+
+- Consulting for the ISO/IEC 20248 (DigSig) 2021 revision, particularly the
+  applied cryptography components
+- Design and development of DigSig solutions for Thailand government agencies
+  _(Go, Javascript, WASM)_
+- Design and development of custom machine learning pipelines for Thai language
+  customers _(Go, Python)_
+- Provisioning of BSD based hosting services including highly available
+  databases and load balanced servers _(BSD, Ansible, HAProxy, Postgresql)_
+- Providing free, privacy focused DNS services _(PowerDNS, TinyDNS, Python)_
+
+Over the years:
+
+- Developed custom hosting control panels _(Go, AngularJS, Ruby on Rails,
+  Shell)_
+- Developed and maintained custom support and monitoring software for clients
+  _(Python, Shell)_
+- Designed and built custom REST API for a number of SaaS clients _(Go,
+  Sinatra)_
+- Designed and built custom e-commerce integrations for international clients
+  _(Magento, Spree, Ruby, SQL, PHP, XML)_
 
 
 ## Web developer, [Sensory Networks](https://web.archive.org/web/20070105091228/http://www.sensorynetworks.com) _(2005 -- 2006, Sydney)_
