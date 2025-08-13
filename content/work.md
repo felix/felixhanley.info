@@ -1,4 +1,9 @@
-# Felix Hanley
+---
+title: Résumé
+description: Résumé of Felix Hanley
+---
+
+<div id="pdf-resume"><a href="/felix_hanley.pdf">PDF version</a></div># Felix Hanley
 
 <felix@userspace.com.au> &middot; [https://felixhanley.info](https://felixhanley.info) &middot; [+61 457 092 803](tel:+61457092803)
 

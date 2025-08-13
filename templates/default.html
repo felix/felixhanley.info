@@ -1,64 +1,80 @@
 <!DOCTYPE html>
-<html$if(lang)$ lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 $for(author-meta)$
-  <meta name="author" content="$author-meta$">
+<meta name="author" content="$author-meta$" />
 $endfor$
 $if(date-meta)$
-  <meta name="dcterms.date" content="$date-meta$">
+<meta name="dcterms.date" content="$date-meta$" />
 $endif$
 $if(keywords)$
-  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+<meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
 $endif$
-  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-  <style type="text/css">code{white-space: pre;}</style>
-$if(quotes)$
-  <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+$if(description-meta)$
+<meta name="description" content="$description-meta$" />
 $endif$
+<title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+<link rel="stylesheet" href="/css/screen.css">
 $if(highlighting-css)$
-  <style type="text/css">
+<style>
 $highlighting-css$
-  </style>
+</style>
 $endif$
+<script src="/js/site.js"></script>
 $for(css)$
-  <link rel="stylesheet" href="$css$">
+<link rel="stylesheet" href="$css$" />
+$endfor$
+$for(header-includes)$
+$header-includes$
 $endfor$
 $if(math)$
-  $math$
+$if(mathjax)$
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 $endif$
-$for(header-includes)$
-  $header-includes$
-$endfor$
+$math$
+$endif$
 </head>
 <body>
 $for(include-before)$
 $include-before$
 $endfor$
-$if(title)$
+<header class="site">
+<a href="/">Felix Hanley</a>
+<nav class="site">
+<a href="/contact.html">Contact</a>
+<a href="/work.html">Résumé</a>
+<a href="/notes/">Notes</a>
+</nav>
+</header>
+<main>
 <header>
-<h1 class="title">$title$</h1>
+$if(title)$
+<h1>$title$</h1>
+$endif$
 $if(subtitle)$
 <p class="subtitle">$subtitle$</p>
 $endif$
-$for(author)$
-<p class="author">$author$</p>
-$endfor$
 $if(date)$
-<p class="date">$date$</p>
+<div class="meta">
+<span class="date">$date$</span>
+$endif$
+$if(keywords)$
+<span class="tags">
+$for(keywords)$
+<a class="tag" href="/tags/$keywords$.html">$keywords$</a>
+</span>
+$endfor$
 $endif$
 </header>
-$endif$
-$if(toc)$
-<nav id="$idprefix$TOC">
-$toc$
-</nav>
-$endif$
 $body$
+<footer>
 $for(include-after)$
 $include-after$
 $endfor$
+</footer>
+</main>
 </body>
 </html>
