@@ -26,13 +26,13 @@ _References available on request_
 A world leader in secure identification.
 
 Currently the technical lead and architect for the core services, libraries and
-APIs for use in global manufacturing processes, a new SaaS, and mobile
-applications.
+APIs for use in global manufacturing processes, a SaaS, and mobile applications.
 
 - Implementing ISO/IEC 20248 and extensions for use in RFID and NFC data carriers _(Go, WASM)_
-- Architecture and implementation of custom PKI and related services _(Go, X.509, ASN.1, OpenTelemetry, AWS)_
+- Architecture and implementation of custom PKI and related services _(Go, X.509, ASN.1)_
 - Strong focus on efficient, high performance services for use in global manufacturing
-- Design and lead for a new SaaS providing distributed PKI
+- Design and lead for SaaS development, custom network appliances, SDKs & libraries
+- Infrastructure migrations, deployments and monitoring _(AWS, Terraform, OpenTelemetry)_
 - Development of shared libraries to support device application development
 - Acting engineering manager
 

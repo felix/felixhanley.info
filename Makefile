@@ -49,6 +49,7 @@ public/tags/index.html: work/tags/index.md
 work/tags/index.md: $(SRC)
 	mkdir -p $(@D)
 	printf -- '---\ntitle: Tags\n---\n\n' > "$@"
+	rm -f "$(@D)/*.html"
 	for md in $^; do \
 		title="$$(grep 'title' "$$md" |cut -d' ' -f2-)"; \
 		html="$$(printf "$${md%%.md}.html" |cut -d'/' -f2-)"; \
@@ -71,7 +72,9 @@ public/felix_hanley.pdf: resume/data.md resume/meta.yaml templates/default.latex
 		-o $@ resume/data.md
 
 deploy: all
-	rsync -Pruct4 --delete public/ --exclude '*.swp' --delete-excluded felixhanley.info@gunn.userspace.com.au:htdocs/
+	rsync -ruct4 \
+		--delete public/ --exclude '*.swp' --delete-excluded \
+		felixhanley.info@gunn.userspace.com.au:htdocs/
 
 clean:
 	rm -rf public
