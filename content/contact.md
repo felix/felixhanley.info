@@ -1,7 +1,6 @@
 ---
 title: Contact
 description: Felix Hanley
-keywords: [git,contact,gpg]
 ---
 
 Email is my preferred means of contact. Note, if you are sending any sensitive

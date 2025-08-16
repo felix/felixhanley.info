@@ -1,18 +1,14 @@
 SRC	!= find content -type f -name '*.md'
 DST	= $(patsubst content/%.md,public/%.html,$(SRC))
 STATIC	= $(patsubst static/%,public/%,$(shell find static -type f))
-NOTES	!= find content/notes -type f -name '*.md'
+NOTES	!= find content/notes ! -name 'index.md' -type f -name '*.md'
 TMPL	:= templates/default.html
-PDOPTS	:= -f markdown -t html --standalone --template $(TMPL)
+PDOPTS	:= -f markdown+link_attributes -t html --standalone --template $(TMPL)
 
 .PHONY: all
 all: content notes tags static \
 	public/work.html \
 	public/felix_hanley.pdf
-
-.PHONY: note
-note:
-	$(EDITOR) content/notes/.template.md
 
 .PHONY: notes tags
 notes: public/notes/index.html ;
@@ -34,16 +30,15 @@ public/%.html: content/%.md $(TMPL)
 content/work.md: resume/data.md
 	mkdir -p $(@D)
 	printf -- '---\ntitle: Résumé\ndescription: Résumé of Felix Hanley\n---\n\n' > $@
-	printf -- '<div id="pdf-resume"><a href="/felix_hanley.pdf">PDF version</a></div>' >> $@
+	printf -- '[download the PDF version](/felix_hanley.pdf){#pdf-resume}\n\n' >> $@
 	cat $< >> $@
 
 public/notes/index.html: work/notes/index.md
 	pandoc $(PDOPTS) -o $@ $<
-work/notes/index.md: $(NOTES)
+work/notes/index.md: content/notes/index.md $(NOTES)
 	mkdir -p $(@D)
-	printf -- '---\ntitle: Notes\n---\n\n' > "$@"
-	printf -- 'Things I want to remember\n\n' >> "$@"
-	for md in $^; do \
+	cp $< $@
+	for md in $(NOTES); do \
 		title="$$(grep 'title' "$$md" |cut -d' ' -f2-)"; \
 		html="$$(printf "$${md%%.md}.html" |cut -d'/' -f2-)"; \
 		printf -- '- [%s](/%s)\n' "$$title" "$$html" >> $@; \
@@ -60,8 +55,8 @@ work/tags/index.md: $(SRC)
 		html="$$(printf "$${md%%.md}.html" |cut -d'/' -f2-)"; \
 		for tag in $$(awk '/keywords/ {gsub(/[\[\]]/,"",$$2); split($$2,a,",")}END{for (k in a) { print a[k]}}' "$$md" ); do \
 		fn="$(@D)/$$tag"; \
-		printf '[%s](/%s)\n' "$$tag" "$$fn.html" >> $@; \
-		[ -f "$$fn" ] || printf -- '---\ntitle: Pages tagged %s\n---\n\n' "$$tag" > "$$fn"; \
+		printf '[%s](/%s){.tag}\n' "$$tag" "$$fn.html" >> $@; \
+		[ -f "$$fn" ] || printf -- '---\ntitle: Pages tagged %s\n---\n\n' "\'$$tag\'" > "$$fn"; \
 		printf -- '- [%s](/%s)\n' "$$title" "$$html" >> $$fn; \
 		done; \
 		done

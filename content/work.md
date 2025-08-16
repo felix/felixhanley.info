@@ -3,7 +3,9 @@ title: Résumé
 description: Résumé of Felix Hanley
 ---
 
-<div id="pdf-resume"><a href="/felix_hanley.pdf">PDF version</a></div># Felix Hanley
+[download the PDF version](/felix_hanley.pdf){#pdf-resume}
+
+# Felix Hanley
 
 <felix@userspace.com.au> &middot; [https://felixhanley.info](https://felixhanley.info) &middot; [+61 457 092 803](tel:+61457092803)
 
@@ -26,7 +28,7 @@ mirrored at [GitHub](https://github.com/felix) and/or
 
 _References available on request_
 
-## Principal Software Engineer, [Tőnnjes](https://toennjes.com) _(October 2023 -- present, Australia)_
+## Principal Software Engineer, [Tőnnjes](https://toennjes.com) _(October 2023 -- present, Remote)_
 
 A world leader in secure identification.
 
@@ -41,7 +43,7 @@ APIs for use in global manufacturing processes, a SaaS, and mobile applications.
 - Development of shared libraries to support device application development
 - Acting engineering manager
 
-## Principal DevOps Engineer, [MYOB](https://myob.com) _(April 2019 -- October 2023, Australia)_
+## Principal DevOps Engineer, [MYOB](https://myob.com) _(April 2019 -- October 2023, Melbourne)_
 
 An Australian multi-national corporation that provides accounting software to
 small and medium businesses.
@@ -189,8 +191,6 @@ Hardware support and maintenance of C/C++ code.
 
 ## Education
 
-2001 Bachelor of Computer Science and Software Engineering, [The University of
-Sydney](https://sydney.edu.au/)
+2001 Bachelor of Computer Science and Software Engineering, [The University of Sydney](https://sydney.edu.au/)
 
-1994 Bachelor of Applied Science and Computer Technology, Swinburne University
-_(deferred)_
+1994 Bachelor of Applied Science and Computer Technology, Swinburne University _(deferred)_

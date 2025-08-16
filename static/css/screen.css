@@ -63,26 +63,37 @@ h2 {
 	font-size: 1.3125rem;
 	line-height: 1.1428;
 }
+input, label {
+	line-height: 2;
+	margin-bottom: .5rem;
+}
+textarea {
+	min-height: 20ch;
+	width: 100%;
+}
+.date {
+	font-family: sans-serif;
+}
 .tag {
 	background-color: #eee;
 	border-radius: 5px;
 	border: 1px solid #aaa;
+	font-family: sans-serif;
 	padding: 3px 5px;
 	text-decoration: none;
 }
 #pdf-resume {
+	background-color: #ff3333;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+	color: white;
+	display: inline-block;
+	font-family: sans-serif;
+	padding: 5px 10px;
 	position: fixed;
-	right: calc(100% - 21vw - 40em);
-	top: 2rem;
-	a {
-		background-color: #ff3333;
-		border-radius: 3px;
-		color: white;
-		display: inline-block;
-		font-family: sans-serif;
-		padding: 3px 5px;
-		text-decoration: none;
-	}
+	right: 0;
+	text-decoration: none;
+	top: 5rem;
 }
 div.sourceCode {
 	padding: .5rem;
@@ -130,7 +141,6 @@ div.sourceCode {
 }
 .hb-btn:checked ~ nav {
 	max-height: 240px;
-	margin-top: 1rem;
 }
 .hb-btn:checked ~ .hb-icon span {
 	background: transparent;
@@ -154,8 +164,8 @@ div.sourceCode {
 		grid-template-columns: none;
 		grid-template-rows: [nav] fitcontent(100%) [content] auto;
 	}
-	header.site .name {
-		margin-bottom: 0;
+	header.site {
+		padding-bottom: 0;
 	}
 	nav.site {
 		max-height: 0;
