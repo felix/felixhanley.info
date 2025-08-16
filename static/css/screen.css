@@ -176,6 +176,7 @@ div.sourceCode {
 		border-bottom-left-radius: 3px;
 		border-top-left-radius: 3px;
 		left: inherit;
+		position: absolute;
 		right: 0;
 		top: 6rem;
 	}

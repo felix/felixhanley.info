@@ -30,7 +30,7 @@ public/%.html: content/%.md $(TMPL)
 content/work.md: resume/data.md
 	mkdir -p $(@D)
 	printf -- '---\ntitle: Résumé\ndescription: Résumé of Felix Hanley\n---\n\n' > $@
-	printf -- '[download the PDF version](/felix_hanley.pdf){#pdf-resume}\n\n' >> $@
+	printf -- '[PDF version](/felix_hanley.pdf){#pdf-resume}\n\n' >> $@
 	cat $< >> $@
 
 public/notes/index.html: work/notes/index.md

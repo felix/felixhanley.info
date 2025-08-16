@@ -3,7 +3,7 @@ title: Résumé
 description: Résumé of Felix Hanley
 ---
 
-[download the PDF version](/felix_hanley.pdf){#pdf-resume}
+[PDF version](/felix_hanley.pdf){#pdf-resume}
 
 # Felix Hanley
 
