@@ -29,19 +29,20 @@ header.site {
 	a {
 		color: white;
 		display: block;
-		margin-bottom: .5rem;
-		text-decoration: none;
-	}
-	& > a {
 		margin-bottom: 1.5rem;
+		text-decoration: none;
 	}
 	a:hover {
 		color: #ff3333;
+	}
+	.name {
+		margin-bottom: 1.5rem;
 	}
 }
 nav.site a {
 	color: #aaa;
 	font-size: 2rem;
+	margin-bottom: 1.5rem;
 }
 main {
 	padding: 1.5rem;
@@ -54,7 +55,6 @@ h1,h2,h3 {
 	font-weight: normal;
 	font-family: sans-serif;
 	margin: 0;
-	text-transform: capitalize;
 }
 h1 {
 	margin-bottom: 1rem;
@@ -89,4 +89,77 @@ div.sourceCode {
 }
 .sourceCode {
 	background-color: #eee;
+}
+
+/* menu toggler */
+.hb-icon {
+	cursor: pointer;
+	display: inline-block;
+	padding: 28px 20px;
+	position: absolute;
+	right: 1.5rem;
+	top: 0.75rem;
+	user-select: none;
+}
+.hb-icon span {
+	background: #fff;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+}
+.hb-icon span:before,
+.hb-icon span:after {
+	background: #fff;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+.hb-icon span:before {
+	top: 5px;
+}
+.hb-icon span:after {
+	top: -5px;
+}
+.hb-btn {
+	display: none;
+}
+.hb-btn:checked ~ nav {
+	max-height: 240px;
+	margin-top: 1rem;
+}
+.hb-btn:checked ~ .hb-icon span {
+	background: transparent;
+}
+.hb-btn:checked ~ .hb-icon span:before {
+	transform: rotate(-45deg);
+}
+.hb-btn:checked ~ .hb-icon span:after {
+	transform: rotate(45deg);
+}
+.hb-btn:checked ~ .hb-icon:not(.steps) span:before,
+.hb-btn:checked ~ .hb-icon:not(.steps) span:after {
+	top: 0;
+}
+/* menu toggler end */
+
+@media (max-width: 55em) {
+	body {
+		display: inherit;
+		height: fit-content;
+		grid-template-columns: none;
+		grid-template-rows: [nav] fitcontent(100%) [content] auto;
+	}
+	header.site .name {
+		margin-bottom: 0;
+	}
+	nav.site {
+		max-height: 0;
+		transition: max-height 0.2s ease-out;
+		overflow: hidden;
+	}
 }

@@ -10,6 +10,10 @@ all: content notes tags static \
 	public/work.html \
 	public/felix_hanley.pdf
 
+.PHONY: note
+note:
+	$(EDITOR) content/notes/.template.md
+
 .PHONY: notes tags
 notes: public/notes/index.html ;
 tags: public/tags/index.html ;
@@ -37,7 +41,8 @@ public/notes/index.html: work/notes/index.md
 	pandoc $(PDOPTS) -o $@ $<
 work/notes/index.md: $(NOTES)
 	mkdir -p $(@D)
-	printf -- '---\ntitle: notes\n---\n\n' > "$@"
+	printf -- '---\ntitle: Notes\n---\n\n' > "$@"
+	printf -- 'Things I want to remember\n\n' >> "$@"
 	for md in $^; do \
 		title="$$(grep 'title' "$$md" |cut -d' ' -f2-)"; \
 		html="$$(printf "$${md%%.md}.html" |cut -d'/' -f2-)"; \
