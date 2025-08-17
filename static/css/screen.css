@@ -47,6 +47,7 @@ nav.site a {
 main {
 	padding: 1.5rem;
 	p,ul {
+		line-height: 2;
 		max-width: 80ch;
 	}
 }
@@ -79,8 +80,13 @@ textarea {
 	border-radius: 5px;
 	border: 1px solid #aaa;
 	font-family: sans-serif;
-	padding: 3px 5px;
+	font-size: .825rem;
+	padding: .125rem .25rem;
 	text-decoration: none;
+	em {
+		color: #888;
+		font-size: .75rem;
+	}
 }
 #pdf-resume {
 	background-color: #ff3333;

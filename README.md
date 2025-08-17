@@ -1,6 +1,10 @@
-# The source for felixhanley.info
+# Source for my personal website
 
-To generate PDFs on FreeBSD the following packages are required:
+- Uses only GNU make, Pandoc, awk.
+- Generates a PDF version of my resume.
+- Collates tags from notes and generates index pages.
 
-- tex-luatex (will install required texlive packages)
-- tex-dvipsk
+## Notes
+
+- YAML metadata is used for all Markdown files.
+- 'keywords' are used as tags and should be on one line.
