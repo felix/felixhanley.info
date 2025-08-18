@@ -27,18 +27,11 @@ public/%.html: content/%.md $(TMPL)
 public/notes/%.html: notes/%.md $(TMPL)
 	mkdir -p $(@D)
 	pandoc $(PDOPTS) -o $@ $<
-
 content/work.md: resume/data.md
 	mkdir -p $(@D)
 	printf -- '---\ntitle: Résumé\ndescription: Résumé of Felix Hanley\n---\n\n' > $@
 	printf -- '[PDF version](/felix_hanley.pdf){#pdf-resume}\n\n' >> $@
 	cat $< >> $@
-
-# public/notes/index.html: work/notes/index.md $(TMPL)
-# 	mkdir -p $(@D)
-# 	pandoc $(PDOPTS) -o $@ $<
-content/notes/index.md: $(NOTES) scripts/notesindex.awk
-	awk -f scripts/notesindex.awk notes/*.md > $@
 
 public/tags/index.html: content/tags/index.md $(TMPL)
 	mkdir -p public/tags
@@ -46,9 +39,12 @@ public/tags/index.html: content/tags/index.md $(TMPL)
 		fn="$$(basename -s '.md' $$md)"; \
 		pandoc $(PDOPTS) -o "public/tags/$$fn.html" $$md; \
 		done
-content/tags/index.md: $(NOTES) scripts/tagindex.awk
+content/tags/index.md: $(NOTES) scripts/processnotes.awk
 	mkdir -p $(@D)
-	awk -f scripts/tagindex.awk -v outpath=$(@D) notes/*.md
+	awk -f scripts/processnotes.awk \
+		-v tagpath=$(@D) \
+		-v notesindex=content/notes/index.md \
+		notes/*.md
 
 public/felix_hanley.pdf: resume/data.md resume/meta.yaml templates/default.latex
 	mkdir -p public
