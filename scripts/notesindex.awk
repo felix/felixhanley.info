@@ -2,9 +2,8 @@ function ltrim(s) { sub(/^[ \t\r\n]+/, "", s); return s }
 function rtrim(s) { sub(/[ \t\r\n]+$/, "", s); return s }
 function trim(s) { return rtrim(ltrim(s)); }
 BEGIN{
-	indexfn = (outpath "/index.md")
-	printf("---\ntitle: Notes\n---\n\n") > indexfn
-	printf("Things I want to remember. Writing them down helps.\n\nThey may be incomplete, incorrect, or incomprehensible. Here be dragons. [Here be tags](/tags/)\n\n") >> indexfn
+	printf("---\ntitle: Notes\n---\n\n")
+	printf("Things I want to remember. Writing them down helps.\n\nThey may be incomplete, incorrect, or incomprehensible. Here be dragons. [Here be tags](/tags/)\n\n")
 }
 /^keywords: / {
 	$1=""
@@ -20,11 +19,11 @@ BEGIN{
 	link = FILENAME
 	gsub(/\.md$/,".html",link)
 	gsub(/[^/]+\//,"",link)
-	printf("- [%s](/notes/%s)",title,link) >> indexfn
+	printf("- [%s](/notes/%s)",title,link)
 	for (i in tags) {
 		tag = trim(tags[i])
-		printf(" [%s](/tags/%s){.tag}",tag,tag".html") >> indexfn
+		printf(" [%s](/tags/%s){.tag}",tag,tag".html")
 	}
-	printf("\n") >> indexfn
+	printf("\n")
 	title=""
 }

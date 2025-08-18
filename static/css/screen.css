@@ -47,8 +47,10 @@ nav.site a {
 main {
 	padding: 1.5rem;
 	p,ul {
-		line-height: 2;
 		max-width: 80ch;
+	}
+	ul {
+		line-height: 2;
 	}
 }
 h1,h2,h3 {
@@ -72,16 +74,18 @@ textarea {
 	min-height: 20ch;
 	width: 100%;
 }
-.date {
-	font-family: sans-serif;
-}
-.tag {
+kbd,.tag {
 	background-color: #eee;
-	border-radius: 5px;
+	border-radius: 6px;
 	border: 1px solid #aaa;
 	font-family: sans-serif;
 	font-size: .825rem;
 	padding: .125rem .25rem;
+}
+.date {
+	font-family: sans-serif;
+}
+.tag {
 	text-decoration: none;
 	em {
 		color: #888;
