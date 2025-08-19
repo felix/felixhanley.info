@@ -7,7 +7,7 @@ keywords: [performance,www]
 
 This strips all meta, removes a bunch of colour stuff etc.
 
-```shell
+```sh
 #!/bin/sh
 
 OPTIPNG="$(command -v optipng)"

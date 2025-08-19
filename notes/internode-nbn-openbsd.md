@@ -11,7 +11,7 @@ APU2](https://pcengines.ch/apu2.htm) for my home network connectivity.
 2. The APU2 has 3 RJ45 ports, em{0,1,2} with `em0` being my uplink, configured
    in `/etc/hostname.em0`:
 
-```shell
+```sh
 up
 ```
 
@@ -19,7 +19,7 @@ My home network is a dual-stack IPv4/6 with a prefix delegation provided by
 Internode. The existing PPPoE configuration in `/etc/hostname.pppoe0` looked
 like this:
 
-```shell
+```sh
 inet 0.0.0.0 255.255.255.255 0.0.0.1 \
         pppoedev authproto pap \
         authname 'xxxx@internode.on.net' \
@@ -34,7 +34,7 @@ inet6 autoconf -autoconfprivacy
 To communicate over the VLAN we need to create another `/etc/hostname.vlan2`
 file with the following contents:
 
-```shell
+```sh
 vnetid 2 parent em0 txprio 1
 up
 ```
@@ -44,7 +44,7 @@ VLAN tagging. `txprio 1` also needed to be added to ensure the wrapping worked.
 
 We can now update the PPPoE configuration use the VLAN:
 
-```shell
+```sh
 inet 0.0.0.0 255.255.255.255 0.0.0.1 \
         llprio 1 mtu 1440 \
         pppoedev vlan2 authproto pap \

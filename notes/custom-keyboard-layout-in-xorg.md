@@ -46,6 +46,6 @@ Lahu](/projects/lahu/).
 No need to load this map system wide, use the _setxbkmap_ and _xkbcomp_ commands 
 to load it into the current X session. Stick it in ~/.xinitrc or ~/.Xsession
 
-```shell
+```sh
 setxkbmap -I$HOME/.xkb -option grp:shifts_toggle,grp_led:scroll "us,th,lah" -print | xkbcomp -I$HOME/.xkb - $DISPLAY
 ```

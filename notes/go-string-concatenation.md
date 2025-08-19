@@ -8,7 +8,7 @@ description: Comparing string concatenation methods in Go
 There are a variety of methods of bulk string concatenation and some are faster
 than others:
 
-UPDATE 20220704: Re-ran the benchmarks, they got slower!
+UPDATE 20220704: Re-ran the benchmarks, they got slower!  
 UPDATE 20250819: Re-ran the benchmarks, fmt got slower
 
 ## Concatenation using '+'
@@ -61,7 +61,7 @@ func BenchmarkBuilder(b *testing.B) {
 
 ## Comparison
 
-```shell
+```sh
 $ go version
 go version go1.24.5 linux/amd64
 $ go test -bench=. -test.benchmem
@@ -76,7 +76,7 @@ PASS
 ok  	benchmarks	204.096s
 ```
 
-```shell
+```sh
 $ go version
 go version go1.18.3 darwin/amd64
 $ go test -bench=. -test.benchmem
@@ -92,7 +92,7 @@ ok      _/tmp/concat 194.673s
 
 Interesting!
 
-```shell
+```sh
 $ go1.11.13 test -bench=. -test.benchmem
 goos: darwin
 goarch: amd64
