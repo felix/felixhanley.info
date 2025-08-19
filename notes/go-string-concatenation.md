@@ -9,6 +9,7 @@ There are a variety of methods of bulk string concatenation and some are faster
 than others:
 
 UPDATE 20220704: Re-ran the benchmarks, they got slower!
+UPDATE 20250819: Re-ran the benchmarks, fmt got slower
 
 ## Concatenation using '+'
 
@@ -59,6 +60,21 @@ func BenchmarkBuilder(b *testing.B) {
 ```
 
 ## Comparison
+
+```shell
+$ go version
+go version go1.24.5 linux/amd64
+$ go test -bench=. -test.benchmem
+goos: linux
+goarch: amd64
+pkg: benchmarks
+cpu: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+BenchmarkFmt-8       	1000000	   152187 ns/op	1006183 B/op	      3 allocs/op
+BenchmarkPlus-8      	1000000	    49599 ns/op	 503996 B/op	      1 allocs/op
+BenchmarkBuilder-8   	557699485	        1.856 ns/op	      5 B/op	      0 allocs/op
+PASS
+ok  	benchmarks	204.096s
+```
 
 ```shell
 $ go version

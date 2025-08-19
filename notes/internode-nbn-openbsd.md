@@ -5,7 +5,7 @@ keywords: [internode,nbn,pf,openbsd]
 description: Connecting OpenBSD to the NBN via Internode
 ---
 
-I run an [OpenBSD](https://www.openbsd.org) router on a [PC Engines
+I (used to) run an [OpenBSD](https://www.openbsd.org) router on a [PC Engines
 APU2](https://pcengines.ch/apu2.htm) for my home network connectivity.
 [Internode](https://internode.on.net) provides their HFC uplink on VLAN tagged
 2. The APU2 has 3 RJ45 ports, em{0,1,2} with `em0` being my uplink, configured
