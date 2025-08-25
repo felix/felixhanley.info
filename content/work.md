@@ -13,9 +13,12 @@ description: Résumé of Felix Hanley
 
 Software engineer based in Australia.
 
-Over many years of experience in a variety of environments I have developed a
-broad range of skills and have designed & delivered numerous high quality
-software projects.
+I have developed a broad range of skills and have designed & delivered numerous 
+high quality software projects. My experience ranges from applied cryptography, 
+bare-metal hosting, performance optimisations, and debugging critical paths.
+
+I am comfortable in a variety of languages having worked with C/C++, all the web 
+languages, and now predominantly in Go, and maybe Zig in the future.
 
 I have much experience in training and mentoring, being able to explain
 technical topics clearly. I enjoy the "craft" of software engineering and am
@@ -81,8 +84,9 @@ classification engine, built to government specifications.
 An IoT technology company providing hardware and software solutions to service
 providers and municipalities across SE Asia and Australasia.
 
-I was pivotal in the design and architecture of a custom processing pipeline,
-ingesting a huge amount of data from large deployments of devices.
+As a senior engineer I was responsible for the design and architecture of a 
+custom processing pipeline, ingesting a huge amount of data from large 
+deployments of devices in multiple countries.
 
 - Developed distributed network stream processing engines ingesting from
   millions of devices _(Go)_
@@ -100,8 +104,8 @@ A small team developing a cross-platform, encrypted storage solution much like
 'Dropbox' but using client-side, PKI cryptography. Products in use by multiple
 government departments. Previously called 'LockBox'.
 
-I was the lead developer on the core cryptographic library to be used by
-multiple front-ends.
+As the lead developer on the core cryptographic library I implemented numerous 
+primitives and reusable components to be used by multiple front-ends.
 
 - Lead development of core cryptographic library, implementing PKCS primitives
   and Java key store (JKS) implementation _(Javascript)_
@@ -116,9 +120,8 @@ multiple front-ends.
 A traditional, "bare-metal" hosting and consulting company with a small team
 based in the Melbourne CBD.
 
-I was involved in all areas of network design, data centre rack planning &
-installation, project planning & cost estimation, client programming and
-consulting.
+As a senior engineer I was involved in all areas of network design & security, 
+project planning & cost estimation, client programming and consulting.
 
 - Managed large, redundant networks, firewalls and VMs _(Xen, Keepalived,
   IPTables, IPSec, PF)_
@@ -134,8 +137,8 @@ consulting.
 
 ## Solution Architect, [UserSpace](https://userspace.com.au) _(2006 -- present, Melbourne, Asia & remote)_
 
-Melbourne based hosting, development and consulting services to Australian and
-SE Asian clients. 
+As a consultant I have worked closely with clients in Australia and South East 
+Asia.
 
 Most recently:
 

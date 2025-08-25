@@ -1,10 +1,10 @@
 function ltrim(s) { sub(/^[ \t\r\n]+/, "", s); return s }
 function rtrim(s) { sub(/[ \t\r\n]+$/, "", s); return s }
 function trim(s) { return rtrim(ltrim(s)); }
+
+# variables: tagpath notesindex
+
 BEGIN{
-	# variables
-	#tagpath
-	#notesindex
 	tagindex = (tagpath "/index.md")
 	printf("---\ntitle: Notes\n---\n\n") > notesindex
 	printf("Things I want to remember. Writing them down helps.\n\nThey may be incomplete, incorrect, or incomprehensible. Here be dragons. [Here be tags](/tags/)\n\n") >> notesindex
@@ -19,7 +19,6 @@ BEGIN{
 	title = trim($0)
 }
 /^---/ && title!=""{
-	linkcount = 0
 	link = FILENAME
 	gsub(/\.md$/,".html",link)
 	gsub(/[^/]+\//,"",link)

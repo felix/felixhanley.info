@@ -11,4 +11,5 @@ I run [UserSpace](https://userspace.com.au) which provides bespoke programming
 and hosting solutions.
 
 The [source for this 
-website](https://src.userspace.com.au/felix/felixhanley.info/) is available.
+website](https://src.userspace.com.au/felix/felixhanley.info/about/) is 
+available.
