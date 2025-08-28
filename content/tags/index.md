@@ -6,6 +6,7 @@ title: Tags
 [laptop _1_](laptop.html){.tag}
 [internode _1_](internode.html){.tag}
 [ABN _1_](ABN.html){.tag}
+[systemd _1_](systemd.html){.tag}
 [tools _2_](tools.html){.tag}
 [jails _1_](jails.html){.tag}
 [freebsd _1_](freebsd.html){.tag}
@@ -16,6 +17,7 @@ title: Tags
 [encoding _1_](encoding.html){.tag}
 [pf _1_](pf.html){.tag}
 [go _1_](go.html){.tag}
+[cicd _1_](cicd.html){.tag}
 [performance _1_](performance.html){.tag}
 [ruby _1_](ruby.html){.tag}
 [xorg _1_](xorg.html){.tag}
@@ -26,5 +28,5 @@ title: Tags
 [ffmpeg _1_](ffmpeg.html){.tag}
 [macos _1_](macos.html){.tag}
 [money _1_](money.html){.tag}
-[debian _1_](debian.html){.tag}
+[debian _2_](debian.html){.tag}
 [hardware _1_](hardware.html){.tag}

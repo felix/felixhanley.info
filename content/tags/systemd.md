@@ -1,6 +1,5 @@
 ---
-title: Pages tagged debian
+title: Pages tagged systemd
 ---
 
 - [Forgejo runner on debian with rootless podman](/notes/forgejo-runner-on-debian.html)
-- [Using a laptop as a headless server](/notes/laptop-server.html)

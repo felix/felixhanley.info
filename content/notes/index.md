@@ -12,6 +12,7 @@ They may be incomplete, incorrect, or incomprehensible. Here be dragons. [Here b
 - [Ducky One 2 Mini on macOS](/notes/ducky-one-2-mini-macos.html) [hardware](/tags/hardware.html){.tag} [keyboard](/tags/keyboard.html){.tag} [macos](/tags/macos.html){.tag}
 - [Encoding conversion tool](/notes/encoding-converter.html) [javascript](/tags/javascript.html){.tag} [encoding](/tags/encoding.html){.tag} [tools](/tags/tools.html){.tag}
 - [Conversion of video with ffmpeg](/notes/ffmpeg-reencode.html) [ffmpeg](/tags/ffmpeg.html){.tag}
+- [Forgejo runner on debian with rootless podman](/notes/forgejo-runner-on-debian.html) [cicd](/tags/cicd.html){.tag} [debian](/tags/debian.html){.tag} [systemd](/tags/systemd.html){.tag}
 - [FreeBSD VNET jails](/notes/freebsd-vnet-jails.html) [freebsd](/tags/freebsd.html){.tag} [jails](/tags/jails.html){.tag}
 - [Go string concatenation comparison](/notes/go-string-concatenation.html) [go](/tags/go.html){.tag} [benchmark](/tags/benchmark.html){.tag}
 - [Internode, NBN and OpenBSD](/notes/internode-nbn-openbsd.html) [internode](/tags/internode.html){.tag} [nbn](/tags/nbn.html){.tag} [pf](/tags/pf.html){.tag} [openbsd](/tags/openbsd.html){.tag}
