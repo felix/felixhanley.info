@@ -15,6 +15,7 @@ They may be incomplete, incorrect, or incomprehensible. Here be dragons. [Here b
 - [FreeBSD VNET jails](/notes/freebsd-vnet-jails.html) [freebsd](/tags/freebsd.html){.tag} [jails](/tags/jails.html){.tag}
 - [Go string concatenation comparison](/notes/go-string-concatenation.html) [go](/tags/go.html){.tag} [benchmark](/tags/benchmark.html){.tag}
 - [Internode, NBN and OpenBSD](/notes/internode-nbn-openbsd.html) [internode](/tags/internode.html){.tag} [nbn](/tags/nbn.html){.tag} [pf](/tags/pf.html){.tag} [openbsd](/tags/openbsd.html){.tag}
+- [Using a laptop as a headless server](/notes/laptop-server.html) [debian](/tags/debian.html){.tag} [laptop](/tags/laptop.html){.tag}
 - [Neovim Lsp usage without plugins](/notes/neovim-lsp-without-plugins.html) [neovim](/tags/neovim.html){.tag}
 - [Neovim shared config with vim](/notes/neovim-shared-config.html) [neovim](/tags/neovim.html){.tag}
 - [Optimise images for performance and consistency](/notes/optimising-images.html) [performance](/tags/performance.html){.tag} [www](/tags/www.html){.tag}

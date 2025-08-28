@@ -3,6 +3,7 @@ title: Tags
 ---
 
 [www _1_](www.html){.tag}
+[laptop _1_](laptop.html){.tag}
 [internode _1_](internode.html){.tag}
 [ABN _1_](ABN.html){.tag}
 [tools _2_](tools.html){.tag}
@@ -25,4 +26,5 @@ title: Tags
 [ffmpeg _1_](ffmpeg.html){.tag}
 [macos _1_](macos.html){.tag}
 [money _1_](money.html){.tag}
+[debian _1_](debian.html){.tag}
 [hardware _1_](hardware.html){.tag}
