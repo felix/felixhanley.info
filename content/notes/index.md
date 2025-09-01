@@ -20,5 +20,6 @@ They may be incomplete, incorrect, or incomprehensible. Here be dragons. [Here b
 - [Neovim Lsp usage without plugins](/notes/neovim-lsp-without-plugins.html) [neovim](/tags/neovim.html){.tag}
 - [Neovim shared config with vim](/notes/neovim-shared-config.html) [neovim](/tags/neovim.html){.tag}
 - [Optimise images for performance and consistency](/notes/optimising-images.html) [performance](/tags/performance.html){.tag} [www](/tags/www.html){.tag}
+- [FreeBSD on PCEngines APU2](/notes/pcengines-apu2-freebsd.html) [freebsd](/tags/freebsd.html){.tag} [hardware](/tags/hardware.html){.tag}
 - [QEMU with physical disk](/notes/qemu-with-physical-disk.html) [qemu](/tags/qemu.html){.tag}
 - [Self-hosted public IP API](/notes/self-hosted-public-ip-api.html) [self-hosted](/tags/self-hosted.html){.tag}

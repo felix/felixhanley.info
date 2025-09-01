@@ -9,7 +9,7 @@ title: Tags
 [systemd _1_](systemd.html){.tag}
 [tools _2_](tools.html){.tag}
 [jails _1_](jails.html){.tag}
-[freebsd _1_](freebsd.html){.tag}
+[freebsd _2_](freebsd.html){.tag}
 [openbsd _1_](openbsd.html){.tag}
 [nbn _1_](nbn.html){.tag}
 [benchmark _1_](benchmark.html){.tag}
@@ -29,4 +29,4 @@ title: Tags
 [macos _1_](macos.html){.tag}
 [money _1_](money.html){.tag}
 [debian _2_](debian.html){.tag}
-[hardware _1_](hardware.html){.tag}
+[hardware _2_](hardware.html){.tag}

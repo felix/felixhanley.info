@@ -60,4 +60,5 @@ deploy: all
 clean:
 	rm -rf public
 	rm -rf work
+	rm -rf content/tags
 	rm -rf resources

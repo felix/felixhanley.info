@@ -15,9 +15,10 @@ body {
 a {
 	color: inherit;
 	text-decoration: underline solid #ffaaaa;
+	text-underline-offset: .125lh;
 }
 a:hover {
-	text-decoration: underline solid #555;
+	text-decoration-color: #555;
 }
 header.site {
 	background-color: #222;
