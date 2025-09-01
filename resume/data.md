@@ -24,7 +24,7 @@ mirrored at [GitHub](https://github.com/felix) and/or
 
 _References available on request_
 
-## Principal Software Engineer, [Tőnnjes](https://toennjes.com) _(October 2023 -- present, Remote)_
+## Principal Software Engineer, [Tönnjes](https://toennjes.com) _(October 2023 -- present, Remote)_
 
 A world leader in secure identification.
 
