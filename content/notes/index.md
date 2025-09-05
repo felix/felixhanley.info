@@ -14,6 +14,7 @@ They may be incomplete, incorrect, or incomprehensible. Here be dragons. [Here b
 - [Conversion of video with ffmpeg](/notes/ffmpeg-reencode.html) [ffmpeg](/tags/ffmpeg.html){.tag}
 - [Forgejo runner on debian with rootless podman](/notes/forgejo-runner-on-debian.html) [cicd](/tags/cicd.html){.tag} [debian](/tags/debian.html){.tag} [systemd](/tags/systemd.html){.tag}
 - [FreeBSD VNET jails](/notes/freebsd-vnet-jails.html) [freebsd](/tags/freebsd.html){.tag} [jails](/tags/jails.html){.tag}
+- [FreeBSD thin jails using zfs snapshots](/notes/freebsd-zfs-thin-jails.html) [freebsd](/tags/freebsd.html){.tag} [jails](/tags/jails.html){.tag}
 - [Go string concatenation comparison](/notes/go-string-concatenation.html) [go](/tags/go.html){.tag} [benchmark](/tags/benchmark.html){.tag}
 - [Internode, NBN and OpenBSD](/notes/internode-nbn-openbsd.html) [internode](/tags/internode.html){.tag} [nbn](/tags/nbn.html){.tag} [pf](/tags/pf.html){.tag} [openbsd](/tags/openbsd.html){.tag}
 - [Using a laptop as a headless server](/notes/laptop-server.html) [debian](/tags/debian.html){.tag} [laptop](/tags/laptop.html){.tag}

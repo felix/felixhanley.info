@@ -8,8 +8,8 @@ title: Tags
 [ABN _1_](ABN.html){.tag}
 [systemd _1_](systemd.html){.tag}
 [tools _2_](tools.html){.tag}
-[jails _1_](jails.html){.tag}
-[freebsd _2_](freebsd.html){.tag}
+[jails _2_](jails.html){.tag}
+[freebsd _3_](freebsd.html){.tag}
 [openbsd _1_](openbsd.html){.tag}
 [nbn _1_](nbn.html){.tag}
 [benchmark _1_](benchmark.html){.tag}
