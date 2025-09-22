@@ -10,6 +10,7 @@ BEGIN{
 	printf("Things I want to remember. Writing them down helps.\n\nThey may be incomplete, incorrect, or incomprehensible. Here be dragons. [Here be tags](/tags/)\n\n") >> notesindex
 }
 /^keywords: / {
+	delete tags
 	$1=""
 	gsub(/[\[\]]/,"",$0)
 	split($0,tags,",")

@@ -47,6 +47,9 @@ nav.site a {
 }
 main {
 	padding: 1.5rem;
+	header {
+		margin-bottom: 1.5rem;
+	}
 	p,ul {
 		max-width: 80ch;
 	}
@@ -87,6 +90,7 @@ kbd,.tag {
 	font-family: sans-serif;
 }
 .tag {
+	font-size: .75rem;
 	text-decoration: none;
 	em {
 		color: #888;

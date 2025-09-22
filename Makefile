@@ -41,10 +41,10 @@ public/tags/index.html: content/tags/index.md $(TMPL)
 		done
 content/tags/index.md: $(NOTES) scripts/processnotes.awk
 	mkdir -p $(@D)
-	awk -f scripts/processnotes.awk \
+	awk -P -f scripts/processnotes.awk \
 		-v tagpath=$(@D) \
 		-v notesindex=content/notes/index.md \
-		notes/*.md
+		$(NOTES)
 
 public/felix_hanley.pdf: resume/data.md resume/meta.yaml templates/default.latex
 	mkdir -p public
