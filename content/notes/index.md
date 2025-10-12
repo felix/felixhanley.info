@@ -6,9 +6,9 @@ Things I want to remember. Writing them down helps.
 
 They may be incomplete, incorrect, or incomprehensible. Here be dragons. [Here be tags](/tags/)
 
+- [FreeBSD thin jails using zfs snapshots](/notes/freebsd-zfs-thin-jails.html) [freebsd](/tags/freebsd.html){.tag} [jails](/tags/jails.html){.tag}
 - [Rust ports on FreeBSD](/notes/rust-ports-on-freebsd.html) [freebsd](/tags/freebsd.html){.tag} [rust](/tags/rust.html){.tag}
 - [Why I use what I use](/notes/why-i-use-what-i-use.html) [self-hosted](/tags/self-hosted.html){.tag} [linux](/tags/linux.html){.tag} [vim](/tags/vim.html){.tag}
-- [FreeBSD thin jails using zfs snapshots](/notes/freebsd-zfs-thin-jails.html) [freebsd](/tags/freebsd.html){.tag} [jails](/tags/jails.html){.tag}
 - [FreeBSD on PCEngines APU2](/notes/pcengines-apu2-freebsd.html) [freebsd](/tags/freebsd.html){.tag} [hardware](/tags/hardware.html){.tag}
 - [Internode, NBN and OpenBSD](/notes/internode-nbn-openbsd.html) [internode](/tags/internode.html){.tag} [nbn](/tags/nbn.html){.tag} [pf](/tags/pf.html){.tag} [openbsd](/tags/openbsd.html){.tag}
 - [Forgejo runner on debian with rootless podman](/notes/forgejo-runner-on-debian.html) [cicd](/tags/cicd.html){.tag} [debian](/tags/debian.html){.tag} [systemd](/tags/systemd.html){.tag}
