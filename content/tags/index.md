@@ -26,6 +26,7 @@ title: Tags
 [self-hosted _2_](self-hosted.html){.tag}
 [qemu _1_](qemu.html){.tag}
 [javascript _1_](javascript.html){.tag}
+[mutt _1_](mutt.html){.tag}
 [money _1_](money.html){.tag}
 [ffmpeg _1_](ffmpeg.html){.tag}
 [neovim _2_](neovim.html){.tag}
@@ -33,3 +34,4 @@ title: Tags
 [vim _1_](vim.html){.tag}
 [debian _2_](debian.html){.tag}
 [hardware _2_](hardware.html){.tag}
+[office365 _1_](office365.html){.tag}
