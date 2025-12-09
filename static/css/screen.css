@@ -116,6 +116,10 @@ div.sourceCode {
 .sourceCode {
 	background-color: #eee;
 }
+pre:not(.sourceCode):has(code) {
+	padding: .5rem;
+	background-color: #eee;
+}
 
 /* menu toggler */
 .hb-icon {
