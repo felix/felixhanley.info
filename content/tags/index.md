@@ -24,8 +24,9 @@ title: Tags
 [ruby _1_](ruby.html){.tag}
 [performance _1_](performance.html){.tag}
 [xorg _1_](xorg.html){.tag}
+[git _1_](git.html){.tag}
 [self-hosted _2_](self-hosted.html){.tag}
-[awk _1_](awk.html){.tag}
+[awk _2_](awk.html){.tag}
 [qemu _1_](qemu.html){.tag}
 [javascript _1_](javascript.html){.tag}
 [mutt _1_](mutt.html){.tag}
