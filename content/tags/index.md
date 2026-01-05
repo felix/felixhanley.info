@@ -7,6 +7,7 @@ title: Tags
 [www _1_](www.html){.tag}
 [laptop _1_](laptop.html){.tag}
 [internode _1_](internode.html){.tag}
+[cgi _1_](cgi.html){.tag}
 [tools _2_](tools.html){.tag}
 [systemd _1_](systemd.html){.tag}
 [jails _2_](jails.html){.tag}
@@ -24,6 +25,7 @@ title: Tags
 [performance _1_](performance.html){.tag}
 [xorg _1_](xorg.html){.tag}
 [self-hosted _2_](self-hosted.html){.tag}
+[awk _1_](awk.html){.tag}
 [qemu _1_](qemu.html){.tag}
 [javascript _1_](javascript.html){.tag}
 [mutt _1_](mutt.html){.tag}
